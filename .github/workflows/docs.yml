@@ -31,10 +31,6 @@ jobs:
           node-version: 18
           cache: pnpm
 
-      - name: 更新依赖
-        run: |-
-          pnpm run docs:update-package
-
 
       # - name: 构建文档
       #   env:
