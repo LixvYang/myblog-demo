@@ -80,8 +80,9 @@ export default hopeTheme({
       "/zh/demo/encrypt.html": ["1234"],
     },
   },
-
+  
   plugins: {
+    
     blog: true,
     copyCode: {
       showInMobile: true,
