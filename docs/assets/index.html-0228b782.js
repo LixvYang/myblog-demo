@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-1ae76327","path":"/posts/redis/datastruct/","title":"Datastruct","lang":"zh-CN","frontmatter":{"title":"Datastruct","article":false,"feed":false,"sitemap":false},"headers":[],"git":{},"readingTime":{"minutes":0,"words":1},"filePathRelative":null,"excerpt":""}');export{t as data};

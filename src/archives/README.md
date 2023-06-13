@@ -29,3 +29,7 @@ Go 语言教程
 [Go strconv包详解](../posts/golang/std/std-strconv.md)
 
 [Go time包详解](../posts/golang/std/std-time.md)
+
+## Redis学习过程
+
+[Redis 学习笔记](../posts/redis/datastruct/datastruct.md)

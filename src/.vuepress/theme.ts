@@ -26,6 +26,7 @@ export default hopeTheme({
       Wechat: "https://example.com",
     },
   },
+  // hotReload: true,
 
   locales: {
     "/": {
