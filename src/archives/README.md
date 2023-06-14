@@ -30,6 +30,12 @@ Go 语言教程
 
 [Go time包详解](../posts/golang/std/std-time.md)
 
+## Gin 框架
+
+[深入剖析Go Gin框架](../posts/golang/tool/gin/2022-12-19-gin-framework-principle.md)
+
 ## Redis学习过程
 
 [Redis 学习笔记](../posts/redis/datastruct/datastruct.md)
+
+[缓存一致性](../posts/redis/cache-consistency/cache-consistency.md)
