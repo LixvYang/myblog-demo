@@ -813,7 +813,7 @@ Buffer Pool中除了缓存索引页和数据页,还缓存undo页,插入缓存,�
 
 为了更好管理这些在Buffer Pool中的缓存页,InnoDB为每一个缓存页面都创建了控制块,控制块信息包括(缓存页的表空间,页号,缓存页地址,链表节点)等.控制块也是有占有空间的,它是放在Buffer Pool的最前面,接着才是缓存页.
 
-![](../assets/img/MySQL/Buffer-Pool-Pages.png)
+![](/assets/images/MySQL/Buffer-Pool-Pages.png)
 
 中间的部分叫碎片空间,为什么会有碎片空间呢?因为可能控制块分配到最后剩下的最后一点点分配不到了,就产生碎片了.
 

@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-53f6d684","path":"/tag/future/","title":"future 标签","lang":"zh-CN","frontmatter":{"title":"future 标签","index":false,"feed":false,"sitemap":false,"blog":{"type":"category","name":"future","key":"tag"},"layout":"BlogCategory"},"headers":[],"git":{},"readingTime":{"minutes":0,"words":0},"filePathRelative":null,"excerpt":""}');export{e as data};

@@ -1,0 +1,1976 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="generator" content="VuePress 2.0.0-beta.62" />
+    <meta name="theme" content="VuePress Theme Hope" />
+    <title>redis 标签</title><meta name="description" content="">
+    <style>
+      :root {
+        --bg-color: #fff;
+      }
+
+      html[data-theme="dark"] {
+        --bg-color: #1d1e1f;
+      }
+
+      html,
+      body {
+        background: var(--bg-color);
+      }
+    </style>
+    <script>
+      const userMode = localStorage.getItem("vuepress-theme-hope-scheme");
+      const systemDarkMode =
+        window.matchMedia &&
+        window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+      if (userMode === "dark" || (userMode !== "light" && systemDarkMode)) {
+        document.documentElement.setAttribute("data-theme", "dark");
+      }
+    </script>
+    <link rel="preload" href="/assets/style-0c209a33.css" as="style"><link rel="stylesheet" href="/assets/style-0c209a33.css">
+    <link rel="modulepreload" href="/assets/app-9b617fb4.js"><link rel="modulepreload" href="/assets/index.html-82524ff5.js"><link rel="modulepreload" href="/assets/plugin-vue_export-helper-c27b6911.js"><link rel="modulepreload" href="/assets/index.html-1356b789.js"><link rel="prefetch" href="/assets/index.html-6076ba48.js" as="script"><link rel="prefetch" href="/assets/intro.html-628ea06a.js" as="script"><link rel="prefetch" href="/assets/slides.html-a343c87a.js" as="script"><link rel="prefetch" href="/assets/index.html-bbde91e0.js" as="script"><link rel="prefetch" href="/assets/disable.html-5a93f9d0.js" as="script"><link rel="prefetch" href="/assets/encrypt.html-a699c315.js" as="script"><link rel="prefetch" href="/assets/markdown.html-ff8207d3.js" as="script"><link rel="prefetch" href="/assets/index.html-15dc4b66.js" as="script"><link rel="prefetch" href="/assets/Perfect-competition.html-500d0249.js" as="script"><link rel="prefetch" href="/assets/2021-What-I-do.html-d3cadf2f.js" as="script"><link rel="prefetch" href="/assets/Absolutely-Correct.html-295a1e3c.js" as="script"><link rel="prefetch" href="/assets/Battle-Internet.html-de6bea0b.js" as="script"><link rel="prefetch" href="/assets/I-wrote-a-blockchain-in-160-lines-of-code.html-aa6933b8.js" as="script"><link rel="prefetch" href="/assets/I-wrote-a-new-App-that-could-help-me-in-immersed.html-20a71679.js" as="script"><link rel="prefetch" href="/assets/More-valuable-than-linear-algebra.html-462058b3.js" as="script"><link rel="prefetch" href="/assets/Protect-yourself.html-8dfc0f08.js" as="script"><link rel="prefetch" href="/assets/be-friends-with-time.html-cb2697be.js" as="script"><link rel="prefetch" href="/assets/cosmic-origin.html-0bb5bee3.js" as="script"><link rel="prefetch" href="/assets/get-away-wechat.html-5763d245.js" as="script"><link rel="prefetch" href="/assets/learn-again.html-d9802584.js" as="script"><link rel="prefetch" href="/assets/patient-with-develop.html-4cf43bbc.js" as="script"><link rel="prefetch" href="/assets/run.html-bcffdfb0.js" as="script"><link rel="prefetch" href="/assets/the-future-of-internet.html-2c484243.js" as="script"><link rel="prefetch" href="/assets/betxin-rules.html-826a09af.js" as="script"><link rel="prefetch" href="/assets/Docker-get-start.html-a1f3f856.js" as="script"><link rel="prefetch" href="/assets/get-start-with-c-tcp-program.html-8d5b49d1.js" as="script"><link rel="prefetch" href="/assets/currency.html-46931cda.js" as="script"><link rel="prefetch" href="/assets/go-depth.html-a62d9db3.js" as="script"><link rel="prefetch" href="/assets/top10-sorting.html-9c062752.js" as="script"><link rel="prefetch" href="/assets/std-bufio.html-e3dc43d4.js" as="script"><link rel="prefetch" href="/assets/std-context.html-cf471fe9.js" as="script"><link rel="prefetch" href="/assets/std-flag.html-9c8b9a4f.js" as="script"><link rel="prefetch" href="/assets/std-fmt.html-f09c8783.js" as="script"><link rel="prefetch" href="/assets/std-log.html-153859be.js" as="script"><link rel="prefetch" href="/assets/std-reflect.html-1464d784.js" as="script"><link rel="prefetch" href="/assets/std-strconv.html-27e620c6.js" as="script"><link rel="prefetch" href="/assets/std-time.html-e261ce65.js" as="script"><link rel="prefetch" href="/assets/backtrack.html-9596eeba.js" as="script"><link rel="prefetch" href="/assets/dynamic-programming.html-f30b366c.js" as="script"><link rel="prefetch" href="/assets/gomock-tuto.html-bbc2453e.js" as="script"><link rel="prefetch" href="/assets/offer.html-cfeee7e2.js" as="script"><link rel="prefetch" href="/assets/mysql-notes.html-656a1178.js" as="script"><link rel="prefetch" href="/assets/cache-consistency.html-4dea4f24.js" as="script"><link rel="prefetch" href="/assets/datastruct.html-f21acc3b.js" as="script"><link rel="prefetch" href="/assets/redis-note.html-78fc6275.js" as="script"><link rel="prefetch" href="/assets/gin-framework-principle.html-fd8ca4a9.js" as="script"><link rel="prefetch" href="/assets/1.html-ede19e32.js" as="script"><link rel="prefetch" href="/assets/2.html-c0125bb9.js" as="script"><link rel="prefetch" href="/assets/3.html-92fde2ce.js" as="script"><link rel="prefetch" href="/assets/4.html-e47c0880.js" as="script"><link rel="prefetch" href="/assets/404.html-f04ced3e.js" as="script"><link rel="prefetch" href="/assets/index.html-28f6427f.js" as="script"><link rel="prefetch" href="/assets/index.html-533dd762.js" as="script"><link rel="prefetch" href="/assets/index.html-a6fa1b37.js" as="script"><link rel="prefetch" href="/assets/index.html-7d740e07.js" as="script"><link rel="prefetch" href="/assets/index.html-6bb79537.js" as="script"><link rel="prefetch" href="/assets/index.html-b93f75ba.js" as="script"><link rel="prefetch" href="/assets/index.html-b98900cc.js" as="script"><link rel="prefetch" href="/assets/index.html-bdafc669.js" as="script"><link rel="prefetch" href="/assets/index.html-963e7caf.js" as="script"><link rel="prefetch" href="/assets/index.html-bdf00eca.js" as="script"><link rel="prefetch" href="/assets/index.html-4b356d95.js" as="script"><link rel="prefetch" href="/assets/index.html-932ed3ab.js" as="script"><link rel="prefetch" href="/assets/index.html-34e64b21.js" as="script"><link rel="prefetch" href="/assets/index.html-058c3214.js" as="script"><link rel="prefetch" href="/assets/index.html-0dfb58c1.js" as="script"><link rel="prefetch" href="/assets/index.html-147389e1.js" as="script"><link rel="prefetch" href="/assets/index.html-8d71de80.js" as="script"><link rel="prefetch" href="/assets/index.html-c2f746d4.js" as="script"><link rel="prefetch" href="/assets/index.html-65ed4305.js" as="script"><link rel="prefetch" href="/assets/index.html-0caf566d.js" as="script"><link rel="prefetch" href="/assets/index.html-0ce04f18.js" as="script"><link rel="prefetch" href="/assets/index.html-6f31e80c.js" as="script"><link rel="prefetch" href="/assets/index.html-f0189b54.js" as="script"><link rel="prefetch" href="/assets/index.html-4a6904f1.js" as="script"><link rel="prefetch" href="/assets/index.html-03bf3810.js" as="script"><link rel="prefetch" href="/assets/index.html-e609b71c.js" as="script"><link rel="prefetch" href="/assets/index.html-04a11369.js" as="script"><link rel="prefetch" href="/assets/index.html-d1922e1a.js" as="script"><link rel="prefetch" href="/assets/index.html-c43655ce.js" as="script"><link rel="prefetch" href="/assets/index.html-b67245ca.js" as="script"><link rel="prefetch" href="/assets/index.html-0c60682a.js" as="script"><link rel="prefetch" href="/assets/index.html-f9475fdf.js" as="script"><link rel="prefetch" href="/assets/index.html-66a3434d.js" as="script"><link rel="prefetch" href="/assets/index.html-58ac58da.js" as="script"><link rel="prefetch" href="/assets/index.html-3a947047.js" as="script"><link rel="prefetch" href="/assets/index.html-a3a16301.js" as="script"><link rel="prefetch" href="/assets/index.html-a20b3126.js" as="script"><link rel="prefetch" href="/assets/index.html-acbf5c91.js" as="script"><link rel="prefetch" href="/assets/index.html-3487908d.js" as="script"><link rel="prefetch" href="/assets/index.html-8d1151da.js" as="script"><link rel="prefetch" href="/assets/index.html-347f8f0d.js" as="script"><link rel="prefetch" href="/assets/index.html-efe63c0e.js" as="script"><link rel="prefetch" href="/assets/index.html-c53768c0.js" as="script"><link rel="prefetch" href="/assets/index.html-214601b9.js" as="script"><link rel="prefetch" href="/assets/index.html-840dc877.js" as="script"><link rel="prefetch" href="/assets/index.html-f6cd9cb5.js" as="script"><link rel="prefetch" href="/assets/index.html-fa85c0bf.js" as="script"><link rel="prefetch" href="/assets/index.html-dba578ae.js" as="script"><link rel="prefetch" href="/assets/index.html-f71b5046.js" as="script"><link rel="prefetch" href="/assets/index.html-5677f005.js" as="script"><link rel="prefetch" href="/assets/index.html-171811bf.js" as="script"><link rel="prefetch" href="/assets/index.html-c45a46d0.js" as="script"><link rel="prefetch" href="/assets/index.html-2c2224f3.js" as="script"><link rel="prefetch" href="/assets/index.html-f027bd21.js" as="script"><link rel="prefetch" href="/assets/index.html-20838d5f.js" as="script"><link rel="prefetch" href="/assets/index.html-9ee7f6ac.js" as="script"><link rel="prefetch" href="/assets/index.html-f9a72425.js" as="script"><link rel="prefetch" href="/assets/index.html-78cdaab1.js" as="script"><link rel="prefetch" href="/assets/index.html-f658f50d.js" as="script"><link rel="prefetch" href="/assets/index.html-6f851208.js" as="script"><link rel="prefetch" href="/assets/index.html-3d310661.js" as="script"><link rel="prefetch" href="/assets/index.html-b4429dd6.js" as="script"><link rel="prefetch" href="/assets/index.html-20848499.js" as="script"><link rel="prefetch" href="/assets/index.html-89c7041d.js" as="script"><link rel="prefetch" href="/assets/index.html-03530d3d.js" as="script"><link rel="prefetch" href="/assets/index.html-a4cc3a13.js" as="script"><link rel="prefetch" href="/assets/index.html-379e03c2.js" as="script"><link rel="prefetch" href="/assets/index.html-bcaa02ce.js" as="script"><link rel="prefetch" href="/assets/index.html-dcc95bfe.js" as="script"><link rel="prefetch" href="/assets/index.html-193defc5.js" as="script"><link rel="prefetch" href="/assets/index.html-c7b91d9d.js" as="script"><link rel="prefetch" href="/assets/index.html-457ce6c1.js" as="script"><link rel="prefetch" href="/assets/index.html-1d2c3708.js" as="script"><link rel="prefetch" href="/assets/index.html-4ac0a8de.js" as="script"><link rel="prefetch" href="/assets/index.html-38a20207.js" as="script"><link rel="prefetch" href="/assets/index.html-d3097db7.js" as="script"><link rel="prefetch" href="/assets/index.html-7aeca58b.js" as="script"><link rel="prefetch" href="/assets/index.html-3ef207b0.js" as="script"><link rel="prefetch" href="/assets/intro.html-03b12fa1.js" as="script"><link rel="prefetch" href="/assets/slides.html-cec126b8.js" as="script"><link rel="prefetch" href="/assets/index.html-72b77ce8.js" as="script"><link rel="prefetch" href="/assets/disable.html-4bb51bcc.js" as="script"><link rel="prefetch" href="/assets/encrypt.html-1c354699.js" as="script"><link rel="prefetch" href="/assets/markdown.html-c1776077.js" as="script"><link rel="prefetch" href="/assets/index.html-42293e54.js" as="script"><link rel="prefetch" href="/assets/Perfect-competition.html-463687fc.js" as="script"><link rel="prefetch" href="/assets/2021-What-I-do.html-5949c74c.js" as="script"><link rel="prefetch" href="/assets/Absolutely-Correct.html-986856c4.js" as="script"><link rel="prefetch" href="/assets/Battle-Internet.html-d3fc3610.js" as="script"><link rel="prefetch" href="/assets/I-wrote-a-blockchain-in-160-lines-of-code.html-b4af58ae.js" as="script"><link rel="prefetch" href="/assets/I-wrote-a-new-App-that-could-help-me-in-immersed.html-44e48c5d.js" as="script"><link rel="prefetch" href="/assets/More-valuable-than-linear-algebra.html-354ba35a.js" as="script"><link rel="prefetch" href="/assets/Protect-yourself.html-0b57bc67.js" as="script"><link rel="prefetch" href="/assets/be-friends-with-time.html-ea5cabf6.js" as="script"><link rel="prefetch" href="/assets/cosmic-origin.html-fe725cbd.js" as="script"><link rel="prefetch" href="/assets/get-away-wechat.html-d59ec1bd.js" as="script"><link rel="prefetch" href="/assets/learn-again.html-8ba04a63.js" as="script"><link rel="prefetch" href="/assets/patient-with-develop.html-f468c066.js" as="script"><link rel="prefetch" href="/assets/run.html-2e942187.js" as="script"><link rel="prefetch" href="/assets/the-future-of-internet.html-b84a0a0b.js" as="script"><link rel="prefetch" href="/assets/betxin-rules.html-adce2e34.js" as="script"><link rel="prefetch" href="/assets/Docker-get-start.html-0a731854.js" as="script"><link rel="prefetch" href="/assets/get-start-with-c-tcp-program.html-f3a8997f.js" as="script"><link rel="prefetch" href="/assets/currency.html-8096dd02.js" as="script"><link rel="prefetch" href="/assets/go-depth.html-b32e04cf.js" as="script"><link rel="prefetch" href="/assets/top10-sorting.html-d2108293.js" as="script"><link rel="prefetch" href="/assets/std-bufio.html-13bfb899.js" as="script"><link rel="prefetch" href="/assets/std-context.html-66167329.js" as="script"><link rel="prefetch" href="/assets/std-flag.html-a6691c7a.js" as="script"><link rel="prefetch" href="/assets/std-fmt.html-8e1f9247.js" as="script"><link rel="prefetch" href="/assets/std-log.html-ba5b39d3.js" as="script"><link rel="prefetch" href="/assets/std-reflect.html-3b369e29.js" as="script"><link rel="prefetch" href="/assets/std-strconv.html-e22f7442.js" as="script"><link rel="prefetch" href="/assets/std-time.html-f2d89653.js" as="script"><link rel="prefetch" href="/assets/backtrack.html-39612048.js" as="script"><link rel="prefetch" href="/assets/dynamic-programming.html-04965673.js" as="script"><link rel="prefetch" href="/assets/gomock-tuto.html-a04ca228.js" as="script"><link rel="prefetch" href="/assets/offer.html-74f5a8a0.js" as="script"><link rel="prefetch" href="/assets/mysql-notes.html-a4b7553e.js" as="script"><link rel="prefetch" href="/assets/cache-consistency.html-ba57d47f.js" as="script"><link rel="prefetch" href="/assets/datastruct.html-966540df.js" as="script"><link rel="prefetch" href="/assets/redis-note.html-1ca1f447.js" as="script"><link rel="prefetch" href="/assets/gin-framework-principle.html-e4d96fa6.js" as="script"><link rel="prefetch" href="/assets/1.html-d4967375.js" as="script"><link rel="prefetch" href="/assets/2.html-60ab43c3.js" as="script"><link rel="prefetch" href="/assets/3.html-b929f973.js" as="script"><link rel="prefetch" href="/assets/4.html-21e9b385.js" as="script"><link rel="prefetch" href="/assets/404.html-37422284.js" as="script"><link rel="prefetch" href="/assets/index.html-ba66d573.js" as="script"><link rel="prefetch" href="/assets/index.html-bb84e385.js" as="script"><link rel="prefetch" href="/assets/index.html-b3173f41.js" as="script"><link rel="prefetch" href="/assets/index.html-65402d1c.js" as="script"><link rel="prefetch" href="/assets/index.html-d5c18fc9.js" as="script"><link rel="prefetch" href="/assets/index.html-3c2850ad.js" as="script"><link rel="prefetch" href="/assets/index.html-c9ec8373.js" as="script"><link rel="prefetch" href="/assets/index.html-7e4412dc.js" as="script"><link rel="prefetch" href="/assets/index.html-d7dd3641.js" as="script"><link rel="prefetch" href="/assets/index.html-533bafb0.js" as="script"><link rel="prefetch" href="/assets/index.html-56f7027d.js" as="script"><link rel="prefetch" href="/assets/index.html-e102a811.js" as="script"><link rel="prefetch" href="/assets/index.html-5a34e781.js" as="script"><link rel="prefetch" href="/assets/index.html-3465bc98.js" as="script"><link rel="prefetch" href="/assets/index.html-84542f37.js" as="script"><link rel="prefetch" href="/assets/index.html-d52880b4.js" as="script"><link rel="prefetch" href="/assets/index.html-642465ea.js" as="script"><link rel="prefetch" href="/assets/index.html-b9953823.js" as="script"><link rel="prefetch" href="/assets/index.html-4e88812d.js" as="script"><link rel="prefetch" href="/assets/index.html-225abd73.js" as="script"><link rel="prefetch" href="/assets/index.html-2a292b02.js" as="script"><link rel="prefetch" href="/assets/index.html-c6423c36.js" as="script"><link rel="prefetch" href="/assets/index.html-f8998680.js" as="script"><link rel="prefetch" href="/assets/index.html-ea283583.js" as="script"><link rel="prefetch" href="/assets/index.html-8039b5af.js" as="script"><link rel="prefetch" href="/assets/index.html-9f3c1556.js" as="script"><link rel="prefetch" href="/assets/index.html-9ed1d464.js" as="script"><link rel="prefetch" href="/assets/index.html-7622b05d.js" as="script"><link rel="prefetch" href="/assets/index.html-07a5f007.js" as="script"><link rel="prefetch" href="/assets/index.html-c6a2ea9a.js" as="script"><link rel="prefetch" href="/assets/index.html-fcb5a9b2.js" as="script"><link rel="prefetch" href="/assets/index.html-d819cea3.js" as="script"><link rel="prefetch" href="/assets/index.html-630a1926.js" as="script"><link rel="prefetch" href="/assets/index.html-e7690772.js" as="script"><link rel="prefetch" href="/assets/index.html-f7f674f0.js" as="script"><link rel="prefetch" href="/assets/index.html-4fdbe469.js" as="script"><link rel="prefetch" href="/assets/index.html-e5d08f66.js" as="script"><link rel="prefetch" href="/assets/index.html-3373b251.js" as="script"><link rel="prefetch" href="/assets/index.html-10928593.js" as="script"><link rel="prefetch" href="/assets/index.html-f4fa3cb3.js" as="script"><link rel="prefetch" href="/assets/index.html-f32c2935.js" as="script"><link rel="prefetch" href="/assets/index.html-7ea85ec8.js" as="script"><link rel="prefetch" href="/assets/index.html-b1b1de2f.js" as="script"><link rel="prefetch" href="/assets/index.html-93508c14.js" as="script"><link rel="prefetch" href="/assets/index.html-a4ff6fea.js" as="script"><link rel="prefetch" href="/assets/index.html-2080646d.js" as="script"><link rel="prefetch" href="/assets/index.html-468d1175.js" as="script"><link rel="prefetch" href="/assets/index.html-cebbf13c.js" as="script"><link rel="prefetch" href="/assets/index.html-ac053178.js" as="script"><link rel="prefetch" href="/assets/index.html-f37a6d24.js" as="script"><link rel="prefetch" href="/assets/index.html-4b302814.js" as="script"><link rel="prefetch" href="/assets/index.html-60558891.js" as="script"><link rel="prefetch" href="/assets/index.html-5edeb101.js" as="script"><link rel="prefetch" href="/assets/index.html-defb63ba.js" as="script"><link rel="prefetch" href="/assets/index.html-315b26a1.js" as="script"><link rel="prefetch" href="/assets/index.html-f729c6b8.js" as="script"><link rel="prefetch" href="/assets/index.html-2779b034.js" as="script"><link rel="prefetch" href="/assets/index.html-fc33cf8d.js" as="script"><link rel="prefetch" href="/assets/index.html-45580407.js" as="script"><link rel="prefetch" href="/assets/index.html-06abf0b6.js" as="script"><link rel="prefetch" href="/assets/index.html-fbd8c5c3.js" as="script"><link rel="prefetch" href="/assets/index.html-6894d8f6.js" as="script"><link rel="prefetch" href="/assets/index.html-05f6d60d.js" as="script"><link rel="prefetch" href="/assets/index.html-ced61aba.js" as="script"><link rel="prefetch" href="/assets/index.html-d5ff3b33.js" as="script"><link rel="prefetch" href="/assets/index.html-bd0ab2b3.js" as="script"><link rel="prefetch" href="/assets/index.html-4bc1727f.js" as="script"><link rel="prefetch" href="/assets/index.html-241582e5.js" as="script"><link rel="prefetch" href="/assets/index.html-ae50628b.js" as="script"><link rel="prefetch" href="/assets/index.html-6fc49b27.js" as="script"><link rel="prefetch" href="/assets/index.html-10359b36.js" as="script"><link rel="prefetch" href="/assets/index.html-a40ff2ae.js" as="script"><link rel="prefetch" href="/assets/index.html-5794ba1d.js" as="script"><link rel="prefetch" href="/assets/index.html-0a5206b2.js" as="script"><link rel="prefetch" href="/assets/index.html-5847691a.js" as="script"><link rel="prefetch" href="/assets/index.html-16d8c6d6.js" as="script"><link rel="prefetch" href="/assets/index.html-fd2ac6a4.js" as="script"><link rel="prefetch" href="/assets/giscus-52604b1e.js" as="script"><link rel="prefetch" href="/assets/auto-fa8841cf.js" as="script"><link rel="prefetch" href="/assets/index-ae8c1e74.js" as="script"><link rel="prefetch" href="/assets/flowchart-d65a1d8e.js" as="script"><link rel="prefetch" href="/assets/mermaid.core-777ede9e.js" as="script"><link rel="prefetch" href="/assets/highlight.esm-75b11b9d.js" as="script"><link rel="prefetch" href="/assets/markdown.esm-0191f9da.js" as="script"><link rel="prefetch" href="/assets/math.esm-70a288c8.js" as="script"><link rel="prefetch" href="/assets/notes.esm-a106bb2c.js" as="script"><link rel="prefetch" href="/assets/reveal.esm-ec5549c1.js" as="script"><link rel="prefetch" href="/assets/search.esm-7e6792e2.js" as="script"><link rel="prefetch" href="/assets/zoom.esm-b83b91d0.js" as="script"><link rel="prefetch" href="/assets/VuePlayground-a60f4327.js" as="script"><link rel="prefetch" href="/assets/photoswipe.esm-2450701e.js" as="script">
+  </head>
+  <body>
+    <div id="app"><!--[--><!--[--><!--[--><span tabindex="-1"></span><a href="#main-content" class="vp-skip-link sr-only">跳至主要內容</a><!--]--><div class="theme-container no-sidebar"><!--[--><header class="vp-navbar" id="navbar"><div class="vp-navbar-start"><button type="button" class="vp-toggle-sidebar-button" title="Toggle Sidebar"><span class="icon"></span></button><!--[--><!----><!--]--><!--[--><a href="/" class="vp-brand"><!----><!----><!----></a><!--]--><!--[--><!----><!--]--></div><div class="vp-navbar-center"><!--[--><!----><!--]--><!--[--><nav class="vp-nav-links"><div class="nav-item hide-in-mobile"><a href="/" class="nav-link" aria-label="主页"><span class="font-icon icon iconfont icon-home" style=""></span>主页<!----></a></div><div class="nav-item hide-in-mobile"><a href="/archives/" class="nav-link" aria-label="归档"><span class="font-icon icon iconfont icon-discover" style=""></span>归档<!----></a></div><div class="nav-item hide-in-mobile"><a href="/intro.html" class="nav-link" aria-label="关于"><span class="font-icon icon iconfont icon-info" style=""></span>关于<!----></a></div></nav><!--]--><!--[--><!----><!--]--></div><div class="vp-navbar-end"><!--[--><!----><!--]--><!--[--><!----><div class="nav-item"><a class="vp-repo-link" href="https://github.com/lixvyang/myblog" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><svg xmlns="http://www.w3.org/2000/svg" class="icon github-icon" viewBox="0 0 1024 1024" fill="currentColor" aria-label="github icon" style="width:1.25rem;height:1.25rem;vertical-align:middle;"><path d="M511.957 21.333C241.024 21.333 21.333 240.981 21.333 512c0 216.832 140.544 400.725 335.574 465.664 24.49 4.395 32.256-10.07 32.256-23.083 0-11.69.256-44.245 0-85.205-136.448 29.61-164.736-64.64-164.736-64.64-22.315-56.704-54.4-71.765-54.4-71.765-44.587-30.464 3.285-29.824 3.285-29.824 49.195 3.413 75.179 50.517 75.179 50.517 43.776 75.008 114.816 53.333 142.762 40.79 4.523-31.66 17.152-53.377 31.19-65.537-108.971-12.458-223.488-54.485-223.488-242.602 0-53.547 19.114-97.323 50.517-131.67-5.035-12.33-21.93-62.293 4.779-129.834 0 0 41.258-13.184 134.912 50.346a469.803 469.803 0 0 1 122.88-16.554c41.642.213 83.626 5.632 122.88 16.554 93.653-63.488 134.784-50.346 134.784-50.346 26.752 67.541 9.898 117.504 4.864 129.834 31.402 34.347 50.474 78.123 50.474 131.67 0 188.586-114.73 230.016-224.042 242.09 17.578 15.232 33.578 44.672 33.578 90.454v135.85c0 13.142 7.936 27.606 32.854 22.87C862.25 912.597 1002.667 728.747 1002.667 512c0-271.019-219.648-490.667-490.71-490.667z"></path></svg></a></div><div class="nav-item hide-in-mobile"><button type="button" class="outlook-button" tabindex="-1" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" class="icon outlook-icon" viewBox="0 0 1024 1024" fill="currentColor" aria-label="outlook icon"><path d="M224 800c0 9.6 3.2 44.8 6.4 54.4 6.4 48-48 76.8-48 76.8s80 41.6 147.2 0 134.4-134.4 38.4-195.2c-22.4-12.8-41.6-19.2-57.6-19.2C259.2 716.8 227.2 761.6 224 800zM560 675.2l-32 51.2c-51.2 51.2-83.2 32-83.2 32 25.6 67.2 0 112-12.8 128 25.6 6.4 51.2 9.6 80 9.6 54.4 0 102.4-9.6 150.4-32l0 0c3.2 0 3.2-3.2 3.2-3.2 22.4-16 12.8-35.2 6.4-44.8-9.6-12.8-12.8-25.6-12.8-41.6 0-54.4 60.8-99.2 137.6-99.2 6.4 0 12.8 0 22.4 0 12.8 0 38.4 9.6 48-25.6 0-3.2 0-3.2 3.2-6.4 0-3.2 3.2-6.4 3.2-6.4 6.4-16 6.4-16 6.4-19.2 9.6-35.2 16-73.6 16-115.2 0-105.6-41.6-198.4-108.8-268.8C704 396.8 560 675.2 560 675.2zM224 419.2c0-28.8 22.4-51.2 51.2-51.2 28.8 0 51.2 22.4 51.2 51.2 0 28.8-22.4 51.2-51.2 51.2C246.4 470.4 224 448 224 419.2zM320 284.8c0-22.4 19.2-41.6 41.6-41.6 22.4 0 41.6 19.2 41.6 41.6 0 22.4-19.2 41.6-41.6 41.6C339.2 326.4 320 307.2 320 284.8zM457.6 208c0-12.8 12.8-25.6 25.6-25.6 12.8 0 25.6 12.8 25.6 25.6 0 12.8-12.8 25.6-25.6 25.6C470.4 233.6 457.6 220.8 457.6 208zM128 505.6C128 592 153.6 672 201.6 736c28.8-60.8 112-60.8 124.8-60.8-16-51.2 16-99.2 16-99.2l316.8-422.4c-48-19.2-99.2-32-150.4-32C297.6 118.4 128 291.2 128 505.6zM764.8 86.4c-22.4 19.2-390.4 518.4-390.4 518.4-22.4 28.8-12.8 76.8 22.4 99.2l9.6 6.4c35.2 22.4 80 12.8 99.2-25.6 0 0 6.4-12.8 9.6-19.2 54.4-105.6 275.2-524.8 288-553.6 6.4-19.2-3.2-32-19.2-32C777.6 76.8 771.2 80 764.8 86.4z"></path></svg><div class="outlook-dropdown"><!----></div></button></div><!----><!--]--><!--[--><!----><!--]--><button type="button" class="vp-toggle-navbar-button" aria-label="Toggle Navbar" aria-expanded="false" aria-controls="nav-screen"><span><span class="vp-top"></span><span class="vp-middle"></span><span class="vp-bottom"></span></span></button></div></header><!----><!--]--><!----><div class="toggle-sidebar-wrapper"><span class="arrow start"></span></div><aside class="sidebar" id="sidebar"><!--[--><!----><!--]--><ul class="sidebar-links"></ul><!--[--><!----><!--]--></aside><!--[--><div class="vp-page vp-blog"><div class="blog-page-wrapper"><main class="vp-blog-main" id="main-content"><ul class="tag-list-wrapper"><li class="tag tag7"><a href="/tag/econonics/" class="">econonics<span class="tag-num">1</span></a></li><li class="tag tag5 active"><a aria-current="page" href="/tag/redis/" class="router-link-active router-link-exact-active">redis<span class="tag-num">4</span></a></li><li class="tag tag1"><a href="/tag/consistency/" class="">consistency<span class="tag-num">2</span></a></li><li class="tag tag6"><a href="/tag/thinking/" class="">thinking<span class="tag-num">1</span></a></li><li class="tag tag0"><a href="/tag/network/" class="">network<span class="tag-num">2</span></a></li><li class="tag tag4"><a href="/tag/blockchain/" class="">blockchain<span class="tag-num">2</span></a></li><li class="tag tag3"><a href="/tag/thinging/" class="">thinging<span class="tag-num">2</span></a></li><li class="tag tag5"><a href="/tag/white-noise/" class="">white-noise<span class="tag-num">1</span></a></li><li class="tag tag4"><a href="/tag/music/" class="">music<span class="tag-num">1</span></a></li><li class="tag tag6"><a href="/tag/secure/" class="">secure<span class="tag-num">2</span></a></li><li class="tag tag7"><a href="/tag/value/" class="">value<span class="tag-num">1</span></a></li><li class="tag tag7"><a href="/tag/privacy/" class="">privacy<span class="tag-num">2</span></a></li><li class="tag tag6"><a href="/tag/time/" class="">time<span class="tag-num">1</span></a></li><li class="tag tag3"><a href="/tag/imagine/" class="">imagine<span class="tag-num">1</span></a></li><li class="tag tag4"><a href="/tag/wechat/" class="">wechat<span class="tag-num">1</span></a></li><li class="tag tag0"><a href="/tag/learn/" class="">learn<span class="tag-num">1</span></a></li><li class="tag tag5"><a href="/tag/develop/" class="">develop<span class="tag-num">1</span></a></li><li class="tag tag0"><a href="/tag/run/" class="">run<span class="tag-num">1</span></a></li><li class="tag tag2"><a href="/tag/long-termism/" class="">long_termism<span class="tag-num">1</span></a></li><li class="tag tag7"><a href="/tag/internet/" class="">internet<span class="tag-num">1</span></a></li><li class="tag tag2"><a href="/tag/future/" class="">future<span class="tag-num">1</span></a></li><li class="tag tag8"><a href="/tag/betxin-rules/" class="">betxin-rules<span class="tag-num">1</span></a></li><li class="tag tag2"><a href="/tag/docker/" class="">docker<span class="tag-num">1</span></a></li><li class="tag tag7"><a href="/tag/golang/" class="">golang<span class="tag-num">16</span></a></li><li class="tag tag8"><a href="/tag/concurrency/" class="">concurrency<span class="tag-num">1</span></a></li><li class="tag tag5"><a href="/tag/top10-sort/" class="">top10-sort<span class="tag-num">1</span></a></li><li class="tag tag5"><a href="/tag/leetcode/" class="">leetcode<span class="tag-num">3</span></a></li><li class="tag tag2"><a href="/tag/backtrack/" class="">backtrack<span class="tag-num">1</span></a></li><li class="tag tag0"><a href="/tag/dynamic-programming/" class="">dynamic-programming<span class="tag-num">1</span></a></li><li class="tag tag3"><a href="/tag/mock/" class="">mock<span class="tag-num">1</span></a></li><li class="tag tag3"><a href="/tag/offer/" class="">offer<span class="tag-num">1</span></a></li><li class="tag tag4"><a href="/tag/mysql/" class="">mysql<span class="tag-num">1</span></a></li><li class="tag tag5"><a href="/tag/gin/" class="">gin<span class="tag-num">1</span></a></li><li class="tag tag6"><a href="/tag/grpc/" class="">grpc<span class="tag-num">4</span></a></li></ul><div id="article-list" class="vp-article-list"><div class="vp-article-wrapper"><article class="vp-article-item" vocab="https://schema.org/" typeof="Article"><!--[--><!--]--><!----><a href="/posts/program/redis/cache-consistency/cache-consistency.html" class=""><header class="vp-article-title"><!----><!----><span property="headline">缓存一致性目录</span></header></a><div class="vp-article-excerpt"><h1> 缓存一致性目录</h1>
+<ul>
+<li><a href="#%E7%BC%93%E5%AD%98%E4%B8%80%E8%87%B4%E6%80%A7%E7%9B%AE%E5%BD%95">缓存一致性目录</a>
+<ul>
+<li><a href="#%E5%BC%95%E5%85%A5%E7%BC%93%E5%AD%98%E6%8F%90%E9%AB%98%E6%80%A7%E8%83%BD">引入缓存提高性能</a></li>
+<li><a href="#%E7%BC%93%E5%AD%98%E5%88%A9%E7%94%A8%E7%8E%87%E4%B8%8E%E4%B8%80%E8%87%B4%E6%80%A7%E9%97%AE%E9%A2%98">缓存利用率与一致性问题</a></li>
+<li><a href="#%E5%B9%B6%E5%8F%91%E5%BC%95%E5%85%A5%E7%9A%84%E4%B8%80%E8%87%B4%E6%80%A7%E9%97%AE%E9%A2%98">并发引入的一致性问题</a></li>
+<li><a href="#%E5%88%A0%E9%99%A4%E7%BC%93%E5%AD%98%E5%8F%AF%E4%BB%A5%E4%BF%9D%E8%AF%81%E4%B8%80%E8%87%B4%E6%80%A7%E5%90%97">删除缓存可以保证一致性吗</a></li>
+<li><a href="#%E5%A6%82%E4%BD%95%E4%BF%9D%E8%AF%81%E4%B8%A4%E6%AD%A5%E9%83%BD%E6%89%A7%E8%A1%8C%E6%88%90%E5%8A%9F">如何保证两步都执行成功?</a></li>
+<li><a href="#%E4%B8%BB%E4%BB%8E%E5%BA%93%E5%BB%B6%E8%BF%9F%E5%92%8C%E5%BB%B6%E8%BF%9F%E5%8F%8C%E5%88%A0%E9%97%AE%E9%A2%98">主从库延迟和延迟双删问题</a></li>
+<li><a href="#%E5%8F%AF%E4%BB%A5%E5%81%9A%E5%88%B0%E5%BC%BA%E4%B8%80%E8%87%B4%E5%90%97">可以做到强一致吗?</a></li>
+<li><a href="#%E6%80%BB%E7%BB%93">总结</a></li>
+</ul>
+</li>
+</ul></div><hr class="vp-article-hr"><div class="page-info"><!----><span class="page-original-info">原创</span><span class="page-date-info" aria-label="写作日期"><svg xmlns="http://www.w3.org/2000/svg" class="icon calendar-icon" viewBox="0 0 1024 1024" fill="currentColor" aria-label="calendar icon"><path d="M716.4 110.137c0-18.753-14.72-33.473-33.472-33.473-18.753 0-33.473 14.72-33.473 33.473v33.473h66.993v-33.473zm-334.87 0c0-18.753-14.72-33.473-33.473-33.473s-33.52 14.72-33.52 33.473v33.473h66.993v-33.473zm468.81 33.52H716.4v100.465c0 18.753-14.72 33.473-33.472 33.473a33.145 33.145 0 01-33.473-33.473V143.657H381.53v100.465c0 18.753-14.72 33.473-33.473 33.473a33.145 33.145 0 01-33.473-33.473V143.657H180.6A134.314 134.314 0 0046.66 277.595v535.756A134.314 134.314 0 00180.6 947.289h669.74a134.36 134.36 0 00133.94-133.938V277.595a134.314 134.314 0 00-133.94-133.938zm33.473 267.877H147.126a33.145 33.145 0 01-33.473-33.473c0-18.752 14.72-33.473 33.473-33.473h736.687c18.752 0 33.472 14.72 33.472 33.473a33.145 33.145 0 01-33.472 33.473z"></path></svg><span><!----></span><meta property="datePublished" content="2022-11-21T00:00:00.000Z"></span><!----><span class="page-reading-time-info" aria-label="阅读时间"><svg xmlns="http://www.w3.org/2000/svg" class="icon timer-icon" viewBox="0 0 1024 1024" fill="currentColor" aria-label="timer icon"><path d="M799.387 122.15c4.402-2.978 7.38-7.897 7.38-13.463v-1.165c0-8.933-7.38-16.312-16.312-16.312H256.33c-8.933 0-16.311 7.38-16.311 16.312v1.165c0 5.825 2.977 10.874 7.637 13.592 4.143 194.44 97.22 354.963 220.201 392.763-122.204 37.542-214.893 196.511-220.2 389.397-4.661 5.049-7.638 11.651-7.638 19.03v5.825h566.49v-5.825c0-7.379-2.849-13.981-7.509-18.9-5.049-193.016-97.867-351.985-220.2-389.527 123.24-37.67 216.446-198.453 220.588-392.892zM531.16 450.445v352.632c117.674 1.553 211.787 40.778 211.787 88.676H304.097c0-48.286 95.149-87.382 213.728-88.676V450.445c-93.077-3.107-167.901-81.297-167.901-177.093 0-8.803 6.99-15.793 15.793-15.793 8.803 0 15.794 6.99 15.794 15.793 0 80.261 63.69 145.635 142.01 145.635s142.011-65.374 142.011-145.635c0-8.803 6.99-15.793 15.794-15.793s15.793 6.99 15.793 15.793c0 95.019-73.789 172.82-165.96 177.093z"></path></svg><span>大约 16 分钟</span><meta property="timeRequired" content="PT16M"></span><span class="page-category-info" aria-label="分类"><svg xmlns="http://www.w3.org/2000/svg" class="icon category-icon" viewBox="0 0 1024 1024" fill="currentColor" aria-label="category icon"><path d="M148.41 106.992h282.176c22.263 0 40.31 18.048 40.31 40.31V429.48c0 22.263-18.047 40.31-40.31 40.31H148.41c-22.263 0-40.311-18.047-40.311-40.31V147.302c0-22.263 18.048-40.31 40.311-40.31zM147.556 553.478H429.73c22.263 0 40.311 18.048 40.311 40.31v282.176c0 22.263-18.048 40.312-40.31 40.312H147.555c-22.263 0-40.311-18.049-40.311-40.312V593.79c0-22.263 18.048-40.311 40.31-40.311zM593.927 106.992h282.176c22.263 0 40.31 18.048 40.31 40.31V429.48c0 22.263-18.047 40.31-40.31 40.31H593.927c-22.263 0-40.311-18.047-40.311-40.31V147.302c0-22.263 18.048-40.31 40.31-40.31zM730.22 920.502H623.926c-40.925 0-74.22-33.388-74.22-74.425V623.992c0-41.038 33.387-74.424 74.425-74.424h222.085c41.038 0 74.424 33.226 74.424 74.067v114.233c0 10.244-8.304 18.548-18.547 18.548s-18.548-8.304-18.548-18.548V623.635c0-20.388-16.746-36.974-37.33-36.974H624.13c-20.585 0-37.331 16.747-37.331 37.33v222.086c0 20.585 16.654 37.331 37.126 37.331H730.22c10.243 0 18.547 8.304 18.547 18.547 0 10.244-8.304 18.547-18.547 18.547z"></path></svg><!--[--><span class="page-category-item clickable" role="navigation">tutorial</span><!--]--><meta property="articleSection" content="tutorial"></span><span class="page-tag-info" aria-label="标签"><svg xmlns="http://www.w3.org/2000/svg" class="icon tag-icon" viewBox="0 0 1024 1024" fill="currentColor" aria-label="tag icon"><path d="M939.902 458.563L910.17 144.567c-1.507-16.272-14.465-29.13-30.737-30.737L565.438 84.098h-.402c-3.215 0-5.726 1.005-7.634 2.913l-470.39 470.39a10.004 10.004 0 000 14.164l365.423 365.424c1.909 1.908 4.42 2.913 7.132 2.913s5.223-1.005 7.132-2.913l470.39-470.39c2.01-2.11 3.014-5.023 2.813-8.036zm-240.067-72.121c-35.458 0-64.286-28.828-64.286-64.286s28.828-64.285 64.286-64.285 64.286 28.828 64.286 64.285-28.829 64.286-64.286 64.286z"></path></svg><!--[--><span class="page-tag-item clickable" role="navigation">redis</span><span class="page-tag-item clickable" role="navigation">consistency</span><!--]--><meta property="keywords" content="redis,consistency"></span></div></article></div><div class="vp-article-wrapper"><article class="vp-article-item" vocab="https://schema.org/" typeof="Article"><!--[--><!--]--><!----><a href="/posts/program/redis/datastruct/datastruct.html" class=""><header class="vp-article-title"><!----><!----><span property="headline">Redis 学习笔记</span></header></a><div class="vp-article-excerpt"><h1> Redis 学习笔记</h1>
+<h2> 数据结构与对象</h2>
+<h3> SDS(简单动态字符串)</h3>
+<div class="hint-container info">
+<p class="hint-container-title">相关信息</p>
+<blockquote>
+<p>SDS(简单动态字符串), 是对C语言字符串封装了一层</p>
+</blockquote>
+</div>
+<p>举个例子</p>
+<div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code>set msg "hello world"
+OK
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div></div><hr class="vp-article-hr"><div class="page-info"><!----><span class="page-original-info">原创</span><span class="page-date-info" aria-label="写作日期"><svg xmlns="http://www.w3.org/2000/svg" class="icon calendar-icon" viewBox="0 0 1024 1024" fill="currentColor" aria-label="calendar icon"><path d="M716.4 110.137c0-18.753-14.72-33.473-33.472-33.473-18.753 0-33.473 14.72-33.473 33.473v33.473h66.993v-33.473zm-334.87 0c0-18.753-14.72-33.473-33.473-33.473s-33.52 14.72-33.52 33.473v33.473h66.993v-33.473zm468.81 33.52H716.4v100.465c0 18.753-14.72 33.473-33.472 33.473a33.145 33.145 0 01-33.473-33.473V143.657H381.53v100.465c0 18.753-14.72 33.473-33.473 33.473a33.145 33.145 0 01-33.473-33.473V143.657H180.6A134.314 134.314 0 0046.66 277.595v535.756A134.314 134.314 0 00180.6 947.289h669.74a134.36 134.36 0 00133.94-133.938V277.595a134.314 134.314 0 00-133.94-133.938zm33.473 267.877H147.126a33.145 33.145 0 01-33.473-33.473c0-18.752 14.72-33.473 33.473-33.473h736.687c18.752 0 33.472 14.72 33.472 33.473a33.145 33.145 0 01-33.472 33.473z"></path></svg><span><!----></span><meta property="datePublished" content="2022-11-21T00:00:00.000Z"></span><!----><span class="page-reading-time-info" aria-label="阅读时间"><svg xmlns="http://www.w3.org/2000/svg" class="icon timer-icon" viewBox="0 0 1024 1024" fill="currentColor" aria-label="timer icon"><path d="M799.387 122.15c4.402-2.978 7.38-7.897 7.38-13.463v-1.165c0-8.933-7.38-16.312-16.312-16.312H256.33c-8.933 0-16.311 7.38-16.311 16.312v1.165c0 5.825 2.977 10.874 7.637 13.592 4.143 194.44 97.22 354.963 220.201 392.763-122.204 37.542-214.893 196.511-220.2 389.397-4.661 5.049-7.638 11.651-7.638 19.03v5.825h566.49v-5.825c0-7.379-2.849-13.981-7.509-18.9-5.049-193.016-97.867-351.985-220.2-389.527 123.24-37.67 216.446-198.453 220.588-392.892zM531.16 450.445v352.632c117.674 1.553 211.787 40.778 211.787 88.676H304.097c0-48.286 95.149-87.382 213.728-88.676V450.445c-93.077-3.107-167.901-81.297-167.901-177.093 0-8.803 6.99-15.793 15.793-15.793 8.803 0 15.794 6.99 15.794 15.793 0 80.261 63.69 145.635 142.01 145.635s142.011-65.374 142.011-145.635c0-8.803 6.99-15.793 15.794-15.793s15.793 6.99 15.793 15.793c0 95.019-73.789 172.82-165.96 177.093z"></path></svg><span>大约 128 分钟</span><meta property="timeRequired" content="PT128M"></span><span class="page-category-info" aria-label="分类"><svg xmlns="http://www.w3.org/2000/svg" class="icon category-icon" viewBox="0 0 1024 1024" fill="currentColor" aria-label="category icon"><path d="M148.41 106.992h282.176c22.263 0 40.31 18.048 40.31 40.31V429.48c0 22.263-18.047 40.31-40.31 40.31H148.41c-22.263 0-40.311-18.047-40.311-40.31V147.302c0-22.263 18.048-40.31 40.311-40.31zM147.556 553.478H429.73c22.263 0 40.311 18.048 40.311 40.31v282.176c0 22.263-18.048 40.312-40.31 40.312H147.555c-22.263 0-40.311-18.049-40.311-40.312V593.79c0-22.263 18.048-40.311 40.31-40.311zM593.927 106.992h282.176c22.263 0 40.31 18.048 40.31 40.31V429.48c0 22.263-18.047 40.31-40.31 40.31H593.927c-22.263 0-40.311-18.047-40.311-40.31V147.302c0-22.263 18.048-40.31 40.31-40.31zM730.22 920.502H623.926c-40.925 0-74.22-33.388-74.22-74.425V623.992c0-41.038 33.387-74.424 74.425-74.424h222.085c41.038 0 74.424 33.226 74.424 74.067v114.233c0 10.244-8.304 18.548-18.547 18.548s-18.548-8.304-18.548-18.548V623.635c0-20.388-16.746-36.974-37.33-36.974H624.13c-20.585 0-37.331 16.747-37.331 37.33v222.086c0 20.585 16.654 37.331 37.126 37.331H730.22c10.243 0 18.547 8.304 18.547 18.547 0 10.244-8.304 18.547-18.547 18.547z"></path></svg><!--[--><span class="page-category-item clickable" role="navigation">record</span><!--]--><meta property="articleSection" content="record"></span><span class="page-tag-info" aria-label="标签"><svg xmlns="http://www.w3.org/2000/svg" class="icon tag-icon" viewBox="0 0 1024 1024" fill="currentColor" aria-label="tag icon"><path d="M939.902 458.563L910.17 144.567c-1.507-16.272-14.465-29.13-30.737-30.737L565.438 84.098h-.402c-3.215 0-5.726 1.005-7.634 2.913l-470.39 470.39a10.004 10.004 0 000 14.164l365.423 365.424c1.909 1.908 4.42 2.913 7.132 2.913s5.223-1.005 7.132-2.913l470.39-470.39c2.01-2.11 3.014-5.023 2.813-8.036zm-240.067-72.121c-35.458 0-64.286-28.828-64.286-64.286s28.828-64.285 64.286-64.285 64.286 28.828 64.286 64.285-28.829 64.286-64.286 64.286z"></path></svg><!--[--><span class="page-tag-item clickable" role="navigation">redis</span><!--]--><meta property="keywords" content="redis"></span></div></article></div><div class="vp-article-wrapper"><article class="vp-article-item" vocab="https://schema.org/" typeof="Article"><!--[--><!--]--><!----><a href="/posts/thinking/2021-What-I-do.html" class=""><header class="vp-article-title"><!----><!----><span property="headline">我在2021年做了些什么？</span></header></a><div class="vp-article-excerpt"><h1> 我在2021年做了些什么？</h1>
+<p>记录时间与我而言仅仅只是手段，重要的是明白自己的时间都花在了哪里，或许哪里又可以有所改进？或许，自己的效率又有哪里可以提升的空间？又或许自己在过去一年又有哪些未完成的学习和工作任务？等等</p>
+<p>这些问题相信每个人都遇到过，可能有相应的对应方法，又或许仅仅是使用鸵鸟策略对其相视不见。</p>
+<p>提出问题却不去想办法解决问题是耍流氓的行为。既然我能心安理得的提出这些问题，那么相应的我就有责任去回答这些问题的解决方案。</p>
+<p>当然时间又是一个不可再生资源，至少对于现在是，在可遇见的未来更是。这个不可再生资源又和外界认为的很不一样。煤、石油、天然气等等这些所谓的不可再生资源是有解决方案的。只要在以往的不可再生资源在未消耗完之前，寻找到新的可代替的资源就可以实现持续发展了。比如在煤炭用完之前找到了石油，在石油用完之前找到太阳能，在太阳能竭尽之前找到可以直接使用恒星能量的方法或者实现可控核聚变就没什么问题。</p></div><hr class="vp-article-hr"><div class="page-info"><!----><span class="page-original-info">原创</span><span class="page-date-info" aria-label="写作日期"><svg xmlns="http://www.w3.org/2000/svg" class="icon calendar-icon" viewBox="0 0 1024 1024" fill="currentColor" aria-label="calendar icon"><path d="M716.4 110.137c0-18.753-14.72-33.473-33.472-33.473-18.753 0-33.473 14.72-33.473 33.473v33.473h66.993v-33.473zm-334.87 0c0-18.753-14.72-33.473-33.473-33.473s-33.52 14.72-33.52 33.473v33.473h66.993v-33.473zm468.81 33.52H716.4v100.465c0 18.753-14.72 33.473-33.472 33.473a33.145 33.145 0 01-33.473-33.473V143.657H381.53v100.465c0 18.753-14.72 33.473-33.473 33.473a33.145 33.145 0 01-33.473-33.473V143.657H180.6A134.314 134.314 0 0046.66 277.595v535.756A134.314 134.314 0 00180.6 947.289h669.74a134.36 134.36 0 00133.94-133.938V277.595a134.314 134.314 0 00-133.94-133.938zm33.473 267.877H147.126a33.145 33.145 0 01-33.473-33.473c0-18.752 14.72-33.473 33.473-33.473h736.687c18.752 0 33.472 14.72 33.472 33.473a33.145 33.145 0 01-33.472 33.473z"></path></svg><span><!----></span><meta property="datePublished" content="2021-12-17T00:00:00.000Z"></span><!----><span class="page-reading-time-info" aria-label="阅读时间"><svg xmlns="http://www.w3.org/2000/svg" class="icon timer-icon" viewBox="0 0 1024 1024" fill="currentColor" aria-label="timer icon"><path d="M799.387 122.15c4.402-2.978 7.38-7.897 7.38-13.463v-1.165c0-8.933-7.38-16.312-16.312-16.312H256.33c-8.933 0-16.311 7.38-16.311 16.312v1.165c0 5.825 2.977 10.874 7.637 13.592 4.143 194.44 97.22 354.963 220.201 392.763-122.204 37.542-214.893 196.511-220.2 389.397-4.661 5.049-7.638 11.651-7.638 19.03v5.825h566.49v-5.825c0-7.379-2.849-13.981-7.509-18.9-5.049-193.016-97.867-351.985-220.2-389.527 123.24-37.67 216.446-198.453 220.588-392.892zM531.16 450.445v352.632c117.674 1.553 211.787 40.778 211.787 88.676H304.097c0-48.286 95.149-87.382 213.728-88.676V450.445c-93.077-3.107-167.901-81.297-167.901-177.093 0-8.803 6.99-15.793 15.793-15.793 8.803 0 15.794 6.99 15.794 15.793 0 80.261 63.69 145.635 142.01 145.635s142.011-65.374 142.011-145.635c0-8.803 6.99-15.793 15.794-15.793s15.793 6.99 15.793 15.793c0 95.019-73.789 172.82-165.96 177.093z"></path></svg><span>大约 6 分钟</span><meta property="timeRequired" content="PT6M"></span><span class="page-category-info" aria-label="分类"><svg xmlns="http://www.w3.org/2000/svg" class="icon category-icon" viewBox="0 0 1024 1024" fill="currentColor" aria-label="category icon"><path d="M148.41 106.992h282.176c22.263 0 40.31 18.048 40.31 40.31V429.48c0 22.263-18.047 40.31-40.31 40.31H148.41c-22.263 0-40.311-18.047-40.311-40.31V147.302c0-22.263 18.048-40.31 40.311-40.31zM147.556 553.478H429.73c22.263 0 40.311 18.048 40.311 40.31v282.176c0 22.263-18.048 40.312-40.31 40.312H147.555c-22.263 0-40.311-18.049-40.311-40.312V593.79c0-22.263 18.048-40.311 40.31-40.311zM593.927 106.992h282.176c22.263 0 40.31 18.048 40.31 40.31V429.48c0 22.263-18.047 40.31-40.31 40.31H593.927c-22.263 0-40.311-18.047-40.311-40.31V147.302c0-22.263 18.048-40.31 40.31-40.31zM730.22 920.502H623.926c-40.925 0-74.22-33.388-74.22-74.425V623.992c0-41.038 33.387-74.424 74.425-74.424h222.085c41.038 0 74.424 33.226 74.424 74.067v114.233c0 10.244-8.304 18.548-18.547 18.548s-18.548-8.304-18.548-18.548V623.635c0-20.388-16.746-36.974-37.33-36.974H624.13c-20.585 0-37.331 16.747-37.331 37.33v222.086c0 20.585 16.654 37.331 37.126 37.331H730.22c10.243 0 18.547 8.304 18.547 18.547 0 10.244-8.304 18.547-18.547 18.547z"></path></svg><!--[--><span class="page-category-item clickable" role="navigation">years</span><!--]--><meta property="articleSection" content="years"></span><span class="page-tag-info" aria-label="标签"><svg xmlns="http://www.w3.org/2000/svg" class="icon tag-icon" viewBox="0 0 1024 1024" fill="currentColor" aria-label="tag icon"><path d="M939.902 458.563L910.17 144.567c-1.507-16.272-14.465-29.13-30.737-30.737L565.438 84.098h-.402c-3.215 0-5.726 1.005-7.634 2.913l-470.39 470.39a10.004 10.004 0 000 14.164l365.423 365.424c1.909 1.908 4.42 2.913 7.132 2.913s5.223-1.005 7.132-2.913l470.39-470.39c2.01-2.11 3.014-5.023 2.813-8.036zm-240.067-72.121c-35.458 0-64.286-28.828-64.286-64.286s28.828-64.285 64.286-64.285 64.286 28.828 64.286 64.285-28.829 64.286-64.286 64.286z"></path></svg><!--[--><span class="page-tag-item clickable" role="navigation">redis</span><span class="page-tag-item clickable" role="navigation">consistency</span><!--]--><meta property="keywords" content="redis,consistency"></span></div></article></div><div class="vp-article-wrapper"><article class="vp-article-item" vocab="https://schema.org/" typeof="Article"><!--[--><!--]--><!----><a href="/posts/program/redis/note/redis-note.html" class=""><header class="vp-article-title"><!----><!----><span property="headline">Redis笔记</span></header></a><div class="vp-article-excerpt"><h1> Redis笔记</h1>
+<!-- ## 数据结构与对象
+
+### SDS(简单动态字符串)
+> SDS(简单动态字符串), 是对C语言字符串封装了一层
+
+举个例子
+```
+set msg "hello world"
+OK
+```
+Redis会新增一个键值对, 其中: 键值对键是保存msg的SDS, 值也是一个字符串对象SDS
+```c
+struct sdshdr {
+//记录buf数组中已使用字节的数量  等于SDS所保存字符串的长度
+int len;
+//记录buf数组中未使用字节的数量
+int free;
+//字节数组，用于保存字符串
+char buf[];
+};
+```
+
+其中SDS保留了C字符串中最后一个字符是'\0'的惯例, 目的是SDS可以直接重用C字符串函数库里的函数.
+
+好处: 
+1. 因为SDS内部有个len属性, 所以如果想获取字符串长度就直接返回len, 时间复杂度是O(1), 但如果用原生strlen函数 时间复杂度就是O(n)了
+2. SDS不会造成缓冲区溢出,因为 SDS 在拼接字符串之前会检查 SDS 空间是否满足要求，如果空间不够会自动扩容，所以不会导致缓冲区溢出的问题, 可以减少修改字符串带来的内存重分配次数,空间预分配:当append时当SDS长度小于1MB,则再多分配一倍的空间；若大于1MB, 则多分配1MB的空间；惰性空间释放, 当需要减少SDS的空间时, 不会立刻减少, 先更新free, 这样可以避免再次分配带来的性能损耗, 当然也有真正的释放内存空间的API.
+3. SDS 不仅可以保存文本数据，还可以保存二进制数据。因为 SDS 使用 len 属性的值而不是空字符来判断字符串是否结束，并且 SDS 的所有 API 都会以处理二进制的方式来处理 SDS 存放在 buf[] 数组里的数据。所以 SDS 不光能存放文本数据，而且能保存图片、音频、视频、压缩文件这样的二进制数据。
+
+### 链表
+
+链表在Redis中的应用非常广泛，比如列表键的底层实现之一就是链表。当一个列表键包含了数量比较多的元素，又或者列表中包含的元素都是比较长的字符串时，Redis就会使用链表作为列表键的底层实现。
+
+每个链表节点是
+```c
+typedef struct listNode {
+    struct listNode * prev;
+    struct listNode * next;
+    void * value;
+}listNode;
+```
+多个listNode可以通过prev和next指针组成双端链表。
+```c
+typedef struct list {
+listNode * head;
+listNode * tail;
+// 链表所包含的节点数量
+unsigned long len;
+// 节点值复制函数
+void *(*dup)(void *ptr);
+// 节点值释放函数
+void (*free)(void *ptr);
+// 节点值对比函数
+int (*match)(void *ptr,void *key);
+} list;
+```
+链表的特性: 双端, 无环, ·带表头指针和表尾指针, 带链表长度计数器
+
+多态：链表节点使用void*指针来保存节点值，并且可以通过list结构的dup、free、match三个属性为节点值设置类型特定函数，所以链表可以用于保存各种不同类型的值。
+
+### 字典
+
+Redis的字典用哈希表来实现, 一个哈希表里面有多个哈希表节点, 而每个哈希表节点就保存了字典中的多个键值对
+
+哈希表实现
+```c
+typedef struct dictht {
+//哈希表数组
+dictEntry **table;
+//哈希表大小
+unsigned long size;
+//哈希表大小掩码，用于计算索引值
+//总是等于size-1
+unsigned long sizemask;
+//该哈希表已有节点的数量
+unsigned long used;
+} dictht;
+```
+table属性是一个数组,数组每个元素指向的是dictEntry结构的指针, 每个dictEntry结构都保存着一个键值对.
+size属性保存哈希表的大小, 就是table数目的大小
+used保存总共的键值对个数
+sizemask属性的值总是等于size-1，这个属性和哈希值一起决定一个键应该被放到table数组的哪个索引上面。
+
+哈希节点
+
+```c
+typedef struct dictEntry {
+//键
+void *key;
+//值
+union{
+    void *val;
+    uint64_tu64;
+    int64_ts64;
+} v;
+//指向下个哈希表节点，形成链表
+struct dictEntry *next;
+} dictEntry;
+```
+
+next是一个指针,这个指针可以将哈希值相同的键值对连接在一起, 来解决哈系碰撞问题.
+
+字典实现
+
+```c
+typedef struct dict {
+//类型特定函数
+dictType *type;
+//私有数据
+void *privdata;
+//哈希表
+dictht ht[2];
+// rehash索引
+//当rehash 不在进行时，值为-1
+int rehashidx; /* rehashing not in progress if rehashidx == -1 */
+} dict;
+```
+
+type属性和privdata属性是针对不同类型的键值对，为创建多态字典而设置的：
+type属性是一个指向dictType结构的指针，每个dictType结构保存了一簇用于操作特定类型键值对的函数，Redis会为用途不同的字典设置不同的类型特定函数
+
+而privdata属性则保存了需要传给那些类型特定函数的可选参数
+
+```c
+typedef struct dictType {
+//计算哈希值的函数
+unsigned int (*hashFunction)(const void *key);
+//复制键的函数
+void *(*keyDup)(void *privdata, const void *key);
+//复制值的函数
+void *(*valDup)(void *privdata, const void *obj);
+//对比键的函数
+int (*keyCompare)(void *privdata, const void *key1, const void *key2);
+//销毁键的函数
+void (*keyDestructor)(void *privdata, void *key);
+//销毁值的函数
+void (*valDestructor)(void *privdata, void *obj);
+} dictType;
+```
+
+ht 属 性 是 一 个 包 含 两 个 项 的 数 组 ， 数 组 中 的 每 个 项 都 是 一 个dictht哈希表，一般情况下，字典只使用ht[0]哈希表，ht[1]哈希表只会在对ht[0]哈希表进行rehash时使用。
+
+除了ht[1]之外，另一个和rehash有关的属性就是rehashidx，它记录了rehash目前的进度，如果目前没有在进行rehash，那么它的值为-1。
+
+
+rehash
+
+当哈希表的负载因子不断变大, 就需要rehash
+1）为字典的ht[1]哈希表分配空间，这个哈希表的空间大小取决于 要 执 行 的 操 作 ， 以 及 ht[0] 当 前 包 含 的 键 值 对 数 量 （ 也 即 是ht[0].used属性的值）：
+- 如果执行的是扩展操作，那么ht[1]的大小为第一个大于等于ht[0].used*2的2^n（2的n次方幂）；
+- 如果执行的是收缩操作，那么ht[1]的大小为第一个大于等于ht[0].used的2^n。
+2）将保存在ht[0]中的所有键值对rehash到ht[1]上面：rehash指的是重新计算键的哈希值和索引值，然后将键值对放置到ht[1]哈希表的指定位置上。
+
+哈希表的扩展与收缩
+
+当以下条件中的任意一个被满足时，程序会自动开始对哈希表执行扩展操作：
+
+1）服务器目前没有在执行BGSAVE命令或者BGREWRITEAOF命令，并且哈希表的负载因子大于等于1。
+2）服务器目前正在执行BGSAVE命令或者BGREWRITEAOF命令，并且哈希表的负载因子大于等于5。
+
+负载因子=哈希表已保存节点数量/哈希表大小
+load_factor = ht[0].used / ht[0].size
+
+当哈希表的负载因子小于0.1时，程序自动开始对哈希表执行收缩操作。
+
+渐进式rehash
+当哈希表里的数据很多时, 一下子瞬间rehash可能导致性能问题, 所以redis采用渐进式rehash
+```sh
+1）为ht[1]分配空间，让字典同时持有ht[0]和ht[1]两个哈希表。
+2）在字典中维持一个索引计数器变量rehashidx，并将它的值设置为0，表示rehash工作正式开始。
+3）在rehash进行期间，每次对字典执行添加、删除、查找或者更新操作时，程序除了执行指定的操作以外，还会顺带将ht[0]哈希表在rehashidx索引上的所有键值对rehash到ht[1]，当rehash工作完成之后，程序将rehashidx属性的值增一。
+4）随着字典操作的不断执行，最终在某个时间点上，ht[0]的所有键值对都会被rehash至ht[1]，这时程序将rehashidx属性的值设为-1，表示rehash操作已完成。
+
+因为在进行渐进式rehash的过程中，字典会同时使用ht[0]和ht[1] 两 个 哈 希 表 ， 所 以 在 渐 进 式 rehash 进 行 期 间 ， 字 典 的 删 除（delete）、查找（find）、更新（update）等操作会在两个哈希表上进行。例如，要在字典里面查找一个键的话，程序会先在ht[0]里面进行查找，如果没找到的话，就会继续到ht[1]里面进行查找，诸如此类。
+
+另外，在渐进式rehash执行期间，新添加到字典的键值对一律会被保存到ht[1]里面，而ht[0]则不再进行任何添加操作，这一措施保证了ht[0]包含的键值对数量会只减不增，并随着rehash操作的执行而最终变成空表
+```
+
+### 跳表
+
+跳表是一个数据结构, 通过在每个节点内维持多个指向其他节点的指针, 从而达到快速访问节点的目的, 跳跃表支持平均O（logN）、最坏O（N）复杂度的节点查找，还可以通过顺序性操作来批量处理节点。
+
+Redis只在两个地方用到了跳跃表，一个是实现有序集合键，另一个是在集群节点中用作内部数据结构.
+跳表节点的属性
+```c
+typedef struct zskiplistNode {
+//Zset 对象的元素值
+sds ele;
+//元素权重值
+double score;
+//后向指针
+struct zskiplistNode *backward;
+//节点的level数组，保存每层上的前向指针和跨度
+struct zskiplistLevel {
+    struct zskiplistNode *forward;
+    unsigned long span;
+} level[];
+} zskiplistNode;
+```
+level层, 指向多个元素, 每个元素都可以访问其他节点, 程序可以通过层快速定位元素每次创建一个新跳跃表节点的时候，程序都根据幂次定律随机生成一个介于1和32之间的值作为level数组的大小，这个大小就是层的“高度”。
+
+前进指针, 每个层之间都有一个指向表尾方向的前进指针, 用于从表头向表尾方向遍历节点, 层的跨度span属性记录了两个节点之间的距离
+
+跳表属性
+```c
+typedef struct zskiplist {
+struct zskiplistNode *header, *tail;
+unsigned long length;
+int level;
+} zskiplist;
+```
+
+### 整数集合
+
+整数集合是集合键的实现之一, 当一个集合只包含整数值元素，并且这个集合的元素数量不多时，Redis就会使用整数集合作为集合键的底层实现。
+
+```c
+typedef struct intset {
+//编码方式
+uint32_t encoding;
+//集合包含的元素数量
+uint32_t length;
+//保存元素的数组
+int8_t contents[];
+} intset;
+```
+整数集合（intset）是Redis用于保存整数值的集合抽象数据结构，它可以保存类型为int16_t、int32_t或者int64_t的整数值，并且保证集合中不会出现重复元素。
+
+contents数组是整数集合的底层实现, 虽然intset结构将contents属性声明为int8_t类型的数组，但实际上contents数组并不保存任何int8_t类型的值，contents数组的真正类型取决于encoding属性的值：
+
+encoding的属性有INTSET_ENC_INT16, INTSET_ENC_INT32, INTSET_ENC_INT64, 分别将contents的属性设置为int16_t, int32_t, int64_t
+
+升级
+
+每当我们要将一个新元素添加到整数集合里面，并且新元素的类型比整数集合现有所有元素的类型都要长时，整数集合需要先进行升级（upgrade），然后才能将新元素添加到整数集合里面。
+
+因为引发升级的新元素的长度总是比整数集合现有所有元素的长度都大，所以这个新元素的值要么就大于所有现有元素，要么就小于所有现有元素：
+- 在新元素小于所有现有元素的情况下，新元素会被放置在底层数组的最开头（索引0）；
+- 在新元素大于所有现有元素的情况下，新元素会被放置在底层数组的最末尾（索引length-1）。
+
+升级的好处:提升灵活性, 节省内存
+
+不支持降级
+
+### 压缩列表
+
+ziplist是list和hash的底层实现之一, 当一个列表键只包含少量列表项，并且每个列表项要么就是小整数值，要么就是长度比较短的字符串，那么Redis就会使用压缩列表来做列表键的底层实现。
+
+压缩列表是Redis为了节约内存而开发的，是由一系列特殊编码的连续内存块组成的顺序型（sequential）数据结构。一个压缩列表可以包含任意多个节点（entry），每个节点可以保存一个字节数组或者一个整数值。
+
+压缩列表的组成
+```
+压缩列表在表头有三个字段：
+zlbytes，记录整个压缩列表占⽤对内存字节数；
+zltail，记录压缩列表「尾部」节点距离起始地址由多少字节，也就是列表尾的偏移量；
+zllen，记录压缩列表包含的节点数量；
+zlend，标记压缩列表的结束点，固定值 0xFF（⼗进制255）。
+```
+
+在压缩列表中，如果我们要查找定位第⼀个元素和最后⼀个元素，可以通过表头三个字段的⻓度直接定位，复杂度是 O(1)。⽽查找其他元素时，就没有这么⾼效了，只能逐个查找，此时的复杂度就是 O(N)了，因此压缩列表不适合保存过多的元素
+
+压缩列表节点包含三部分内容：prevlen，记录了「前⼀个节点」的⻓度；encoding，记录了当前节点实际数据的类型以及⻓度；data，记录了当前节点的实际数据；
+
+连锁更新
+
+压缩列表新增某个元素或修改某个元素时，如果空间不不够，压缩列表占⽤的内存空间就需要重新分配。⽽当新插⼊的元素较⼤时，可能会导致后续元素的 prevlen 占⽤空间都发⽣变化，从⽽引起「连锁更新」问题，导致每个元素的空间都要重新分配，造成访问压缩列表性能的下降。
+
+### 对象
+
+Redis针对前面所说的类型建立了一个对象系统, 这个系列包括字符串对象、列表对象、哈希对象、集合对象和有序集合对象这五种类型的对象，每种对象都用到了至少一种我们前面所介绍的数据结构。
+
+Redis的总对象类型是
+```c
+typedef struct redisObject {
+//类型
+unsigned type:4;
+//编码
+unsigned encoding:4;
+//指向底层实现数据结构的指针
+void *ptr;
+// ...
+} robj;
+```
+
+type类型记录了对象的类型, 这个熟悉可以是REDIS_STRING, REDIS_LIST...
+
+encoding属性记录了对象底层所使用的编码, 比如list的底层对象是list或者quicklist, hash的底层对象是ziplist或hash...
+
+
+## 5种常见的数据类型
+
+### String内部实现
+
+String的内部实现是
+SDS(简单动态字符串), 是对C语言字符串封装了一层
+
+举个例子
+```
+set msg "hello world"
+OK
+```
+
+字符串对象的编码可以是int、raw或者embstr。
+
+Redis会新增一个键值对, 其中: 键值对键是保存msg的SDS, 值也是一个字符串对象SDS
+```
+struct sdshdr {
+//记录buf数组中已使用字节的数量  等于SDS所保存字符串的长度
+int len;
+//记录buf数组中未使用字节的数量
+int free;
+//字节数组，用于保存字符串
+char buf[];
+};
+```
+
+其中SDS保留了C字符串中最后一个字符是'\0'的惯例, 目的是SDS可以直接重用C字符串函数库里的函数.
+
+好处: 
+1. 因为SDS内部有个len属性, 所以如果想获取字符串长度就直接返回len, 时间复杂度是O(1), 但如果用原生strlen函数 时间复杂度就是O(n)了
+2. SDS不会造成缓冲区溢出,因为 SDS 在拼接字符串之前会检查 SDS 空间是否满足要求，如果空间不够会自动扩容，所以不会导致缓冲区溢出的问题, 可以减少修改字符串带来的内存重分配次数,空间预分配:当append时当SDS长度小于1MB,则再多分配一倍的空间；若大于1MB, 则多分配1MB的空间；惰性空间释放, 当需要减少SDS的空间时, 不会立刻减少, 先更新free, 这样可以避免再次分配带来的性能损耗, 当然也有真正的释放内存空间的API.
+3. SDS 不仅可以保存文本数据，还可以保存二进制数据。因为 SDS 使用 len 属性的值而不是空字符来判断字符串是否结束，并且 SDS 的所有 API 都会以处理二进制的方式来处理 SDS 存放在 buf[] 数组里的数据。所以 SDS 不光能存放文本数据，而且能保存图片、音频、视频、压缩文件这样的二进制数据。
+
+#### 命令
+| 命令 | 描述 |
+| - | - |
+| SET KEY VALUE |	设置指定 KEY 的值 |
+| GET KEY |	获取指定 KEY 的值 |
+| GETRANGE KEY start end  | 返回 KEY 中字符串值的子字符|
+| GETSET KEY value |	将给定 KEY 的值设为 value ，并返回 KEY 的旧值|
+| GETBIT KEY offset |	对 KEY 所储存的字符串值，获取指定偏移量上的位|
+| MGET KEY1 [KEY2…] |	获取所有(一个或多个)给定 KEY 的值|
+| SETBIT KEY offset value |	对 KEY 所储存的字符串值，设置或清除指定偏移量上的位|
+| SETEX KEY seconds value |	将值 value 关联到 KEY ，并将 KEY 的过期时间设为 seconds (以秒为单位)|
+| SETNX KEY value |	只有在 KEY 不存在时设置 KEY 的值|
+| SETRANGE KEY offset value |	用 value 参数覆写给定 KEY 所储存的字符串值，从偏移量 offset 开始|
+| STRLEN KEY |	返回 KEY 所储存的字符串值的长度|
+| MSET KEY value KEY value … 	|同时设置一个或多个 KEY-value 对|
+| MSETNX KEY value KEY value …  |	同时设置一个或多个 KEY-value 对，当且仅当所有给定 KEY 都不存在|
+| PSETEX KEY milliseconds value |	这个命令和 SETEX 命令相似，但它以毫秒为单位设置 KEY 的生存时间|
+| INCR KEY |	将 KEY 中储存的数字值增一 |
+| INCRBY KEY increment |	将 KEY 所储存的值加上给定的增量值 increment|
+| INCRBYFLOAT KEY increment |	将 KEY 所储存的值加上给定的浮点增量值 increment|
+| DECR KEY |	将 KEY 中储存的数字值减一|
+| DECRBY KEY decrement |	KEY 所储存的值减去给定的减量值 decrement|
+| APPEND KEY value |	如果 KEY 已经存在并且是一个字符串， APPEND 命令将指定的 value 追加到该 KEY 原来值的末尾|
+| BITCOUNT KEY START END 	|计算给定字符串中，被设置为 1 的比特位的数量|
+| BITOP OPERATION DESTKEY KEY KEY … 	|对二进制位进行操作|
+
+###  List 类型内部实现
+
+List的内部实现是双向链表或者压缩列表
+
+- 如果列表的元素个数小于 512 个（默认值，可由 list-max-ziplist-entries 配置），列表每个元素的值都小于 64 字节（默认值，可由 list-max-ziplist-value 配置），Redis 会使用压缩列表作为 List 类型的底层数据结构；
+- 如果列表的元素不满足上面的条件，Redis 会使用双向链表作为 List 类型的底层数据结构；
+
+但是在 Redis 3.2 版本之后，List 数据类型底层数据结构就只由 quicklist 实现了，替代了双向链表和压缩列表。
+#### 命令
+
+| 命令 | 描述 | 
+| - | - |
+| LPUSH KEY value1 value2 | 将一个或多个值插入到列表头部。 |
+| LPUSHX KEY value | 将一个值插入到已存在的列表头部。 |
+| RPUSH KEY value1 value2 |	将一个或多个值插入到列表尾部。 |
+| RPUSHX KEY value | 将一个值插入到已存在的列表尾部。 |
+| LSET KEY index value 	| 将列表索引 index 位置的值设置为 value。 |
+| LINSERT KEY BEFORE AFTER pivot value | 将值 value 插入到列表 KEY 当中，位于值 pivot 之前或之后。 |
+| LPOP KEY |	获取并移除列表的第一个元素。|
+| RPOP KEY 	| 获取并移除列表的最后一个元素。|
+| BLPOP KEY1 KEY2 timeout |	获取并移除列表的第一个元素， 如果列表没有元素会阻塞列表直到超时或有元素可弹出为止。|
+| BRPOP KEY1 KEY2 timeout |	获取并移除列表的最后一个元素， 如果列表没有元素会阻塞列表直到超时或有元素可弹出为止。|
+| RPOPLPUSH source destination |	移除 source 列表的最后一个元素，并将该元素添加到另一个列表 destination 的开头并返回。|
+| BRPOPLPUSH source destination timeout | 1. BRPOPLPUSH 是 RPOPLPUSH 的阻塞版本。2. 当 source 有数据时，BRPOPLPUSH 的表现与 RPOPLPUSH 完全一样。3. 当 source 是空时，会阻塞列表直到超时或有元素可弹出为止。|
+| LLEN KEY |	获取列表长度。|
+| LINDEX KEY index |	通过索引获取列表中的元素。|
+| LREM KEY count value |	从列表中移除 count 个值与 value 相等的元素。|
+| LTRIM KEY start stop |	对一个列表进行修剪(trim)，只保留列表中的 start 和 stop 之间的元素。|
+| LRANGE KEY start stop |	获取列表 start 和 stop 之间 的元素。|
+
+### Hash 类型内部实现
+
+Hash 类型的底层数据结构是由压缩列表或哈希表实现的：
+
+- 如果哈希类型元素个数小于 512 个（默认值，可由 hash-max-ziplist-entries 配置），所有值小于 64 字节（默认值，可由 hash-max-ziplist-value 配置）的话，Redis 会使用压缩列表作为 Hash 类型的底层数据结构；
+- 如果哈希类型元素不满足上面条件，Redis 会使用哈希表作为 Hash 类型的底层数据结构
+
+在 Redis 7.0 中，压缩列表数据结构已经废弃了，交由 listpack 数据结构来实现了。
+
+#### 命令
+
+| 命令 |	描述 |
+| - | - |
+| HSET KEY field value |	将哈希表 KEY 中的字段 field 的值设为 value 。|
+| HSETNX KEY field value | 只有在字段 field 不存在时，设置哈希表字段的值。 |
+| HMSET KEY field1 value1 field2 value2 |	同时将多个 field-value (域-值)对设置到哈希表 KEY 中。|
+| HGET KEY field |	获取存储在哈希表中指定字段的值。|
+| HGETALL KEY |	获取在哈希表中指定 KEY 的所有字段和值。|
+| HMGET KEY field1 field2 |	获取所有给定字段的值。|
+| HKEYS KEY |	获取所有哈希表中的字段。|
+| HVALS KEY |	获取哈希表中所有值。|
+| HLEN KEY |	获取哈希表中字段的数量。|
+| HINCRBY KEY field increment  | 为哈希表 KEY 中的指定字段的整数值加上增量 increment 。|
+| HINCRBYFLOAT KEY field increment  |	为哈希表 KEY 中的指定字段的浮点数值加上增量 increment 。|
+| HDEL KEY field1 field2  | 删除一个或多个哈希表字段。|
+| HEXISTS KEY field | 查看哈希表 KEY 中，指定的字段是否存在。|
+| HSCAN KEY cursor [MATCH pattern] [COUNT count] | 迭代哈希表中的键值对，类似 SCAN 命令。|
+
+> Set 类型内部实现
+
+Set 类型的底层数据结构是由哈希表或整数集合实现的：
+
+- 如果集合中的元素都是整数且元素个数小于 512 （默认值，set-maxintset-entries配置）个，Redis 会使用整数集合作为 Set 类型的底层数据结构；
+- 如果集合中的元素不满足上面条件，则 Redis 使用哈希表作为 Set 类型的底层数据结构。
+
+当以哈希表存储时, 值为空, key就是所有的set的值
+
+#### 命令
+
+| 命令 | 描述 |
+| - | - |
+| SADD key member1 member2 | 向集合添加一个或多个成员。 |
+| SCARD | key | 	获取集合的成员数。 |
+| SDIFF key1 key2 |	返回给定所有集合的差集。|
+| SDIFFSTORE destination key1 key2 |	返回给定所有集合的差集并存储在 destination 中。|
+| SINTER key1 key2 |	返回给定所有集合的交集。|
+| SINTERSTORE destination key1 key2 | 返回给定所有集合的交集并存储在 destination 中。|
+| SISMEMBER key member |	判断 member 元素是否是集合 key 的成员。|
+| SMEMBERS key |	返回集合中的所有成员。|
+| SMOVE source destination member |	将 member 元素从 source 集合移动到 destination 集合。|
+| SPOP key |	移除并返回集合中的一个随机元素。|
+| SRANDMEMBER key count 	| 返回集合中一个或多个随机数。|
+| SREM key member1 member2| 	移除集合中一个或多个成员。|
+| SUNION key1 key2 | 	返回所有给定集合的并集。|
+| SUNIONSTORE destination key1 key2 | 所有给定集合的并集存储在 destination 集合中。|
+| SSCAN key cursor MATCH pattern COUNT count |	迭代集合中的元素。|
+
+
+> ZSet 类型内部实现
+
+Zset 类型的底层数据结构是由压缩列表或跳表实现的：
+
+- 如果有序集合的元素个数小于 128 个，并且每个元素的值小于 64 字节时，Redis 会使用压缩列表作为 Zset 类型的底层数据结构；
+- 如果有序集合的元素不满足上面的条件，Redis 会使用跳表作为 Zset 类型的底层数据结构；
+
+在 Redis 7.0 中，压缩列表数据结构已经废弃了，交由 listpack 数据结构来实现了。
+
+|命令 |-	描述|
+| - | - |
+|  ZADD KEY score1 member1 [score2 member2] |	向有序集合添加一个或多个成员，或者更新已存在成员的分数。|
+|  ZCARD KEY |	获取有序集合的成员数。|
+|  ZCOUNT KEY min max |	计算在有序集合中指定区间分数的成员数。|
+|  ZINCRBY KEY increment member |	有序集合中对指定成员的分数加上增量 increment 。|
+|  ZINTERSTORE destination num KEY [KEY …] |	计算给定的一个或多个有序集的交集并将结果集存储在新的有序集合 KEY 中。|
+|  ZLEXCOUNT KEY min max |	在有序集合中计算指定字典区间内成员数量。|
+|  ZRANGE KEY start stop [WITHSCORES] |	通过索引区间返回有序集合成指定区间内的成员。|
+|  ZRANGEBYLEX KEY min max [LIMIT offset count] |	通过字典区间返回有序集合的成员。|
+|  ZRANGEBYSCORE KEY min max [WITHSCORES] [LIMIT] |	通过分数返回有序集合指定区间内的成员。|
+|  ZRANK KEY member |	返回有序集合中指定成员的索引。|
+|  ZREM KEY member [member …] |	移除有序集合中的一个或多个成员。|
+|  ZREMRANGEBYLEX KEY min max |	移除有序集合中给定的字典区间的所有成员。|
+|  ZREMRANGEBYRANK KEY start stop |	移除有序集合中给定的排名区间的所有成员。|
+|  ZREMRANGEBYSCORE KEY min max |	移除有序集合中给定的分数区间的所有成员。|
+|  ZREVRANGE KEY start stop [WITHSCORES] |	返回有序集中指定区间内的成员，通过索引，分数从高到底。|
+|  ZREVRANGEBYSCORE KEY max min [WITHSCORES] |	返回有序集中指定分数区间内的成员，分数从高到低排序。|
+|  ZREVRANK KEY member |	返回有序集合中指定成员的排名，有序集成员按分数值递减(从大到小)排序。|
+|  ZSCORE KEY member |	返回有序集中，成员的分数值。|
+|  ZUNIONSTORE destination numKEYs KEY [KEY …] |	计算给定的一个或多个有序集的并集，并存储在新的 KEY 中。|
+|  ZSCAN KEY cursor [MATCH pattern] [COUNT count]  |	迭代有序集合中的元素（包括元素成员和元素分值）。|
+
+## Redis线程模型
+
+Redis单线程指的是在接受客户端请求,解析请求,进行数据读写,发送给客户端这个过程是一个线程完成的
+
+但是，Redis 程序并不是单线程的，Redis 在启动的时候，是会启动后台线程（BIO）的
+
+- Redis 在 2.6 版本，会启动 2 个后台线程，分别处理关闭文件、AOF 刷盘这两个任务；
+- Redis 在 4.0 版本之后，新增了一个新的后台线程，用来异步释放 Redis 内存，也就是 lazyfree 线程。例如执行 unlink key / flushdb async / flushall async 等命令，会把这些删除操作交给后台线程来执行，好处是不会导致 Redis 主线程卡顿。因此，当我们要删除一个大 key 的时候，不要使用 del 命令删除，因为 del 是在主线程处理的，这样会导致 Redis 主线程卡顿，因此我们应该使用 unlink 命令来异步删除大key。
+
+之所以 Redis 为「关闭文件、AOF 刷盘、释放内存」这些任务创建单独的线程来处理，是因为这些任务的操作都是很耗时的，如果把这些任务都放在主线程来处理，那么 Redis 主线程就很容易发生阻塞，这样就无法处理后续的请求了。
+
+后台线程相当于一个消费者，生产者把耗时任务丢到任务队列中，消费者（BIO）不停轮询这个队列，拿出任务就去执行对应的方法即可。
+
+## Redis 采用单线程为什么还这么快？
+
+- Redis 的大部分操作都在内存中完成，并且采用了高效的数据结构，因此 Redis 瓶颈可能是机器的内存或者网络带宽，而并非 CPU，既然 CPU 不是瓶颈，那么自然就采用单线程的解决方案了；
+- Redis 采用单线程模型可以避免了多线程之间的竞争，省去了多线程切换带来的时间和性能上的开销，而且也不会导致死锁问题。
+- Redis 采用了 I/O 多路复用机制处理大量的客户端 Socket 请求，IO 多路复用机制是指一个线程处理多个 IO 流，就是我们经常听到的 select/epoll 机制。简单来说，在 Redis 只运行单线程的情况下，该机制允许内核中，同时存在多个监听 Socket 和已连接 Socket。内核会一直监听这些 Socket 上的连接请求或数据请求。一旦有请求到达，就会交给 Redis 线程处理，这就实现了一个 Redis 线程处理多个 IO 流的效果。
+
+CPU 并不是制约 Redis 性能表现的瓶颈所在，更多情况下是受到内存大小和网络I/O的限制，所以 Redis 核心网络模型使用单线程并没有什么问题，如果你想要使用服务的多核CPU，可以在一台服务器上启动多个节点或者采用分片集群的方式。
+
+除了上面的官方回答，选择单线程的原因也有下面的考虑。
+
+使用了单线程后，可维护性高，多线程模型虽然在某些方面表现优异，但是它却引入了程序执行顺序的不确定性，带来了并发读写的一系列问题，增加了系统复杂度、同时可能存在线程切换、甚至加锁解锁、死锁造成的性能损耗。
+
+在 Redis 6.0 版本之后，也采用了多个 I/O 线程来处理网络请求，这是因为随着网络硬件的性能提升，Redis 的性能瓶颈有时会出现在网络 I/O 的处理上。
+
+所以为了提高网络 I/O 的并行度，Redis 6.0 对于网络 I/O 采用多线程来处理。但是对于命令的执行，Redis 仍然使用单线程来处理，所以大家不要误解 Redis 有多线程同时执行命令。
+
+## Redis持久化
+
+Redis 如何实现数据不丢失？
+
+- AOF 日志：每执行一条写操作命令，就把该命令以追加的方式写入到一个文件里；
+- RDB 快照：将某一时刻的内存数据，以二进制的方式写入磁盘；
+- 混合持久化方式：Redis 4.0 新增的方式，集成了 AOF 和 RBD 的优点；
+
+AOF 日志是如何实现的？
+
+Redis 在执行完一条写操作命令后，就会把该命令以追加的方式写入到一个文件里，然后 Redis 重启时，会读取该文件记录的命令，然后逐一执行命令的方式来进行数据恢复。
+
+> 为什么先执行命令，再把数据写入日志呢？
+
+- 避免额外的检查开销：因为如果先将写操作命令记录到 AOF 日志里，再执行该命令的话，如果当前的命令语法有问题，那么如果不进行命令语法检查，该错误的命令记录到 AOF 日志里后，Redis 在使用日志恢复数据时，就可能会出错。
+- 不会阻塞当前写操作命令的执行：因为当写操作命令执行成功后，才会将命令记录到 AOF 日志。
+
+当然，这样做也会带来风险：
+
+- 数据可能会丢失： 执行写操作命令和记录日志是两个过程，那当 Redis 在还没来得及将命令写入到硬盘时，服务器发生宕机了，这个数据就会有丢失的风险。
+- 可能阻塞其他操作： 由于写操作命令执行成功后才记录到 AOF 日志，所以不会阻塞当前命令的执行，但因为 AOF 日志也是在主线程中执行，所以当 Redis 把日志文件写入磁盘的时候，还是会阻塞后续的操作无法执行。
+
+> AOF 写回策略有几种？
+- Always，这个单词的意思是「总是」，所以它的意思是每次写操作命令执行完后，同步将 AOF 日志数据写回硬盘；
+- Everysec，这个单词的意思是「每秒」，所以它的意思是每次写操作命令执行完后，先将命令写入到 AOF 文件的内核缓冲区，然后每隔一秒将缓冲区里的内容写回到硬盘；
+- No，意味着不由 Redis 控制写回硬盘的时机，转交给操作系统控制写回的时机，也就是每次写操作命令执行完后，先将命令写入到 AOF 文件的内核缓冲区，再由操作系统决定何时将缓冲区内容写回硬盘。
+
+> AOF 日志过大，会触发什么机制？
+
+Redis 为了避免 AOF 文件越写越大，提供了 AOF 重写机制，当 AOF 文件的大小超过所设定的阈值后，Redis 就会启用 AOF 重写机制，来压缩 AOF 文件。
+
+> RDB 快照是如何实现的呢？
+
+因为 AOF 日志记录的是操作命令，不是实际的数据，所以用 AOF 方法做故障恢复时，需要全量把日志都执行一遍，一旦 AOF 日志非常多，势必会造成 Redis 的恢复操作缓慢。
+
+为了解决这个问题，Redis 增加了 RDB 快照。所谓的快照，就是记录某一个瞬间东西，比如当我们给风景拍照时，那一个瞬间的画面和信息就记录到了一张照片。
+
+所以，RDB 快照就是记录某一个瞬间的内存数据，记录的是实际数据，而 AOF 文件记录的是命令操作的日志，而不是实际的数据。
+
+因此在 Redis 恢复数据时， RDB 恢复数据的效率会比 AOF 高些，因为直接将 RDB 文件读入内存就可以，不需要像 AOF 那样还需要额外执行操作命令的步骤才能恢复数据。
+
+> RDB 做快照时会阻塞线程吗？
+
+Redis 提供了两个命令来生成 RDB 文件，分别是 save 和 bgsave，他们的区别就在于是否在「主线程」里执行：
+
+- 执行了 save 命令，就会在主线程生成 RDB 文件，由于和执行操作命令在同一个线程，所以如果写入 RDB 文件的时间太长，会阻塞主线程；
+- 执行了 bgsave 命令，会创建一个子进程来生成 RDB 文件，这样可以避免主线程的阻塞；
+
+Redis 还可以通过配置文件的选项来实现每隔一段时间自动执行一次 bgsave 命令，默认会提供以下配置：
+
+这里提一点，Redis 的快照是全量快照，也就是说每次执行快照，都是把内存中的「所有数据」都记录到磁盘中。所以执行快照是一个比较重的操作，如果频率太频繁，可能会对 Redis 性能产生影响。如果频率太低，服务器故障时，丢失的数据会更多。
+
+>  为什么会有混合持久化
+
+混合持久化优点：
+
+    混合持久化结合了 RDB 和 AOF 持久化的优点，开头为 RDB 的格式，使得 Redis 可以更快的启动，同时结合 AOF 的优点，有减低了大量数据丢失的风险。
+
+混合持久化缺点：
+
+    AOF 文件中添加了 RDB 格式的内容，使得 AOF 文件的可读性变得很差；
+    兼容性差，如果开启混合持久化，那么此混合持久化 AOF 文件，就不能用在 Redis 4.0 之前版本了。
+
+> Redis 如何实现服务高可用？
+
+要想设计一个高可用的 Redis 服务，一定要从 Redis 的多服务节点来考虑，比如 Redis 的主从复制、哨兵模式、切片集群。
+
+> 主从复制
+主从复制是 Redis 高可用服务的最基础的保证，实现方案就是将从前的一台 Redis 服务器，同步数据到多台从 Redis 服务器上，即一主多从的模式，且主从服务器之间采用的是「读写分离」的方式。
+
+主服务器可以进行读写操作，当发生写操作时自动将写操作同步给从服务器，而从服务器一般是只读，并接受主服务器同步过来写操作命令，然后执行这条命令。
+
+也就是说，所有的数据修改只在主服务器上进行，然后将最新的数据同步给从服务器，这样就使得主从服务器的数据是一致的。
+
+注意，主从服务器之间的命令复制是异步进行的。
+
+具体来说，在主从服务器命令传播阶段，主服务器收到新的写命令后，会发送给从服务器。但是，主服务器并不会等到从服务器实际执行完命令后，再把结果返回给客户端，而是主服务器自己在本地执行完命令后，就会向客户端返回结果了。如果从服务器还没有执行主服务器同步过来的命令，主从服务器间的数据就不一致了。
+
+所以，无法实现强一致性保证（主从数据时时刻刻保持一致），数据不一致是难以避免的。
+
+> 哨兵模式
+
+在使用 Redis 主从服务的时候，会有一个问题，就是当 Redis 的主从服务器出现故障宕机时，需要手动进行恢复。
+
+为了解决这个问题，Redis 增加了哨兵模式（Redis Sentinel），因为哨兵模式做到了可以监控主从服务器，并且提供主从节点故障转移的功能。
+
+> 切片集群模式
+
+当 Redis 缓存数据量大到一台服务器无法缓存时，就需要使用 Redis 切片集群（Redis Cluster ）方案，它将数据分布在不同的服务器上，以此来降低系统对单主节点的依赖，从而提高 Redis 服务的读写性能。
+
+Redis Cluster 方案采用哈希槽（Hash Slot），来处理数据和节点之间的映射关系。在 Redis Cluster 方案中，一个切片集群共有 16384 个哈希槽，这些哈希槽类似于数据分区，每个键值对都会根据它的 key，被映射到一个哈希槽中，具体执行过程分为两大步：
+
+    根据键值对的 key，按照 CRC16 算法
+
+   计算一个 16 bit 的值。
+    再用 16bit 值对 16384 取模，得到 0~16383 范围内的模数，每个模数代表一个相应编号的哈希槽。
+
+接下来的问题就是，这些哈希槽怎么被映射到具体的 Redis 节点上的呢？有两种方案：
+
+    平均分配： 在使用 cluster create 命令创建 Redis 集群时，Redis 会自动把所有哈希槽平均分布到集群节点上。比如集群中有 9 个节点，则每个节点上槽的个数为 16384/9 个。
+    手动分配： 可以使用 cluster meet 命令手动建立节点间的连接，组成集群，再使用 cluster addslots 命令，指定每个节点上的哈希槽个数。
+
+为了方便你的理解，我通过一张图来解释数据、哈希槽，以及节点三者的映射分布关系。
+
+集群脑裂导致数据丢失怎么办？
+  什么是脑裂？
+  总结一句话就是：由于网络问题，集群节点之间失去联系。主从数据不同步；重新平衡选举，产生两个主服务。等网络恢复，旧主节点会降级为从节点，再与新主节点进行同步复制的时候，由于会从节点会清空自己的缓冲区，所以导致之前客户端写入的数据丢失了。
+
+> 解决方案
+
+## Redis 过期删除与内存淘汰
+
+Redis 是可以对 key 设置过期时间的，因此需要有相应的机制将已过期的键值对删除，而做这个工作的就是过期键值删除策略。
+
+每当我们对一个 key 设置了过期时间时，Redis 会把该 key 带上过期时间存储到一个过期字典（expires dict）中，也就是说「过期字典」保存了数据库中所有 key 的过期时间。
+
+当我们查询一个 key 时，Redis 首先检查该 key 是否存在于过期字典中：
+
+    如果不在，则正常读取键值；
+    如果存在，则会获取该 key 的过期时间，然后与当前系统时间进行比对，如果比系统时间大，那就没有过期，否则判定该 key 已过期。
+
+Redis 使用的过期删除策略是「惰性删除+定期删除」这两种策略配和使用。
+
+> 什么是惰性删除策略？
+
+惰性删除策略的做法是，不主动删除过期键，每次从数据库访问 key 时，都检测 key 是否过期，如果过期则删除该 key。
+
+惰性删除策略的优点：
+
+    因为每次访问时，才会检查 key 是否过期，所以此策略只会使用很少的系统资源，因此，惰性删除策略对 CPU 时间最友好。
+
+惰性删除策略的缺点：
+
+    如果一个 key 已经过期，而这个 key 又仍然保留在数据库中，那么只要这个过期 key 一直没有被访问，它所占用的内存就不会释放，造成了一定的内存空间浪费。所以，惰性删除策略对内存不友好。
+
+> Redis 持久化时，对过期键会如何处理的？
+
+Redis 持久化文件有两种格式：RDB（Redis Database）和 AOF（Append Only File），下面我们分别来看过期键在这两种格式中的呈现状态。
+
+RDB 文件分为两个阶段，RDB 文件生成阶段和加载阶段。
+
+    RDB 文件生成阶段：从内存状态持久化成 RDB（文件）的时候，会对 key 进行过期检查，过期的键「不会」被保存到新的 RDB 文件中，因此 Redis 中的过期键不会对生成新 RDB 文件产生任何影响。
+    RDB 加载阶段：RDB 加载阶段时，要看服务器是主服务器还是从服务器，分别对应以下两种情况：
+        如果 Redis 是「主服务器」运行模式的话，在载入 RDB 文件时，程序会对文件中保存的键进行检查，过期键「不会」被载入到数据库中。所以过期键不会对载入 RDB 文件的主服务器造成影响；
+        如果 Redis 是「从服务器」运行模式的话，在载入 RDB 文件时，不论键是否过期都会被载入到数据库中。但由于主从服务器在进行数据同步时，从服务器的数据会被清空。所以一般来说，过期键对载入 RDB 文件的从服务器也不会造成影响。
+
+AOF 文件分为两个阶段，AOF 文件写入阶段和 AOF 重写阶段。
+
+    AOF 文件写入阶段：当 Redis 以 AOF 模式持久化时，如果数据库某个过期键还没被删除，那么 AOF 文件会保留此过期键，当此过期键被删除后，Redis 会向 AOF 文件追加一条 DEL 命令来显式地删除该键值。
+    AOF 重写阶段：执行 AOF 重写时，会对 Redis 中的键值对进行检查，已过期的键不会被保存到重写后的 AOF 文件中，因此不会对 AOF 重写造成任何影响。
+
+> Redis 主从模式中，对过期键会如何处理？
+
+当 Redis 运行在主从模式下时，从库不会进行过期扫描，从库对过期的处理是被动的。也就是即使从库中的 key 过期了，如果有客户端访问从库时，依然可以得到 key 对应的值，像未过期的键值对一样返回。
+
+从库的过期键处理依靠主服务器控制，主库在 key 到期时，会在 AOF 文件里增加一条 del 指令，同步到所有的从库，从库通过执行这条 del 指令来删除过期的 key。
+
+
+### Redis的RDB持久化过程
+
+#### RDB文件的创建与载入
+
+Redis是内存型数据库, 这即意味着若服务器断电或关闭, 内存中加载的所有数据都会丢失, 所以Redis有RDB持久化过程,即可以将内存中的数据以固定格式保存在磁盘里,这样即使服务器断电...在重启服务器的时候也可以加载RDB文件来恢复数据,但RDB不是万能的,也就是若RDB文件生成一天后断了电,那么在这一天内产生的数据是没办法恢复的...当然这是另一个话题了
+
+我们先来说一说RDB持久化的过程
+
+生成RDB文件是用`SAVE`或`BGSAVE`来生成,SAVE命令会阻塞Redis的主进程也就是说若内存中的数据特别多,会导致Redis服务直接卡停, 导致Redis服务器无法处理别的请求.BGSAVE是在后台起一个进程来处理保存数据.
+
+如何加载RDB文件呢?
+
+Redis没有加载RDB文件的命令, 在Redis服务启动的时候会检查在config文件中配置文件下有没有文件,若有则自动加载RDB文件, 没有则不加载.
+
+另外, 因为AOF文件是持久化比RDB频繁,所以若AOF文件和RDB文件同时存在,则优先加载AOF文件.只有在AOF持久化功能处于关闭状态时，服务器才会使用RDB文件来还原数据库状态。
+
+这意味着若开启了AOF,但AOF文件为空,则加载的数据就为空
+
+BGSAVE命令的保存工作由主进程fork的子进程执行,所以在执行了BGSAVE的情况下Redis服务器还能够接受客户端的命令, 但是在BGSAVE命令执行期间,服务器处理`BGSAVE`, `SAVE`, `BGREWRITEAOF`三个命令和平时有所不同
+
+首先BGSAVE执行期间,客户端发送SAVE命令会被服务器直接拒绝, 服务器禁止SAVE和BGSAVE的目的是避免父子进程同时执行`rdbSave`防止有竞争条件, 其次BGSAVE命令执行期间客户端发送BGSAVE命令会被服务器直接拒绝, 因为同时执行两个BGSAVE也会产生竞争条件, 最后`BGREWRITEAOF`和`BGSAVE`两个命令不能同时执行, 如果BGSAVE同时执行, 那么客户端发送的BGREWRITEAOF命令会被延迟到BGSAVE命令执行完毕之后执行。如 果 BGREWRITEAOF命令正在执行，那么客户端发送的BGSAVE命令会被服务器拒绝。
+
+为什么BGREWRITEAOF和BGSAVE两个命令不能同时进行?
+
+> 因为BGREWRITEAOF和BGSAVE两个命令的实际工作都由子进程执行，所以这两个命令在操作方面并没有什么冲突的地方，不能同时执行它们只是一个性能方面的考虑——并发出两个子进程，并且这两个子进程都同时执行大量的磁盘写入操作，这怎么想都不会是一个好主意。
+
+RDB文件载入时服务器会一直阻塞直到载入完成为止.
+
+#### 自动间隔性保存
+
+因为BGSAVE可以创建一个新的子进程来保存数据,所以可以通过配置文件的save选项设置多个保存条件,只要有其中任意一个满足,后台就可以自动执行BGSAVE, 如果我们向服务器提供`save 900 1`, 则若服务器在900秒内对数据库有至少一次修改,则BGSAVE自动执行
+
+保存条件: 用户可以自己制定配置文件,若不配置则默认条件是
+```
+save 900 1
+save 300 10
+save 60 10000
+```
+接着服务器会根据save选项去保存条件,设置服务器状态redisServer结构的saveparams属性:, saveparams属性是一个数组,数组中每个元素是一个saveparam结构,saveparam结构是所设置的保存条件.
+```c
+struct saveparam {
+    //秒数
+    time_t seconds;
+    //修改数
+    int changes;
+};
+```
+除了saveparams数组外,服务器状态还维持着一个dirty计数器和lastsave属性:
+1. dirty计数器记录距离上一次成功执行SAVE命令或者BGSAVE命令之后，服务器对数据库状态（服务器中的所有数据库）进行了多少次修改（包括写入、删除、更新等操作）。
+2. lastsave属性是一个UNIX时间戳,记录了上一次服务器的SAVE命令或BGSAVE命令的时间
+
+当服务器成功执行一个数据库修改命令之后，程序就会对dirty计数器进行更新：命令修改了多少次数据库，dirty计数器的值就增加多少。
+
+> 检查保存条件是否满足
+
+Redis服务器周期性操作函数serverCron默认每隔100毫秒就执行一次, 它的工作之一就是检查save选项所设置的保存条件是否已经满足,如果满足的话就执行BGSAVE命令
+
+
+#### RDB文件的结构
+    
+    
+RDB的文件结构
+```
+REDIS db_version databases EOF check_sum
+```
+
+注意:为了区分变量常量数据,使用全大写单词标示常量,用全小写字母标识变量和数据
+
+RDB文件的最开头是REDIS部分，这个部分的长度为5字节，保存着“REDIS”五个字符。通过这五个字符，程序可以在载入文件时，快速检查所载入的文件是否RDB文件。又因为Redis保存的是二进制数据,不是C字符串所以开头的REDIS其实就是REDIS五个字符没有'\0'结尾...
+
+db_version是长度为4字节,它的值是一个字符串表示的整数,这个整数记录了RDB文件的版本,比如"0006"代表是第六版,这里只介绍RDB的第六版文件
+
+databases部分包含着0或多个数据库以及其中的数据.如果数据库的数据库状态为空则这部位为空.否则就保存数据
+
+EOF常量为1字节,这个常量标志着RDB文件正文内容的结束,当读入程序遇到这个值的时候,它知道所有数据库的键值对都录入完毕.
+
+check_sum是一个8字节长的无符号整数,保存着一个校验和,它是REDIS、db_version、databases、EOF四个部分的内容进行计算得出的。服务器在载入RDB文件时，会将载入数据所计算出的校验和与check_sum所记录的校验和进行对比，以此来检查RDB文件是否有出错或者损坏的情况出现。
+
+##### databases部分
+
+一个RDB文件的databases部分可以保存任意多个非空数据库。
+
+每 个 非 空 数 据 库 在 RDB 文 件 中 都 可 以 保 存 为 SELECTDB 、db_number、key_value_pairs三个部分.
+
+- SELECTDB常量的长度为1字节，当读入程序遇到这个值的时候，它知道接下来要读入的将是一个数据库号码。
+- db_number保存着一个数据库号码，根据号码的大小不同，这个部分的长度可以是1字节、2字节或者5字节。当程序读入db_number部分之后，服务器会调用SELECT命令，根据读入的数据库号码进行数
+据库切换，使得之后读入的键值对可以载入到正确的数据库中。
+- key_value_pairs部分保存了数据库中的所有键值对数据，如果键值对带有过期时间，那么过期时间也会和键值对保存在一起。根据键值对的数量、类型、内容以及是否有过期时间等条件的不同，key_value_pairs部分的长度也会有所不同。
+
+##### key_value_pairs部分
+
+RDB文件中的每个key_value_pairs部分都保存了一个或以上数量的键值对，如果键值对带有过期时间的话，那么键值对的过期时间也会被保存在内。
+
+不带过期时间的键值对在RDB文件中由TYPE、key、value三部分组成
+
+TYPE记录了value的类型, 长度为1字节, 值可以是以下常量的其中一个
+- REDIS_RDB_TYPE_STRING
+- REDIS_RDB_TYPE_LIST
+- REDIS_RDB_TYPE_SET
+- REDIS_RDB_TYPE_ZSET
+- REDIS_RDB_TYPE_HASH
+- REDIS_RDB_TYPE_LIST_ZIPLIST
+- REDIS_RDB_TYPE_SET_INTSET
+- REDIS_RDB_TYPE_ZSET_ZIPLIST
+- REDIS_RDB_TYPE_HASH_ZIPLIST
+
+带有过期的部分有新增的EXPIRETIME_MS和ms, 分别是以毫秒为单位的过期时间和UNIX时间戳记录的过期时间
+
+values 部分则是
+
+其他的值类型部分不赘述了
+
+### AOF文件结构
+
+除了RDB持久化功能外,Redis还提供AOF持久化.AOF持久化是通过保存Redis服务器所执行的写命令来记录数据库状态的
+
+
+被写入AOF文件的所有命令都是以Redis的命令请求协议格式保存的，因为Redis的命令请求协议是纯文本格式，所以我们可以直接打开一个AOF文件，观察里面的内容。
+
+服务器在启动时，可以通过载入和执行AOF文件中保存的命令来还原服务器关闭之前的数据库状态
+
+#### AOF持久化的实现
+
+AOF持久化功能的实现可以分为命令追加（append）、文件写入、文件同步（sync）三个步骤。
+
+追加:当AOF持久化功能处于打开状态时,服务器执行完一个写命令后,会以协议格式命令将被写命令追加到服务器状态的aof_buf缓冲区末尾.  
+
+AOF文件的写入
+
+Redis服务器进程其实就是一个事件循环,这个循环中的文件事件负责接收客户端的命令请求,以及向客户端发送命令回复,而时间事件则负责执行像serverCron函数这样需要定时运行的函数。因为服务器在处理文件事件时可能会执行写命令,使得一些内容被追加到aof_buf缓冲区中,所以服务器在每次循环结束时会调用flushAppendOnlyFile函数,考虑是否刷新aof_buf的内容.
+
+flushAppendOnlyFile函数的行为由服务器配置的appendfsync选项的值来决定.
+appendfsync选项有always  everysec   no意思分别为,总是,每秒,由操作系统决定...
+
+
+文件写入和同步为了提高文件的写入效率,现代计算机中为了提高文件的写入效率,当用户调用write函数，将一些数据写入到文件的时候，操作系统通常会将写入数据暂时保存在一个内存缓冲区里面，等到缓冲区的空间被填满、或者超过了指定的时限之后，才真正地将缓冲区中的数据写入到磁盘里面。这种做法虽然提高了效率，但也为写入数据带来了安全问题，因为如果计算机发生停机，那么保存在内存缓冲区里面的写入数据将会丢失。为此，系统提供了fsync和fdatasync两个同步函数，它们可以强制让操作系统立即将缓冲区中的数据写入到硬盘里面，从而确保写入数据的安全性。
+
+
+AOF的载入与数据还原
+
+AOF文件包含了重建数据库所需的所有写命令,所以服务器只需要读入并重新执行一遍AOF文件里面保存的写命令就好了.
+
+Redis读取AOF文件并还原数据库状态的详细步骤如下：
+1）创建一个不带网络连接的伪客户端（fake client）：因为Redis的命令只能在客户端上下文中执行，而载入AOF文件时所使用的命令直接来源于AOF文件而不是网络连接，所以服务器使用了一个没有网络连接的伪客户端来执行AOF文件保存的写命令，伪客户端执行命令的效果和带网络连接的客户端执行命令的效果完全一样。
+2）从AOF文件中分析并读取出一条写命令。
+3）使用伪客户端执行被读出的写命令。
+4）一直执行步骤2和步骤3，直到AOF文件中的所有写命令都被处理完毕为止。
+当完成以上步骤之后，AOF文件所保存的数据库状态就会被完整地还原出来
+
+AOF重写
+
+因为AOF持久化是通过保存被执行的写命令来记录数据库状态的，所以随着服务器运行时间的流逝，AOF文件中的内容会越来越多，文件的体积也会越来越大，如果不加以控制的话，体积过大的AOF文件很可能对Redis服务器、甚至整个宿主计算机造成影响，并且AOF文件的体积越大，使用AOF文件来进行数据还原所需的时间就越多。
+
+
+为了解决AOF文件体积膨胀的问题，Redis提供了AOF文件重写（rewrite）功能。通过该功能，Redis服务器可以创建一个新的AOF文件来替代现有的AOF文件，新旧两个AOF文件所保存的数据库状态相同，但新AOF文件不会包含任何浪费空间的冗余命令，所以新AOF文件的体积通常会比旧AOF文件的体积要小得多
+
+在接下来的内容中，我们将介绍AOF文件重写的实现原理，以及BGREWEITEAOF命令的实现原理。
+
+
+虽然Redis将生成新AOF文件替换旧AOF文件的功能命名为“AOF文件重写”，但实际上，AOF文件重写并不需要对现有的AOF文件进行任何读取、分析或者写入操作，这个功能是通过读取服务器当前的数据库状态来实现的。
+
+即就是通过扫描服务器有的所有键值去重建AOF文件
+
+### 发布与订阅
+
+Redis发布订阅功能是由PUBLISH,SUBSCRIBE,PSUBSCRIBE等命令组成.
+
+通过执行SUBSCRIBE命令，客户端可以订阅一个或多个频道，从而成为这些频道的订阅者（subscriber）：每当有其他客户端向被订阅的频道发送消息（message）时，频道的所有订阅者都会收到这条消息。
+
+除了订阅频道之外，客户端还可以通过执行PSUBSCRIBE命令订阅一个或多个模式，从而成为这些模式的订阅者：每当有其他客户端向某个频道发送消息时，消息不仅会被发送给这个频道的所有订阅者，它还会被发送给所有与这个频道相匹配的模式的订阅者。
+
+频道的订阅与退订
+
+当一个客户端执行SUBSCRIBE命令订阅某个或某些频道的时候，这个客户端与被订阅频道之间就建立起了一种订阅关系。Redis将所有的订阅关系都发那个到了RedisServer类下的pubsub_channels字典里面,这个字典的键是某个被订阅的频道,值是一个链表,链表里面记录的是这个频道的客户端.
+
+退订的话其实就是遍历链表删除操作,如果客户端为空,则频道键一并删除掉.
+
+模式的订阅与退订
+
+服务器也将所有模式的订阅关系都保存在服务器状态的pubsub_patterns属性里面,pubsub_patterns属性是一个链表，链表中的每个节点都包含着一个pubsub Pattern结构，这个结构的pattern属性记录了被订阅的模式，而client属性则记录了订阅模式的客户端
+
+退订模式频道的退订差不多
+
+发布消息
+
+当一个redis客户端执行PUBLISH,将消息message发送给频道channel时,服务器需要执行以下两个动作,将消息message发送给channel频道的所有订阅者.如果有一个或多个模式和频道匹配那么将消息message发送给pattern模式的订阅者.
+
+发送给模式的订阅者就是遍历所有模式,找出客户端发送...
+
+查看订阅消息
+
+PUBSUB客户端可以通过这个命令来查看频道或者模式的相关信息，比如某个频道目前有多少订阅者，又或者某个模式目前有多少订阅者，诸如此类。
+
+PUBSUB CHANNELS[pattern]子命令用于返回服务器当前被订阅的频道，其中pattern参数是可选的：
+·如果不给定pattern参数，那么命令返回服务器当前被订阅的所有频道。
+·如果给定pattern参数，那么命令返回服务器当前被订阅的频道中那些与pattern模式相匹配的频道。
+
+PUBSUB NUMSUB[channel-1 channel-2...channel-n]子命令接受任意多个频道作为输入参数，并返回这些频道的订阅者数量。
+
+PUBSUB NUMPAT子命令用于返回服务器当前被订阅模式的数量。
+
+### 事务
+
+Redis通过multi,exec,watch等命令实现事务(transaction),事务提供了一种将多个命令请求打包,然后一次性顺序执行多个命令的过程.并且在事务执行期间服务器不会中断事务而改去执行其他客户端的命令请求，它会将事务中的所有命令都执行完毕，然后才去处理其他客户端的命令请求。
+
+一个事务从开始到结束通常会经历以下三个阶段：
+1）事务开始。
+2）命令入队。
+3）事务执行。
+
+包括的命令有`MULTI`,`DISCARD`,`EXEC`,`WATCH`
+
+`multi`事务开始,这一切换是通过在客户端状态的flags属性中打开REDIS_MULTI标识来完成的`client.flags |= REDIS_MULTI`.
+
+当一个客户端处于非事务状态时，这个客户端发送的命令会立即被服务器执行, 不同的是若处于事务状态,则根据这个客户端发来的不同命令执行不同的操作.如果客户端发送的命令为EXEC、DISCARD、WATCH、MULTI四个命令的其中一个，那么服务器立即执行这个命令。
+
+与 此 相 反 ， 如 果 客 户 端 发 送 的 命 令 是 EXEC 、 DISCARD 、WATCH、MULTI四个命令以外的其他命令，那么服务器并不立即执行这个命令，而是将这个命令放入一个事务队列里面，然后向客户端返回QUEUED回复
+
+事务队列
+
+每个Redis客户端都有自己的事务状态，这个事务状态保存在客户端状态的mstate属性里面, 事务状态属性包含一个事务队列，以及一个已入队命令的计数器（也可以说是事务队列的长度）：事务队列是一个multiCmd类型的数组，数组中的每个multiCmd结构都保存了一个已入队命令的相关信息，包括指向命令实现函数的指针、命令的参数，以及参数的数量.
+
+执行事务
+
+当一个处于事务状态的客户端向服务器发送EXEC命令时,，这个EXEC命令将立即被服务器执行。服务器会遍历这个客户端的事务队列，执行队列中保存的所有命令，最后将执行命令所得的结果全部返回给客户端。
+
+WATCH命令的实现
+
+WATCH命令是一个乐观锁（optimistic locking），它可以在EXEC命令执行之前，监视任意数量的数据库键，并在EXEC命令执行时，检查被监视的键是否至少有一个已经被修改过了，如果是的话，服务器将拒绝执行事务，并向客户端返回代表事务执行失败的空回复。
+
+若在WATCH监视其间的事务,有其他客户端修改了某个被WATCH监视的键,则事务会被服务器端拒绝执行,WATCH的原理是,每个Redis数据库都保存着一个watched_keys字典，这个字典的键是某个被WATCH命令监视的数据库键，而字典的值则是一个链表，链表中记录了所有监视相应数据库键的客户端
+
+通过watched_keys字典，服务器可以清楚地知道哪些数据库键正在被监视，以及哪些客户端正在监视这些数据库键
+
+比如·客户端c1和c2正在监视键"name"。 ·客户端c3正在监视键"age"。 ·客户端c2和c4正在监视键"address"。
+
+所有对数据库进行修改的命令，比如SET、LPUSH、SADD、ZREM 、 DEL 、 FLUSHDB 等 等 ， 在 执 行 之 后 都 会 调 用multi.c/touchWatchKey函数对watched_keys字典进行检查，查看是否有客户端正在监视刚刚被命令修改过的数据库键，如果有的话，那 么 touchWatchKey 函 数 会 将 监 视 被 修 改 键 的 客 户 端 的REDIS_DIRTY_CAS标识打开，表示该客户端的事务安全性已经被破坏。
+
+当服务器接收到一个客户端发来的EXEC命令时，服务器会根据这个客户端是否打开了REDIS_DIRTY_CAS标识来决定是否执行事务：
+- 如果客户端的REDIS_DIRTY_CAS标识已经被打开，那么说明客户端所监视的键当中，至少有一个键已经被修改过了，在这种情况下，客户端提交的事务已经不再安全，所以服务器会拒绝执行客户端提交的事务。
+- 如果客户端的REDIS_DIRTY_CAS标识没有被打开，那么说明客户端监视的所有键都没有被修改过（或者客户端没有监视任何键），事务仍然是安全的，服务器将执行客户端提交的这个事务。
+
+事务的ACID性质
+
+在传统的关系式数据库中，常常用ACID性质来检验事务功能的可靠性和安全性。在 Redis 中 ， 事 务 总 是 具 有 原 子 性 （ Atomicity ） 、 一 致 性（Consistency）和隔离性（Isolation），并且当Redis运行在某种特定的持久化模式下时，事务也具有耐久性
+
+事务具有原子性指的是，数据库将事务中的多个操作当作一个整体来执行，服务器要么就执行事务中的所有操作，要么就一个操作也不执行。对于Redis的事务功能来说，事务队列中的命令要么就全部都执行，要么就一个都不执行，因此，Redis的事务是具有原子性的
+
+Redis的事务和传统的关系型数据库事务的最大区别在于，Redis不支持事务回滚机制（rollback），即使事务队列中的某个命令在执行期间出现了错误，整个事务也会继续执行下去，直到将事务队列中的所有命令都执行完毕为止。
+
+Redis的作者在事务功能的文档中解释说，不支持事务回滚是因为这种复杂的功能和Redis追求简单高效的设计主旨不相符，并且他认为，Redis事务的执行时错误通常都是编程错误产生的，这种错误通常只会出现在开发环境中，而很少会在实际的生产环境中出现，所以他认为没有必要为Redis开发事务回滚功能。
+
+
+事务具有一致性指的是，如果数据库在执行事务之前是一致的，那么在事务执行之后，无论事务是否执行成功，数据库也应该仍然是一致的。“一致”指的是数据符合数据库本身的定义和要求，没有包含非法或者无效的错误数据。Redis通过谨慎的错误检测和简单的设计来保证事务的一致性，以下三个小节将分别介绍三个Redis事务可能出错的地方，并说明Redis是如何妥善地处理这些错误，从而确保事务的一致性的。
+
+1.入队错误: 如果命令在入队时发生了错误,比如命令不存在,或者命令格式不对,那么Redis将拒绝执行这个命令.
+
+2.执行错误: 执行过程中发生的错误都是一些不能在入队时被服务器发现的错误，这些错误只会在命令实际执行时被触发, 并且执行错后,继续执行下面剩余的队列值
+
+3.服务器停机: 
+
+如果Redis服务器在执行事务的过程中停机，那么根据服务器所使用的持久化模式，可能有以下情况出现：如果服务器运行在无持久化的内存模式下，那么重启之后的数据库将是空白的，因此数据总是一致的。
+
+如果服务器运行在RDB模式下，那么在事务中途停机不会导致不一致性，因为服务器可以根据现有的RDB文件来恢复数据，从而将数据库还原到一个一致的状态。如果找不到可供使用的RDB文件，那么重启之后的数据库将是空白的，而空白数据库总是一致的。
+
+·如果服务器运行在AOF模式下，那么在事务中途停机不会导致不一致性，因为服务器可以根据现有的AOF文件来恢复数据，从而将数据库还原到一个一致的状态。如果找不到可供使用的AOF文件，那么重启之后的数据库将是空白的，而空白数据库总是一致的。综上所述，无论Redis服务器运行在哪种持久化模式下，事务执行中途发生的停机都不会影响数据库的一致性。
+
+隔离性
+
+事务的隔离性指的是，即使数据库中有多个事务并发地执行，各个事务之间也不会互相影响，并且在并发状态下执行的事务和串行执行的事务产生的结果完全相同。
+
+因为Redis使用单线程的方式来执行事务（以及事务队列中的命令），并且服务器保证，在执行事务期间不会对事务进行中断，因此，Redis的事务总是以串行的方式运行的，并且事务也总是具有隔离性的。
+
+耐久性
+
+事务的耐久性指的是，当一个事务执行完毕时，执行这个事务所得的结果已经被保存到永久性存储介质（比如硬盘）里面了，即使服务器在事务执行完毕之后停机，执行事务所得的结果也不会丢失。
+
+因为Redis的事务不过是简单地用队列包裹起了一组Redis命令，Redis并没有为事务提供任何额外的持久化功能，所以Redis事务的耐久性由Redis所使用的持久化模式决定
+
+
+### 复制
+
+在Redis的主从复制中,用户使用`slaveof`命令或者设置slaveof选项,可以让一个服务器去复制另一个服务器,被复制的服务器叫主服务器,对主服务器进行复制的服务器叫从服务器
+
+进行复制中的服务器双方保存相同的数据,概念上将这种现象叫数据库状态一致.
+
+这里先介绍2.8版本以前使用的旧版复制功能的实现原理,并说明旧版复制功能在处理断线后重新连接的从服务器时，会遇上怎样的低效情况。接着，本章将介绍Redis从2.8版本开始使用的新版复制功能是如何通过部分重同步来解决旧版复制功能的低效问题的，并说明部分重同步的实现原理。在此之后，本章将列举SLAVEOF命令的具体实现步骤，并在本章最后，说明主从服务器心跳检测机制的实现原理，并对基于心跳检测实现的几个功能进行介绍。
+
+旧版复制功能的实现
+
+Redis的复制分为同步和命令传播两个操作:
+1. 同步状态用作将从服务器的数据库状态更新至与主服务器当前所处的数据库状态.
+2. 命令传播操作则用于主从服务器状态不一致,让主从服务器状态回到一致的状态.
+
+同步
+
+当客户端向从服务器发送salveof命令时,要求从服务器复制主服务器,从服务器首先需要执行同步操作,也就是将从服务器的数据库状态更新至主服务器当前所处的数据库状态.从服务器对主服务器的同步操作需要通过向主服务器发送SYNC命令来完成,以下是发送SYNC命令的步骤:
+1. 从服务器向主服务器发送SYNC命令。
+2. 收到SYNC命令的主服务器执行BGSAVE命令在后台生成一个RDB文件,并使用一个缓冲区记录从现在开始执行的所有写命令.
+3. 当主服务器BGSAVE命令执行完成,主服务器将BGSAVE生成的RDB文件发送给从服务器,从服务器接收并载入这个RDB文件,将自己的数据库状态更新至主服务器执行BGSAVE命令时的数据库状态
+4. 主服务器将记录在缓冲区里的所有写命令发送给从服务器,从服务器执行这些写命令,将自己的数据库状态更新至主服务器所处的状态.
+
+命令传播
+
+在同步操作完成后,主从服务器状态将达成一致,但如果主服务器的客户端发送写命令时,主从服务器的数据库状态可能被修改,并导致主从服务器状态不再一致,为了让主从服务器再次回到一致状态，主服务器需要对从服务器执行命令传播操作：主服务器会将自己执行的写命令，也即是造成主从服务器不一致的那条写命令，发送给从服务器执行，当从服务器执行了相同的写命令之后，主从服务器将再次回到一致状态。
+
+旧版复制功能的缺陷:Redis中从服务器对主服务器的复制可以分为以下两种情况：
+- 初次复制：从服务器以前没有复制过任何主服务器，或者从服务器当前要复制的主服务器和上一次复制的主服务器不同。
+- 断线后重复制：处于命令传播阶段的主从服务器因为网络原因而中断了复制，但从服务器通过自动重连接重新连上了主服务器，并继续复制主服务器。
+
+对于初次复制来说，旧版复制功能能够很好地完成任务，但对于断线后重复制来说，旧版复制功能虽然也能让主从服务器重新回到一致状态，但效率却非常低,需要主服务器再次发生RDB文件.
+
+新版Redis复制功能的实现:
+
+为了解决旧版复制功能在处理断线重复制情况时的低效问题，Redis从2.8版本开始，使用PSYNC命令代替SYNC命令来执行复制时的同步操作。
+
+PSYNC命令有完整重同步和部分重同步两种模式:
+- 其中完整重同步用于处理初次复制情况:完整重同步的执行步骤和SYNC命令的执行步骤基本一样,都是通过让主服务器创建并发送RDB文件，以及向从服务器发送保存在缓冲区里面的写命令来进行同步。
+- 部分重同步则用于处理断线后复制的情况,当从服务器在断线后重新连接主服务器时,如果条件允许,主服务器可以将主从服务器连接断开期间执行的写命令发送给从服务器，从服务器只要接收并执行这些写命令，就可以将数据库更新至主服务器当前所处的状态。PSYNC命令的部分重同步模式解决了旧版复制功能在处理断线后重复制时出现的低效情况.
+
+部分重同步的实现
+
+部分重同步功能由以下三个部分构成：
+- 主服务器的复制偏移量（replication offset）和从服务器的复制偏移量。
+- 主服务器的复制积压缓冲区（replication backlog）。
+- 服务器的运行ID（run ID）。
+
+复制偏移量
+
+执行复制的双方——主服务器和从服务器会分别维护一个复制偏移量：
+- 主服务器每次向从服务器传播N个字节的数据时，就将自己的复制偏移量的值加上N。
+- 从服务器每次收到主服务器传播来的N个字节的数据时，就将自己的复制偏移量的值加上N。
+
+通过对比主从服务器的复制偏移量，程序可以很容易地知道主从服务器是否处于一致状态：·如果主从服务器处于一致状态，那么主从服务器两者的偏移量总是相同的。相反，如果主从服务器两者的偏移量并不相同，那么说明主从服务器并未处于一致状态。
+
+复制积压缓冲区
+
+复制积压缓冲区是由主服务器维护的一个固定长度（fixed-size）先进先出（FIFO）队列，默认大小为1MB。主服务器的复制积压缓冲区里面会保存着一部分最近传播的写命令，并且复制积压缓冲区会为队列中的每个字节记录相应的复制偏移量
+
+当从服务器重新连上主服务器时，从服务器会通过PSYNC命令将自己的复制偏移量offset发送给主服务器，主服务器会根据这个复制偏移量来决定对从服务器执行何种同步操作：
+- 如果offset偏移量之后的数据（也即是偏移量offset+1开始的数据）仍然存在于复制积压缓冲区里面，那么主服务器将对从服务器执行部分重同步操作。
+- 相反，如果offset偏移量之后的数据已经不存在于复制积压缓冲区，那么主服务器将对从服务器执行完整重同步操作。
+
+服务器运行ID
+
+除了复制偏移量和复制积压缓冲区之外，实现部分重同步还需要用到服务器运行ID（run ID）：
+每个Redis服务器，不论主服务器还是从服务，都会有自己的运行ID
+
+当从服务器对主服务器进行初次复制时，主服务器会将自己的运行ID传送给从服务器，而从服务器则会将这个运行ID保存起来。
+
+当从服务器断线并重新连上一个主服务器时，从服务器将向当前连接的主服务器发送之前保存的运行ID：如果从服务器保存的运行ID和当前连接的主服务器的运行ID相同，那么说明从服务器断线之前复制的就是当前连接的这个主服务器，主服务器可以继续尝试执行部分重同步操作。相反地，如果从服务器保存的运行ID和当前连接的主服务器的运行ID并不相同，那么说明从服务器断线之前复制的主服务器并不是当前连接的这个主服务器，主服务器将对从服务器执行完整重同步操作。
+
+PSYNC命令的实现
+
+到目前为止，本章在介绍PSYNC命令时一直没有说明PSYNC命令的参数以及返回值，因为那时我们还未了解服务器运行ID、复制偏移量、复制积压缓冲区这些东西，在学习了部分重同步的实现原理之后，我们现在可以来了解PSYNC命令的完整细节了。
+
+PSYNC命令的调用方法有两种：
+如果从服务器以前没有复制过任何主服务器，或者之前执行过SLAVEOF no one命令，那么从服务器在开始一次新的复制时将向主服务器发送PSYNC ? -1命令，主动请求主服务器进行完整重同步（因为这时不可能执行部分重同步）
+相反地，如果从服务器已经复制过某个主服务器，那么从服务器在开始一次新的复制时将向主服务器发送`PSYNC <runid> ${offset}`命令：其中runid是上一次复制的主服务器的运行ID，而offset则是从服务器当前的复制偏移量，接收到这个命令的主服务器会通过这两个参数来判断应该对从服务器执行哪种同步操作。
+
+根据情况，接收到PSYNC命令的主服务器会向从服务器返回以下三种回复的其中一种：
+如果主服务器返回`+FULLRESYNC <runid> ${offset}`回复，那么表示主服务器将与从服务器执行完整重同步操作：其中runid是这个主服务器的运行ID，从服务器会将这个ID保存起来，在下一次发送PSYNC命令时使用；而offset则是主服务器当前的复制偏移量，从服务器会将这个值作为自己的初始化偏移量。
+
+如果主服务器返回+CONTINUE回复，那么表示主服务器将与从服务器执行部分重同步操作，从服务器只要等着主服务器将自己缺少的那部分数据发送过来就可以了。
+
+如果主服务器返回-ERR回复，那么表示主服务器的版本低于Redis 2.8，它识别不了PSYNC命令，从服务器将向主服务器发送SYNC命令，并与主服务器执行完整同步操作。
+
+复制的实现
+
+通过向从服务器发送SLAVEOF命令，我们可以让一个从服务器去复制一个主服务器
+
+步骤1：设置主服务器的地址和端口
+
+当客户端向从服务器发送以下命令时：`slaveof 127.0.0.1 6379`, 从服务器首先要做的就是将客户端给定的服务器IP地址127.0.0.1以及端口6379保存到服务器状态的masterhost属性和masterport属性里面.
+
+SLAVEOF命令是一个异步命令，在完成masterhost属性和masterport属性的设置工作之后，从服务器将向发送SLAVEOF命令的客户端返回OK，表示复制指令已经被接收，而实际的复制工作将在OK返回之后才真正开始执行。
+
+步骤2：建立套接字连接
+
+在SLAVEOF命令执行之后，从服务器将根据命令所设置的IP地址和端口，创建连向主服务器的套接字连接。
+
+如果从服务器创建的套接字能成功连接（connect）到主服务器，那么从服务器将为这个套接字关联一个专门用于处理复制工作的文件事件处理器，这个处理器将负责执行后续的复制工作，比如接收RDB文件，以及接收主服务器传播来的写命令，诸如此类。
+而主服务器在接受（accept）从服务器的套接字连接之后，将为该套接字创建相应的客户端状态，并将从服务器看作是一个连接到主服务器的客户端来对待，这时从服务器将同时具有服务器（server）和客户端（client）两个身份：从服务器可以向主服务器发送命令请求，而主服务器则会向从服务器返回命令回复
+
+因为复制工作接下来的几个步骤都会以从服务器向主服务器发送命令请求的形式来进行，所以理解“从服务器是主服务器的客户端”这一点非常重要。
+
+步骤3：发送PING命令
+
+从服务器成为主服务器的客户端之后，做的第一件事就是向主服务器发送一个PING命令
+
+虽然主从服务器成功建立起了套接字连接，但双方并未使用该套接字进行过任何通信，通过发送PING命令可以检查套接字的读写状态是否正常。
+
+因为复制工作接下来的几个步骤都必须在主服务器可以正常处理命令请求的状态下才能进行，通过发送PING命令可以检查主服务器能否正常处理命令请求。
+
+从服务器在发送PING命令之后将遇到以下三种情况的其中一种：
+
+1. 如果主服务器向从服务器返回了一个命令回复，但从服务器却不能在规定的时限（timeout）内读取出命令回复的内容，那么表示主从服务器之间的网络连接状态不佳，不能继续执行复制工作的后续步骤。当出现这种情况时，从服务器断开并重新创建连向主服务器的套接字。
+2. 如果主服务器向从服务器返回一个错误，那么表示主服务器暂时没办法处理从服务器的命令请求，不能继续执行复制工作的后续步骤。当出现这种情况时，从服务器断开并重新创建连向主服务器的套接字。比如说，如果主服务器正在处理一个超时运行的脚本，那么当从服务器向主服务器发送PING命令时，从服务器将收到主服务器返回的BUSY Redisis busy running a script.You can only call SCRIPTKILL or SHUTDOWN NOSAVE.错误。
+3. 如果从服务器读取到"PONG"回复，那么表示主从服务器之间的网络连接状态正常，并且主服务器可以正常处理从服务器（客户端）发送的命令请求，在这种情况下，从服务器可以继续执行复制工作的下个步骤。
+
+步骤4：身份验证
+
+从服务器在收到主服务器返回的"PONG"回复之后，下一步要做的就是决定是否进行身份验证：
+
+如果从服务器设置了masterauth选项，那么进行身份验证。
+
+如果从服务器没有设置masterauth选项，那么不进行身份验证。
+
+在需要进行身份验证的情况下，从服务器将向主服务器发送一条AUTH命令，命令的参数为从服务器masterauth选项的值。
+
+举个例子，如果从服务器masterauth选项的值为10086，那么从服务器将向主服务器发送命令AUTH 10086，如图15-18所示。
+
+步骤5：发送端口信息
+
+在 身 份 验 证 步 骤 之 后 ， 从 服 务 器 将 执 行 命 令 REPLCONF listening-port <port-number>，向主服务器发送从服务器的监听端口号。
+
+步骤6：同步
+
+在这一步，从服务器将向主服务器发送PSYNC命令，执行同步操作，并将自己的数据库更新至主服务器数据库当前所处的状态。
+
+步骤7：命令传播
+
+当完成了同步之后，主从服务器就会进入命令传播阶段，这时主服务器只要一直将自己执行的写命令发送给从服务器，而从服务器只要一直接收并执行主服务器发来的写命令，就可以保证主从服务器一直保持一致了。
+
+心跳检测
+
+在命令传播阶段，从服务器默认会以每秒一次的频率，向主服务器发送命令：
+
+其中replication_offset是从服务器当前的复制偏移量。
+
+发送REPLCONF ACK命令对于主从服务器有三个作用：
+
+- 检测主从服务器的网络连接状态。
+- 辅助实现min-slaves选项。
+- 检测命令丢失。
+以下将分别介绍这三个作用。
+
+检测主从服务器的网络连接状态:主从服务器可以通过发送和接收REPLCONF ACK命令来检查两者之间的网络连接是否正常：如果主服务器超过一秒钟没有收到从服务器发来的REPLCONF ACK命令，那么主服务器就知道主从服务器之间的连接出现问题了。
+
+通过向主服务器发送INFO replication命令，在列出的从服务器列表的lag一栏中，我们可以看到相应从服务器最后一次向主服务器发送REPLCONF ACK命令距离现在过了多少秒.在一般情况下，lag的值应该在0秒或者1之间跳动，如果超过1秒的话，那么说明主从服务器之间的连接出现了故障。
+
+辅助实现min-slaves配置选项
+
+Redis的min-slaves-to-write和min-slaves-max-lag两个选项可以防止主服务器在不安全的情况下执行写命令。
+
+举个例子，如果我们向主服务器提供以下设置：
+
+那么在从服务器的数量少于3个，或者三个从服务器的延迟（lag）值都大于或等于10秒时，主服务器将拒绝执行写命令，这里的延迟值就是上面提到的INFO replication命令的lag值。
+
+检测命令丢失
+
+如果因为网络故障，主服务器传播给从服务器的写命令在半路丢失，那么当从服务器向主服务器发送REPLCONF ACK命令时，主服务器将发觉从服务器当前的复制偏移量少于自己的复制偏移量，然后主服务器就会根据从服务器提交的复制偏移量，在复制积压缓冲区里面找到从服务器缺少的数据，并将这些数据重新发送给从服务器。
+
+### 哨兵
+
+Sentinel(哨兵)系统是Redis高可用性解决方案,由一个或多个Sentinel实例组成的Sentineli系统可以监视任意多个服务器,以及这些主服务器下的所有从服务器,并在被监视的主服务器下线时,自动将这个下线主服务器属下的某个从服务器升级为新的主服务器,然后由新的主服务器代替已下线的主服务器处理请求.
+
+当server1的下线时长超过用户设定的下线时长上限时,Sentinel系统就会对server1执行故障转移操作.
+
+另外，Sentinel还会继续监视已下线的server1，并在它重新上线时，将它设置为新的主服务器的从服务器。
+
+当一个Sentinel启动时，它需要执行以下步骤：
+1）初始化服务器。
+2）将普通Redis服务器使用的代码替换成Sentinel专用代码。
+3）初始化Sentinel状态。
+4）根据给定的配置文件，初始化Sentinel的监视主服务器列表。
+5）创建连向主服务器的网络连接。
+
+初始化服务器
+
+Sentinel的本质就是运行在特殊模式下的Redis服务器,所以第一步其实是先初始化一个普通redis服务器,不过，因为Sentinel执行的工作和普通Redis服务器执行的工作不同，所以Sentinel的初始化过程和普通Redis服务器的初始化过程并不完全相同。
+
+例如，普通服务器在初始化时会通过载入RDB文件或者AOF文件来还原数据库状态，但是因为Sentinel并不使用数据库，所以初始化Sentinel时就不会载入RDB文件或者AOF文件, sentinel内部是可以使用发布订阅功能的.
+
+使用Sentinel专用代码
+
+启动Sentinel的第二个步骤就是将一部分普通Redis服务器使用的代 码 替 换 成 Sentinel 专 用 代 码 。 比 如 说 ， 普 通 Redis 服 务 器 使 用redis.h/REDIS_SERVERPORT常量的值作为服务器端口
+
+初始化Sentinel状态
+
+在应用了Sentinel的专用代码之后，接下来，服务器会初始化一个sentinel.c/sentinelState结构（后面简称“Sentinel状态”），这个结构保存了服务器中所有和Sentinel功能有关的状态
+
+```c
+struct sentinelState {
+    //当前纪元，用于实现故障转移
+    uint64_t current_epoch;
+    //保存了所有被这个sentinel监视的主服务器
+    //字典的键是主服务器的名字
+    //字典的值则是一个指向sentinelRedisInstance结构的指针
+    dict *masters;
+    //是否进入了TILT模式？
+    int tilt;
+    //目前正在执行的脚本的数量
+    int running_scripts;
+    //进入TILT模式的时间
+    mstime_t tilt_start_time;
+    //最后一次执行时间处理器的时间
+    mstime_t previous_time;
+    //一个FIFO队列，包含了所有需要执行的用户脚本
+    list *scripts_queue;
+} sentinel;
+```
+字典的键是被监视主服务器的名字, 而 字 典 的 值 则 是 被 监 视 主 服 务 器 对 应 的sentinel.c/sentinelRedisInstance结构。
+
+```c
+typedef struct sentinelRedisInstance {
+    //标识值，记录了实例的类型，以及该实例的当前状态
+    int flags;
+    //实例的名字
+    //主服务器的名字由用户在配置文件中设置
+    //从服务器以及Sentinel的名字由Sentinel自动设置
+    //格式为ip:port，例如"127.0.0.1:26379"
+    char *name;
+    //实例的运行ID
+    char *runid;
+    //配置纪元，用于实现故障转移
+    uint64_t config_epoch;
+    //实例的地址
+    sentinelAddr *addr;
+    // SENTINEL down-after-milliseconds选项设定的值
+    //实例无响应多少毫秒之后才会被判断为主观下线（subjectively down）
+    mstime_t down_after_period;
+    // SENTINEL monitor <master-name> <IP> <port> <quorum>选项中的quorum参数
+    //判断这个实例为客观下线（objectively down）所需的支持投票数量
+    int quorum;
+    // SENTINEL parallel-syncs <master-name> <number>选项的值
+    //在执行故障转移操作时，可以同时对新的主服务器进行同步的从服务器数量
+    int parallel_syncs;
+    // SENTINEL failover-timeout <master-name> <ms>选项的值
+    //刷新故障迁移状态的最大时限
+    mstime_t failover_timeout;
+    // ...
+} sentinelRedisInstance;
+
+// sentinelRedisInstance.addr 属 性 是 一 个 指 向sentinel.c/sentinelAddr结构的指针，这个结构保存着实例的IP地址和端口号
+typedef struct sentinelAddr {
+    char *ip;
+    int port;
+} sentinelAddr;
+```
+创建连向主服务器的网络连接
+
+初始化Sentinel的最后一步是创建连向被监视主服务器的网络连接，Sentinel将成为主服务器的客户端，它可以向主服务器发送命令，并从命令回复中获取相关的信息。
+
+对于每个被Sentinel监视的主服务器来说，Sentinel会创建两个连向主服务器的异步网络连接：
+- 一个是命令连接，这个连接专门用于向主服务器发送命令，并接收命令回复。
+- 另一个是订阅连接，这个连接专门用于订阅主服务器的__sentinel__:hello频道。
+
+为什么有两个连接？
+
+在Redis目前的发布与订阅功能中，被发送的信息都不会保存在Redis服务器里面，如果在信息发送时，想要接收信息的客户端不在线或者断线，那么这个客户端就会丢失这条信息。因此，为了不丢失__sentinel__:hello频道的任何信息，Sentinel必须专门用一个订阅连接来接收该频道的信息。另一方面，除了订阅频道之外，Sentinel还必须向主服务器发送命令，以此来与主服务器进行通信，所以Sentinel还必须向主服务器创建命令连接。
+因为Sentinel需要与多个实例创建多个网络连接，所以Sentinel使用的是异步连接
+
+获取主服务器信息
+
+哨兵会默认以10秒一次的频率通过命令向被监视的主服务器发送INFO命令,并通过分析INFO命令的回复来获取主服务器的当前消息.
+
+通过分析主服务器返回的INFO命令回复，Sentinel可以获取以下两方面的信息：
+
+一方面是关于主服务器本身的信息，包括run_id域记录的服务器运行ID，以及role域记录的服务器角色；
+另一方面是关于主服务器属下所有从服务器的信息.至于主服务器返回的从服务器信息，则会被用于更新主服务器实例结构的slaves字典，这个字典记录了主服务器属下从服务器的名单.
+
+获取从服务器信息
+
+当Sentinel发现主服务器有新的从服务器出现时，Sentinel除了会为这个新的从服务器创建相应的实例结构之外，Sentinel还会创建连接到从服务器的命令连接和订阅连接。
+
+在创建命令连接之后，Sentinel在默认情况下，会以每十秒一次的频率通过命令连接向从服务器发送INFO命令.
+
+根据INFO命令的回复，Sentinel会提取出以下信息：
+·从服务器的运行ID run_id。
+·从服务器的角色role。
+· 主 服 务 器 的 IP 地 址 master_host ， 以 及 主 服 务 器 的 端 口 号
+master_port。
+·主从服务器的连接状态master_link_status。
+·从服务器的优先级slave_priority。
+·从服务器的复制偏移量slave_repl_offset。根据这些信息，Sentinel会对从服务器的实例结构进行更新.
+
+向主服务器和从服务器发送信息
+
+在默认情况下，Sentinel会以每两秒一次的频率，通过命令连接向所有被监视的主服务器和从服务器发送以下格式的命令
+```
+PUBLISH __sentinel__:hello "<s_ip>,<s_port>,<s_runid>,<s_epoch>,<m_name>,<m_ip>,<m_port>,<m_epoch>"
+```
+这条命令向服务器的__sentinel__:hello频道发送了一条信息，信息的内容由多个参数组成：
+
+·其中以s_开头的参数记录的是Sentinel本身的信息·而m_开头的参数记录的则是主服务器的信息
+
+接收来自主服务器和从服务器的频道信息
+
+当Sentinel与一个主服务器或者从服务器建立起订阅连接之后，Sentinel就会通过订阅连接，向服务器发送以下命令
+```
+SUBSCRIBE __sentinel__:hello
+```
+
+Sentinel对__sentinel__:hello频道的订阅会一直持续到Sentinel与服务器的连接断开为止。
+这也就是说，对于每个与Sentinel连接的服务器，Sentinel既通过命令连接向服务器的__sentinel__:hello频道发送信息，又通过订阅连接从服务器的__sentinel__:hello频道接收信息
+
+对于监视同一个服务器的多个Sentinel来说，一个Sentinel发送的 信 息 会 被 其 他 Sentinel 接 收 到 ， 这 些 信 息 会 被 用 于 更 新 其 他Sentinel对发送信息Sentinel的认知，也会被用于更新其他Sentinel对被监视服务器的认知。
+
+当 一 个 Sentinel 从 __sentinel__:hello 频 道 收 到 一 条 信 息 时 ，Sentinel会对这条信息进行分析，提取出信息中的Sentinel IP地址、Sentinel端口号、Sentinel运行ID等八个参数，并进行以下检查:如果信息中记录的Sentinel运行ID和接收信息的Sentinel的运行ID相同，那么说明这条信息是Sentinel自己发送的，Sentinel将丢弃这条信息，不做进一步处理.相 反 地 ， 如 果 信 息 中 记 录 Sentinel 运 行 ID 和 接 收 信 息 的Sentinel的运行ID不相同，那么说明这条信息是监视同一个服务器的其他Sentinel发来的，接收信息的Sentinel将根据信息中的各个参数，对相应主服务器的实例结构进行更新。
+
+更新sentinels字典
+
+Sentinel为主服务器创建的实例结构中的sentinels字典保存了除Sentinel本身之外，所有同样监视这个主服务器的其他Sentinel的资料
+
+因为一个Sentinel可以通过分析接收到的频道信息来获知其他Sentinel的存在，并通过发送频道信息来让其他Sentinel知道自己的存在，所以用户在使用Sentinel的时候并不需要提供各个Sentinel的地址信息，监视同一个主服务器的多个Sentinel可以自动发现对方。
+
+创建连向其他Sentinel的命令连接
+
+当Sentinel通过频道信息发现一个新的Sentinel时，它不仅会为新Sentinel在sentinels字典中创建相应的实例结构，还会创建一个连向新Sentinel 的命令连接， 而 新 Sentinel 也 同 样 会 创 建 连 向 这 个
+Sentinel的命令连接，最终监视同一主服务器的多个Sentinel将形成相 互 连 接 的 网 络 ： Sentinel A 有 连 向 Sentinel B 的 命 令 连 接 ， 而Sentinel B也有连向Sentinel A的命令连接。
+
+使用命令连接相连的各个Sentinel可以通过向其他Sentinel发送命令请求来进行信息交换，本章接下来将对Sentinel实现主观下线检测和客观下线检测的原理进行介绍，这两种检测都会使用Sentinel之间的命令连接来进行通信。
+
+Sentinel之间不会创建订阅连接
+
+检测主观下线状态
+
+在默认情况下，Sentinel会以每秒一次的频率向所有与它创建了命令连接的实例（包括主服务器、从服务器、其他Sentinel在内）发送PING命令，并通过实例返回的PING命令回复来判断实例是否在线。
+
+如果配置文件指定Sentinel1的down-after-milliseconds选项的值为50000毫秒，那么当主服务器master连续50000毫秒都向Sentinel1返回无效回复时，Sentinel1就会将master标记为主观下线，并在master所对应的实例结构的flags属性中打开SRI_S_DOWN标识
+
+主观下线时长选项的作用范围
+
+用户设置的down-after-milliseconds选项的值，不仅会被Sentinel用来判断主服务器的主观下线状态，还会被用于判断主服务器属下的所有从服务器，以及所有同样监视这个主服务器的其他Sentinel的主观下线状态。举个例子，如果用户向Sentinel设置了以下配置：
+
+```
+sentinel monitor master 127.0.0.1 6379 2
+sentinel down-after-milliseconds master 50000
+```
+
+那么50000毫秒不仅会成为Sentinel判断master进入主观下线的标准，还会成为Sentinel判断master属下所有从服务器，以及所有同样监视master的其他Sentinel进入主观下线的标准。
+
+多个Sentinel设置的主观下线时长可能不同
+
+down-after-milliseconds选项另一个需要注意的地方是，对于监视同一个主服务器的多个Sentinel来说，这些Sentinel所设置的down-after-milliseconds选项的值也可能不同，因此，当一个Sentinel将主服务器判断为主观下线时，其他Sentinel可能仍然会认为主服务器处于在线状态。举个例子，如果Sentinel1载入了以下配置：
+```
+sentinel monitor master 127.0.0.1 6379 2
+sentinel down-after-milliseconds master 50000
+```
+而Sentinel2则载入了以下配置：
+```
+sentinel monitor master 127.0.0.1 6379 2
+sentinel down-after-milliseconds master 10000
+```
+那么当master的断线时长超过10000毫秒之后，Sentinel2会将master判断为主观下线，而Sentinel1却认为master仍然在 线 。 只 有 当 master 的 断 线 时 长 超 过 50000 毫 秒 之 后 ，
+Sentinel1和Sentinel2才会都认为master进入了主观下线状态。
+
+检查客观下线状态
+
+当Sentinel将一个主服务器判断为主观下线之后，为了确认这个主服务器是否真的下线了，它会向同样监视这一主服务器的其他Sentinel进行询问，看它们是否也认为主服务器已经进入了下线状态（可以是主观下线或者客观下线）。当Sentinel从其他Sentinel那里接收到足够数量的已下线判断之后，Sentinel就会将从服务器判定为客观下线，并对主服务器执行故障转移操作。
+
+发送SENTINEL is-master-down-by-addr命令
+```
+SENTINEL is-master-down-by-addr <ip> <port> <current_epoch> <runid>
+```
+
+接收SENTINEL is-master-down-by-addr命令
+
+当一个Sentinel（目标Sentinel）接收到另一个Sentinel（源Sentinel ） 发 来 的 SENTINEL is-master-down-by 命 令 时 ， 目 标Sentinel会分析并取出命令请求中包含的各个参数，并根据其中的主服务器IP和端口号，检查主服务器是否已下线，然后向源Sentinel返回 一 条 包 含 三 个 参 数 的 Multi Bulk 回 复 作 为 SENTINEL is-master-down-by命令的回复：
+
+根据其他Sentinel发回的SENTINEL is-master-down-by-addr命令回复，Sentinel将统计其他Sentinel同意主服务器已下线的数量，当这一数量达到配置指定的判断客观下线所需的数量时，Sentinel会将主服务器实例结构flags属性的SRI_O_DOWN标识打开，表示主服务器已经进入客观下线状态.
+
+客观下线状态的判断条件
+
+当认为主服务器已经进入下线状态的Sentinel的数量，超过Sentinel配置中设置的quorum参数的值，那么该Sentinel就会认为主服务器已经进入客观下线状态。比如说，如果Sentinel在启动时载入了以下配置
+```
+sentinel monitor master 127.0.0.1 6379 2
+```
+那么包括当前Sentinel在内，只要总共有两个Sentinel认为主服务器已经进入下线状态，那么当前Sentinel就将主服务器判断为客观下线
+
+
+不同Sentinel判断客观下线的条件可能不同
+
+同样以多的为主
+
+选举领头Sentinel
+
+当一个主服务器被判断为客观下线时，监视这个下线主服务器的各 个 Sentinel 会 进 行 协 商 ， 选 举 出 一 个 领 头 Sentinel ， 并 由 领 头Sentinel对下线主服务器执行故障转移操作。
+
+以下是Redis选举领头Sentinel的规则和方法：
+
+所有在线的Sentinel都有被选为领头Sentinel的资格，换句话说，监视同一个主服务器的多个在线Sentinel中的任意一个都有可能成为领头Sentinel。
+
+· 每 次 进 行 领 头 Sentinel 选 举 之 后 ， 不 论 选 举 是 否 成 功 ， 所 有Sentinel的配置纪元（configuration epoch）的值都会自增一次。配置纪元实际上就是一个计数器，并没有什么特别的。
+·在一个配置纪元里面，所有Sentinel都有一次将某个Sentinel设置为局部领头Sentinel的机会，并且局部领头一旦设置，在这个配置纪元里面就不能再更改。
+· 每 个 发 现 主 服 务 器 进 入 客 观 下 线 的 Sentinel 都 会 要 求 其 他Sentinel将自己设置为局部领头Sentinel。
+· 当 一 个 Sentinel （ 源 Sentinel ） 向 另 一 个 Sentinel （ 目 标Sentinel）发送SENTINEL is-master-down-by-addr命令，并且命令中的runid参数不是*符号而是源Sentinel的运行ID时，这表示源Sentinel要求目标Sentinel将前者设置为后者的局部领头Sentinel。
+·Sentinel设置局部领头Sentinel的规则是先到先得：最先向目标Sentinel发送设置要求的源Sentinel将成为目标Sentinel的局部领头Sentinel，而之后接收到的所有设置要求都会被目标Sentinel拒绝。
+·目标Sentinel在接收到SENTINEL is-master-down-by-addr命令之后，将向源Sentinel返回一条命令回复，回复中的leader_runid参 数 和 leader_epoch 参 数 分 别 记 录 了 目 标 Sentinel 的 局 部 领 头Sentinel的运行ID和配置纪元。
+·源Sentinel在接收到目标Sentinel返回的命令回复之后，会检查回复中leader_epoch参数的值和自己的配置纪元是否相同，如果相同的话，那么源Sentinel继续取出回复中的leader_runid参数，如果leader_runid参数的值和源Sentinel的运行ID一致，那么表示目标Sentinel将源Sentinel设置成了局部领头Sentinel。
+·如果有某个Sentinel被半数以上的Sentinel设置成了局部领头Sentinel，那么这个Sentinel成为领头Sentinel。举个例子，在一个由 10 个 Sentinel 组 成 的 Sentinel 系 统 里 面 ， 只 要 有 大 于等 于10/2+1=6个Sentinel将某个Sentinel设置为局部领头Sentinel，那么被设置的那个Sentinel就会成为领头Sentinel。
+·因为领头Sentinel的产生需要半数以上Sentinel的支持，并且每个Sentinel在每个配置纪元里面只能设置一次局部领头Sentinel，所以在一个配置纪元里面，只会出现一个领头Sentinel。
+·如果在给定时限内，没有一个Sentinel被选举为领头Sentinel，那么各个Sentinel将在一段时间之后再次进行选举，直到选出领头Sentinel为止。
+
+故障转移
+
+在选举产生出领头Sentinel之后，领头Sentinel将对已下线的主服务器执行故障转移操作，该操作包含以下三个步骤：
+1）在已下线主服务器属下的所有从服务器里面，挑选出一个从服务器，并将其转换为主服务器。
+2）让已下线主服务器属下的所有从服务器改为复制新的主服务器。
+3）将已下线主服务器设置为新的主服务器的从服务器，当这个旧的主服务器重新上线时，它就会成为新的主服务器的从服务器。
+
+选出新的主服务器
+
+故障转移操作第一步要做的就是在已下线主服务器属下的所有从服务器中，挑选出一个状态良好、数据完整的从服务器，然后向这个从服务器发送SLAVEOF no one命令，将这个从服务器转换为主服务器。
+
+新的主服务器是怎样挑选出来的
+
+领头Sentinel会将已下线主服务器的所有从服务器保存到一个列表里面，然后按照以下规则，一项一项地对列表进行过滤：
+
+1）删除列表中所有处于下线或者断线状态的从服务器，这可以保证列表中剩余的从服务器都是正常在线的。
+2）删除列表中所有最近五秒内没有回复过领头Sentinel的INFO命令的从服务器，这可以保证列表中剩余的从服务器都是最近成功进行过通信的。
+3）删除所有与已下线主服务器连接断开超过down-after-milliseconds*10毫秒的从服务器：down-after-milliseconds选项指定了判断主服务器下线所需的时间，而删除断开时长超过down-after-milliseconds*10毫秒的从服务器，则可以保证列表中剩余的从服务器都没有过早地与主服务器断开连接，换句话说，列表中剩余的从服务器保存的数据都是比较新的。
+
+之后，领头Sentinel将根据从服务器的优先级，对列表中剩余的从服务器进行排序，并选出其中优先级最高的从服务器。
+
+如果有多个具有相同最高优先级的从服务器，那么领头Sentinel将按照从服务器的复制偏移量，对具有相同最高优先级的所有从服务器进行排序，并选出其中偏移量最大的从服务器（复制偏移量最大的从服务器就是保存着最新数据的从服务器）。
+最后，如果有多个优先级最高、复制偏移量最大的从服务器，那么领头Sentinel将按照运行ID对这些从服务器进行排序，并选出其中运行ID最小的从服务器。
+
+修改从服务器的复制目标
+
+当新的主服务器出现之后，领头Sentinel下一步要做的就是，让已下线主服务器属下的所有从服务器去复制新的主服务器，这一动作可以通过向从服务器发送SLAVEOF命令来实现.
+
+将旧的主服务器变为从服务器
+
+故障转移操作最后要做的是，将已下线的主服务器设置为新的主服务器的从服务器因为旧的主服务器已经下线，所以这种设置是保存在server1对应的实例结构里面的，当server1重新上线时，Sentinel就会向它发送SLAVEOF命令，让它成为server2的从服务器。
+
+### 集群
+
+Redis集群是Redis提供的分布式数据库方案，集群通过分片（sharding）来进行数据共享，并提供复制和故障转移功能。
+
+本节将对集群的节点、槽指派、命令执行、重新分片、转向、故障转移、消息等各个方面进行介绍。
+
+节点
+
+一个Redis集群通常由多个节点（node）组成，在刚开始的时候，每个节点都是相互独立的，它们都处于一个只包含自己的集群当中，要组建一个真正可工作的集群，我们必须将各个独立的节点连接起来，构成一个包含多个节点的集群。
+
+连接各个节点的工作可以使用`CLUSER MEET <ip> <port>`命令来完成
+
+跟一个节点发生CLUSER MEET命令可以让node节点与ip和port所指定的节点握手,当握手成功后node节点就会将ip和port所指定的节点添加到node节点所在的集群中.
+
+启动节点
+
+一个节点就是一个运行在集群模式下的Redis服务器，Redis服务器在启动时会根据cluster-enabled配置选项是否为yes来决定是否开启服务器的集群模式
+
+节点会继续使用所有在单机模式中使用的服务器组件, 比如说会继续使用文件事件处理器来处理命令请求和返回命令请求...
+
+集群数据结构
+
+clusterNode结构保存了一个节点的当前状态,比如节点创建的时间,节点的名字,节点当前的配置纪元,节点的IP地址和端口号等,每个节点都会使用clusterNode结构来记录自己的状态,并为集群中的所有其他节点都创建一个相应的clusterNode结构,以此来记录其他节点的状态.
+```c
+struct clusterNode {
+    //创建节点的时间
+    mstime_t ctime;
+    //节点的名字，由40个十六进制字符组成
+    //例如68eef66df23420a5862208ef5b1a7005b806f2ff
+    char name[REDIS_CLUSTER_NAMELEN];
+    //节点标识
+    //使用各种不同的标识值记录节点的角色（比如主节点或者从节点），
+    //以及节点目前所处的状态（比如在线或者下线）。
+    int flags;
+    //节点当前的配置纪元，用于实现故障转移
+    uint64_t configEpoch;
+    //节点的IP地址
+    char ip[REDIS_IP_STR_LEN];
+    //节点的端口号
+    int port;
+    //保存连接节点所需的有关信息
+    clusterLink *link;
+    // ...
+};
+```
+link属性对应的是clusterLink结构,该结构保存的其实是连接节点所需要的有关信息,比如socket描述符,输入缓冲区和输出缓冲区:
+```c
+typedef struct clusterLink {
+    //连接的创建时间
+    mstime_t ctime;
+    // TCP套接字描述符
+    int fd;
+    //输出缓冲区，保存着等待发送给其他节点的消息（message）。
+    sds sndbuf;
+    //输入缓冲区，保存着从其他节点接收到的消息。
+    sds rcvbuf;
+    //与这个连接相关联的节点，如果没有的话就为NULL
+    struct clusterNode *node;
+} clusterLink;
+```
+redisClient和clusterLink结构都有自己的socket描述符,输入输出缓冲区,区别在于,redisClient的socket是连接客户端的,clusterLink的socket是连接集群节点的.
+
+最后，每个节点都保存着一个clusterState结构，这个结构记录了在当前节点的视角下，集群目前所处的状态，例如集群是在线还是下线，集群包含多少个节点，集群当前的配置纪元，诸如此类
+```c
+typedef struct clusterState {
+    //指向当前节点的指针
+    clusterNode *myself;
+    //集群当前的配置纪元，用于实现故障转移
+    uint64_t currentEpoch;
+    //集群当前的状态：是在线还是下线
+    int state;
+    //集群中至少处理着一个槽的节点的数量
+    int size;
+    //集群节点名单（包括myself节点）
+    //字典的键为节点的名字，字典的值为节点对应的clusterNode结构
+    dict *nodes;
+    // ...
+} clusterState;
+```
+CLUSTER MEET命令的实现
+
+通过向节点A发送CLUSTER MEET命令，客户端可以让接收命令的节点A将另一个节点B添加到节点A当前所在的集群里面
+1）节点A会为节点B创建一个clusterNode结构，并将该结构添加到自己的clusterState.nodes字典里面。
+2）之后，节点A将根据CLUSTER MEET命令给定的IP地址和端口号，向节点B发送一条MEET消息（message）。
+3）如果一切顺利，节点B将接收到节点A发送的MEET消息，节点B会为节点A创建一个clusterNode结构，并将该结构添加到自己的clusterState.nodes字典里面。
+4）之后，节点B将向节点A返回一条PONG消息。
+5）如果一切顺利，节点A将接收到节点B返回的PONG消息，通过这条PONG消息节点A可以知道节点B已经成功地接收到了自己发送的MEET消息。
+6）之后，节点A将向节点B返回一条PING消息。
+7）如果一切顺利，节点B将接收到节点A返回的PING消息，通过这条PING消息节点B可以知道节点A已经成功地接收到了自己返回的PONG消息，握手完成。
+
+之后，节点A会将节点B的信息通过Gossip协议传播给集群中的其他节点，让其他节点也与节点B进行握手，最终，经过一段时间之后，节点B会被集群中的所有节点认识。
+
+#### 槽指派
+
+Redis集群通过分片的形式来保存redis数据库中的键值对,集群中整个数据库被分成16384个槽,数据库中的每个键都数据这些槽中的一个,集群中的每个节点可以处理0-16384个槽.
+
+当数据库中的16384个槽都有节点处理时,集群处于上线状态,相反若有一个槽没有被处理,则整个集群是下线状态.
+
+通过向节点发送`CLUSTER ADDSLOTS`命令，我们可以将一个或多个槽指派（assign）给节点负责.
+```c
+CLUSTER ADDSLOTS <slot> [slot ...]
+127.0.0.1:7000> CLUSTER ADDSLOTS 0 1 2 3 4 ... 5000
+OK
+127.0.0.1:7000> CLUSTER NODES
+9dfb4c4e016e627d9769e4c9bb0d4fa208e65c26 127.0.0.1:7002 master - 0 1388316664849 0 connected
+68eef66df23420a5862208ef5b1a7005b806f2ff 127.0.0.1:7001 master - 0 1388316665850 0 connected
+51549e625cfda318ad27423a31e7476fe3cd2939 :0 myself,master - 0 0 0 connected 0-5000
+// 为了让7000、7001、7002三个节点所在的集群进入上线状态，我们继续执行以下命令，将槽5001至槽10000指派给节点7001负责：
+127.0.0.1:7001> CLUSTER ADDSLOTS 5001 5002 5003 5004 ... 10000
+OK
+127.0.0.1:7002> CLUSTER ADDSLOTS 10001 10002 10003 10004 ... 16383
+OK
+```
+数据库中的16384个槽都已经被指派给了相应的节点，集群进入上线状态
+
+记录节点的槽指派信息
+
+clusterNode结构的slots属性和numslot属性记录了节点负责处理哪些槽：
+```c
+struct clusterNode {
+    // ...
+    unsigned char slots[16384/8];
+    int numslots;
+};
+```
+如果slots数组在索引i上的二进制位的值为1，那么表示节点负责处理槽i。如果slots数组在索引i上的二进制位的值为0，那么表示节点不负责处理槽i。
+
+至于numslots属性则记 录 节 点 负 责 处 理 的 槽 的 数 量 ， 也 即 是slots数组中值为1的二进制位的数量
+
+传播节点的槽指派信息
+
+一个节点除了将自己负责处理的槽记录在clusterNode结构的slots属性和numslots,它还会将自己的slots数组通过消息发送给集群中的其他节点，以此来告知其他节点自己目前负责处理哪些槽。
+
+当节点A通过消息接收到了B的slots数组,节点A会从自己的clusterState.nodes字典中查找节点B对应的clusterNode结构,并对结构中的slots数组进行保存或更新.
+
+因为集群中的节点都会将自己的slots数组通过消息发送给集群中的其他节点,并且每个接收到slots数组的节点都会将数组保存到相应节点的clusterNode结构中,因此，集群中的每个节点都会知道数据库中的16384个槽分别被指派给了集群中的哪些节点。
+
+记录集群所有槽的指派信息
+
+clusterState结构中的slots数组记录了集群中所有16384个槽的指派信息：
+```c
+typedef struct clusterState {
+    // ...
+    clusterNode *slots[16384];
+    // ...
+} clusterState;
+```
+slots 数 组 包 含 16384 个 项 ， 每 个 数 组 项 都 是 一 个 指 向clusterNode结构的指针：
+- 如果slots[i]指针指向NULL，那么表示槽i尚未指派给任何节点。
+- 如果slots[i]指针指向一个clusterNode结构，那么表示槽i已经指派给了clusterNode结构所代表的节点
+
+如果只将槽指派信息保存在各个节点的clusterNode.slots数组里，会出现一些无法高效地解决的问题，而clusterState.slots数组的存在解决了这些问题
+
+如果节点只使用clusterNode.slots数组来记录槽的指派信息，那么为了知道槽i是否已经被指派，或者槽i被指派给了哪个节点，程序需要遍历clusterState.nodes字典中的所有clusterNode结构，检查这些结构的slots数组，直到找到负责处理槽i的节点为止，这个过程的复 杂 度 为 O （ N ） ， 其 中 N 为 clusterState.nodes 字 典 保 存 的clusterNode结构的数量。
+
+而通过将所有槽的指派信息保存在clusterState.slots数组里面，程序要检查槽i是否已经被指派，又或者取得负责处理槽i的节点，只需要访问clusterState.slots[i]的值即可，这个操作的复杂度仅为O（1）。
+
+CLUSTER ADDSLOTS命令的实现
+
+CLUSTER ADDSLOTS命令接受一个或多个槽作为参数，并将所有输入的槽指派给接收该命令的节点负责,若输入的槽有任何一个槽有节点,那么返回错误.
+
+最后，在CLUSTER ADDSLOTS命令执行完毕之后，节点会通过发送消息告知集群中的其他节点，自己目前正在负责处理哪些槽。
+
+#### 在集群中执行命令
+
+在对数据库中的16384个槽都进行了指派之后，集群就会进入上线状态，这时客户端就可以向集群中的节点发送数据命令了。当客户端向节点发送与数据库键有关的命令时，接收命令的节点会计算出命令要处理的数据库键属于哪个槽，并检查这个槽是否指派给了自己：
+- 如果键所在的槽正好就指派给了当前节点，那么节点直接执行这个命令。
+- 如果键所在的槽并没有指派给当前节点，那么节点会向客户端返回一个MOVED错误，指引客户端转向（redirect）至正确的节点，并再次发送之前想要执行的命令。
+
+计算键属于哪个槽
+
+节点使用以下算法来计算给定键key属于哪个槽：
+```py
+def slot_number(key):
+return CRC16(key) & 16383
+```
+其中CRC16（key）语句用于计算键key的CRC-16校验和，而&16383语句则用于计算出一个介于0至16383之间的整数作为键key的槽号。
+
+使用`CLUSTER KEYSLOT <key>`命令可以查看一个给定键属于哪个槽：
+```c
+127.0.0.1:7000> CLUSTER KEYSLOT "date"
+(integer) 2022
+127.0.0.1:7000> CLUSTER KEYSLOT "msg"
+(integer) 6257
+```
+
+判断槽是否由当前节点负责处理
+
+当节点计算出键所属的槽i之后，节点就会检查自己在clusterState.slots数组中的项i，判断键所在的槽是否由自己负责
+
+MOVED错误
+
+当节点发现键所在的槽并非由自己负责处理的时候，节点就会向客户端返回一个MOVED错误，指引客户端转向至正在负责槽的节点。
+```c
+MOVED <slot> <ip>:<port>
+```
+一个客户端通常会与集群中多个节点建立socket连接,而所谓的节点转向实际上就是换一个socket来发送命令
+
+如果客户端还没有与想要转向的节点建立socket连接,那么客户端会先根据MOVED错误提供的IP地址和端口号来建立连接,再进行转向.
+
+集群模式的redis-cli客户端在接收到MOVED错误时，并不会打印出MOVED错误，而是根据MOVED错误自动进行节点转向，并打印出转向信息，所以我们是看不见节点返回的MOVED错误的.
+
+#####  节点数据库的实现
+集群节点保存键值对以及键值对的过期方式与Redis单机保存键值对过期时间的方式完全相同.
+
+不同的是,节点只能使用0号数据库
+
+另外，除了将键值对保存在数据库里面之外，节点还会用clusterState结构中的slots_to_keys跳跃表来保存槽和键之间的关系
+
+### 重新分片
+
+Redis集群的重新分片操作可以将任意数量已经指派给某个节点的槽指派给另一个节点,并且相关槽所属的键值对也会从源节点被移动到目标节点.
+
+重新分片操作可以在线进行,在重新分片过程中,集群不需要下线,而且源节点和目标节点都可以继续处理命令请求.
+
+重新分片的实现原理
+
+Redis集群的重新分片操作其实是由edis的集群管理软件redis-trib负责执行的，Redis提供了进行重新分片所需的所有命令，而redis-trib则通过向源节点和目标节点发送命令来进行重新分片操作。
+
+redis-trib对集群的单个槽slot进行重新分片的步骤如下：
+
+1. 对目标节点发送`CLUSTER SETSLOT<slot>IMPORTING<source_id>命令`让目标节点准备好从源节点导入属于槽的键值对
+2. redis-trib 对 源 节 点 发 送 `CLUSTER SETSLOT<slot>MIGRATING<target_id>`命令，让源节点准备好将属于槽slot的键值对迁移（migrate）至目标节点。
+3. redis-trib向源节点发送`CLUSTER GETKEYSINSLOT<slot><count>`命令，获得最多count个属于槽slot的键值对的键名（key name）。
+4. 对于步骤3获得的每个键名，redis-trib都向源节点发送一个`MIGRATE<target_ip><target_port><key_name>0<timeout>`命令，将被选中的键原子地从源节点迁移至目标节点。
+5. 重复3-4直到所有的键值对被迁移完毕
+6. redis-trib 向 集 群 中 的 任 意 一 个 节 点 发 送 `CLUSTERSETSLOT<slot>NODE<target_id>`命令，将槽slot指派给目标节点，这一指派信息会通过消息发送至整个集群，最终集群中的所有节点都会知槽slot已经指派给了目标节点。
+
+### ASK错误
+
+在进行重新分片期间，源节点向目标节点迁移一个槽的过程中，可能会出现这样一种情况：属于被迁移槽的一部分键值对保存在源节点里面，而另一部分键值对则保存在目标节点里面。
+
+当客户端向源节点发送一个与数据库键有关的命令，并且命令要处理的数据库键恰好就属于正在被迁移的槽时, 源节点会优先从自己的数据库里查找键,如果找到的话,直接执行客户端发送的命令,相反如果源节点没能在自己的数据库里找到,就可能已经迁移至目标节点,源节点就向客户端返回一个ASK错误,指引客户端转向正在导入槽的目标节点,并且再次发送之前想要发送的命令
+
+和接到MOVED错误时的情况类似，集群模式的redis-cli在接到ASK错误时也不会打印错误，而是自动根据错误提供的IP地址和端口进行转向动作。如果想看到节点发送的ASK错误的话，可以使用单机模式的redis-cli客户端
+
+
+CLUSTER SETSLOT IMPORTING命令的实现
+
+clusterState结构的importing_slots_from数组记录了当前节点正在从其他节点导入的槽：
+
+如 果 importing_slots_from[i] 的 值 不 为 NULL ， 而 是 指 向 一 个clusterNode结构，那么表示当前节点正在从clusterNode所代表的节点导入槽i。
+
+在对集群进行重新分片的时候，向目标节点发送命令：
+```
+CLUSTER SETSLOT <i> IMPORTING <source_id>
+```
+可以将目标节点clusterState.importing_slots_from[i]的值设置为source_id所代表节点的clusterNode结构。
+
+CLUSTER SETSLOT MIGRATING命令的实现
+
+clusterState结构的migrating_slots_to数组记录了当前节点正在迁移至其他节点的槽
+
+如 果 migrating_slots_to[i] 的 值 不 为 NULL ， 而 是 指 向 一 个clusterNode结构，那么表示当前节点正在将槽i迁移至clusterNode所代表的节点。在对集群进行重新分片的时候，向源节点发送命令
+```
+CLUSTER SETSLOT <i> MIGRATING <target_id>
+```
+
+ASK错误
+
+如果节点收到一个键key的命令请求,并且键key所属的槽i正好指派给了当前节点,那么就尝试从节点自己的数据库里查找key,如果找到了节点就直接执行客户端发送的命令.
+
+与此相反，如果节点没有在自己的数据库里找到键key，那么节点会检查自己的clusterState.migrating_slots_to[i]，看键key所属的槽i是否正在进行迁移，如果槽i的确在进行迁移的话，那么节点会向客户端发送一个ASK错误，引导客户端到正在导入槽i的节点去查找键key。
+
+ASKING命令
+
+在一般情况下，如果客户端向节点发送一个关于槽i的命令，而槽i又没有指派给这个节点的话，那么节点将向客户端返回一个MOVED错误；但是，如果节点的clusterState.importing_slots_from[i]显示节点正在导入槽i，并且发送命令的客户端带有REDIS_ASKING标识，那么节点将破例执行这个关于槽i的命令一次。
+
+### 复制与故障转移
+Redis集群中的节点分为主节点（master）和从节点（slave），其中主节点用于处理槽，而从节点则用于复制某个主节点，并在被复制的主节点下线时，代替下线主节点继续处理命令请求。
+
+这时如果一个主节点下线,那么集群仍在正常工作的几个节点将从其从节点中选择选举出一个新节点作为新的主节点,这个新节点将接管原来节点处理的槽,并继续处理客户端的命令请求, 并且原主机的从主机也会改为复制新主机.
+
+此时如果原主节点重新上线,它也会成为新节点的从节点.
+
+设置从节点
+
+向一个节点发送命令：`CLUSTER REPLICATE <node_id>`
+
+可以让接收命令的节点成为node_id所指定节点的从节点，并开始对主节点进行复制
+
+接收到该命令的节点首先会在自己的clusterState.nodes字典中找到node_id 所 对 应 节 点 的 clusterNode 结 构 ， 并 将 自 己 的clusterState.myself.slaveof指针指向这个结构，以此来记录这个节点正在复制的主节点
+
+然后节点会修改自己在clusterState.myself.flags中的属性，关闭原本的REDIS_NODE_MASTER标识，打开REDIS_NODE_SLAVE标识，表示这个节点已经由原来的主节点变成了从节点。
+
+最后节点会调用复制代码,对指定节点进行复制.
+
+故障检测
+
+集群中每个节点会定期向集群中的其他节点发送PING消息,监测对方是否在线,如果接收PING的节点没有在规定时间内返回PONG,那么发送PING消息的节点就会将接收PING消息的节点标记为疑似下线（probablefail，PFAIL）.
+
+集群中的各个节点会通过相互发送消息来交换集群中各个节点的消息,例如某个节点是否处于在线状态,疑似下线状态（PFAIL），还是已下线状态（FAIL）。
+
+当一个主节点A通过消息得知主节点B认为主节点C进入了疑似下线状态时，主节点A会在自己的clusterState.nodes字典中找到主节点C所对应的clusterNode结构，并将主节点B的下线报告（failurereport）添加到clusterNode结构的fail_reports链表里面
+
+如果一个集群中半数以上负责槽的主节点都将节点x报告为疑似下线,那么这个主节点将x节点标记为下线,并且将x下线的消息向集群广播,所有收到这条FAIL消息的节点都会立即将主节点x标记为已下线。
+
+故障转移
+
+当一个从节点发现自己正在复制的主节点进入了已下线状态时，从节点将开始对下线主节点进行故障转移，以下是故障转移的执行步骤
+
+1）复制下线主节点的所有从节点里面，会有一个从节点被选中。点。
+3）新的主节点会撤销所有对已下线主节点的槽指派，并将这些槽全部指派给自己。
+4）新的主节点向集群广播一条PONG消息，这条PONG消息可以让集群中的其他节点立即知道这个节点已经由从节点变成了主节点，并且这个主节点已经接管了原本由已下线节点负责处理的槽。
+5）新的主节点开始接收和自己负责处理的槽有关的命令请求，故障转移完成。
+
+选举新的主节点
+
+新的主节点是通过选举产生的。
+
+1）集群的配置纪元是一个自增计数器，它的初始值为0。
+2）当集群里的某个节点开始一次故障转移操作时，集群配置纪元的值会被增一。
+3）对于每个配置纪元，集群里每个负责处理槽的主节点都有一次投票的机会，而第一个向主节点要求投票的从节点将获得主节点的投票。
+4）当从节点发现自己正在复制的主节点进入已下线状态时，从节点会向集群广播一条CLUSTERMSG_TYPE_FAILOVER_AUTH_REQUEST消息，要求所有收到这条消息、并且具有投票权的主节点向这个从节点投票。
+5）如果一个主节点具有投票权（它正在负责处理槽），并且这个主节点尚未投票给其他从节点，那么主节点将向要求投票的从节点返回一条CLUSTERMSG_TYPE_FAILOVER_AUTH_ACK消息，表示这个主节点支持从节点成为新的主节点。
+6 ） 每 个 参 与 选 举 的 从 节 点 都 会 接 收CLUSTERMSG_TYPE_FAILOVER_AUTH_ACK消息，并根据自己收到了多少条这种消息来统计自己获得了多少主节点的支持。
+7）如果集群里有N个具有投票权的主节点，那么当一个从节点收集到大于等于N/2+1张支持票时，这个从节点就会当选为新的主节点。
+8）因为在每一个配置纪元里面，每个具有投票权的主节点只能投一次票，所以如果有N个主节点进行投票，那么具有大于等于N/2+1张支持票的从节点只会有一个，这确保了新的主节点只会有一个。
+9）如果在一个配置纪元里面没有从节点能收集到足够多的支持票，那么集群进入一个新的配置纪元，并再次进行选举，直到选出新的主节点为止。这个选举新主节点的方法和第16章介绍的选举领头Sentinel的方法非常相 似，因为两者都是基于Raft算法的领头选举leade relection）方法来实现的。
+
+### 消息
+
+集群中的各个节点通过发送和接收消息（message）来进行通信，我们称发送消息的节点为发送者（sender），接收消息的节点为接收者（receiver）
+
+节点发送的消息主要有以下五种：
+
+- MEET消息：当发送者接到客户端发送的CLUSTER MEET命令时，发送者会向接收者发送MEET消息，请求接收者加入到发送者当前所处的集群里面。
+- PING消息：集群里的每个节点默认每隔一秒钟就会从已知节点列表中随机选出五个节点，然后对这五个节点中最长时间没有发送过PING消息的节点发送PING消息，以此来检测被选中的节点是否在线。
+- PONG消息：当接收者收到发送者发来的MEET消息或者PING消息时，为了向发送者确认这条MEET消息或者PING消息已到达，接收者会向发送者返回一条PONG消息。
+- FAIL消息：当一个主节点A判断另一个主节点B已经进入FAIL状态时，节点A会向集群广播一条关于节点B的FAIL消息，所有收到这条消息的节点都会立即将节点B标记为已下线。
+- PUBLISH消息：当节点接收到一个PUBLISH命令时，节点会执行这 个 命 令 ， 并 向 集 群 广 播 一 条 PUBLISH 消 息 ， 所 有 接 收 到 这 条PUBLISH消息的节点都会执行相同的PUBLISH命令。
+
+一条消息由消息头（header）和消息正文（data）组成，接下来的内容将首先介绍消息头，然后再分别介绍上面提到的五种不同类型的消息正文。
+
+#### 消息头
+节点发送的所有消息都由一个消息头包裹，消息头除了包含消息正文之外，还记录了消息发送者自身的一些信息，因为这些信息也会被消息接收者用到，所以严格来讲，我们可以认为消息头本身也是消息的一部分。
+
+```c
+typedef struct {
+    //消息的长度（包括这个消息头的长度和消息正文的长度）
+    uint32_t totlen;
+    //消息的类型
+    uint16_t type;
+    //消息正文包含的节点信息数量
+    //只在发送MEET PING PONG 这三种Gossip 协议消息时使用
+    uint16_t count;
+    //发送者所处的配置纪元
+    uint64_t currentEpoch;
+    //如果发送者是一个主节点，那么这里记录的是发送者的配置纪元
+    // 如果发送者是一个从节点，那么这里记录的是发送者正在复制的主节点的配置纪元
+    uint64_t configEpoch;
+    //发送者的名字（ID）
+    char sender[REDIS_CLUSTER_NAMELEN];
+    //发送者目前的槽指派信息
+    unsigned char myslots[REDIS_CLUSTER_SLOTS/8];
+    //如果发送者是一个从节点，那么这里记录的是发送者正在复制的主节点的名字
+    //如果发送者是一个主节点，那么这里记录的是REDIS_NODE_NULL_NAME
+    //（一个40字节长，值全为0的字节数组）
+    char slaveof[REDIS_CLUSTER_NAMELEN];
+    //发送者的端口号
+    uint16_t port;
+    //发送者的标识值
+    uint16_t flags;
+    //发送者所处集群的状态
+    unsigned char state;
+    //消息的正文（或者说，内容）
+    union clusterMsgData data;
+} clusterMsg;
+```
+clusterMsg.data属性指向联合cluster.h/clusterMsgData，这个联合就是消息的正文：
+```c
+union clusterMsgData {
+    // MEET、PING、PONG消息的正文
+    struct {
+        //每条MEET、PING、PONG消息都包含两个
+        // clusterMsgDataGossip结构
+        clusterMsgDataGossip gossip[1];
+    } ping;
+    // FAIL消息的正文
+    struct {
+        clusterMsgDataFail about;
+    } fail;
+    // PUBLISH消息的正文
+    struct {
+        clusterMsgDataPublish msg;
+    } publish;
+    //其他消息的正文...
+};
+```
+
+MEET、PING、PONG消息的实现
+
+Redis集群中的各个节点通过Gossip协议来交换各自关于不同节点的状态信息，其中Gossip协议由MEET、PING、PONG三种消息实现，这三种消息的正文都由两个cluster.h/clusterMsgDataGossip结构组成：
+```c
+union clusterMsgData {
+// ...
+// MEET、PING和PONG消息的正文
+struct {
+//每条MEET、PING、PONG消息都包含两个
+// clusterMsgDataGossip结构
+clusterMsgDataGossip gossip[1];
+} ping;
+//其他消息的正文...
+};
+```
+当接收者收到MEET、PING、PONG消息时，接收者会访问消息正文中的两个clusterMsgDataGossip结构，并根据自己是否认识clusterMsgDataGossip结构中记录的被选中节点来选择进行哪种操作：
+- 如果被选中节点不存在于接收者的已知节点列表，那么说明接收者是第一次接触到被选中节点，接收者将根据结构中记录的IP地址和端口号等信息，与被选中节点进行握手。
+- 如果被选中节点已经存在于接收者的已知节点列表，那么说明接收者之前已经与被选中节点进行过接触，接收者将根据clusterMsgDataGossip结构记录的信息，对被选中节点所对应的clusterNode结构进行更新。
+
+举个发送PING消息和返回PONG消息的例子，假设在一个包含A、B、C、D、E、F六个节点的集群里：
+·节点A向节点D发送PING消息，并且消息里面包含了节点B和节点C的信息，当节点D收到这条PING消息时，它将更新自己对节点B和节点C的认识。
+·之后，节点D将向节点A返回一条PONG消息，并且消息里面包含了节点E和节点F的消息，当节点A收到这条PONG消息时，它将更新自己对节点E和节点F的认识。
+
+FAIL消息的实现
+
+当集群里的主节点A将主节点B标记为已下线（FAIL）时，主节点A将向集群广播一条关于主节点B的FAIL消息，所有接收到这条FAIL消息的节点都会将主节点B标记为已下线。
+
+在集群的节点数量比较大的情况下，单纯使用Gossip协议来传播节点的已下线信息会给节点的信息更新带来一定延迟，因为Gossip协议消息通常需要一段时间才能传播至整个集群，而发送FAIL消息可以让集群里的所有节点立即知道某个主节点已下线，从而尽快判断是否需要将集群标记为下线，又或者对下线主节点进行故障转移。
+
+FAIL消息的正文由cluster.h/clusterMsgDataFail结构表示，这个结构只包含一个nodename属性，该属性记录了已下线节点的名字：
+```c
+typedef struct {
+    char nodename[REDIS_CLUSTER_NAMELEN];
+} clusterMsgDataFail;
+```
+因为集群里的所有节点都有一个独一无二的名字，所以FAIL消息里面只需要保存下线节点的名字，接收到消息的节点就可以根据这个名字来判断是哪个节点下线了。
+
+PUBLISH消息的实现
+
+当客户端向集群中的某个节点发送命令：
+```c
+PUBLISH <channel> <message>
+```
+的时候,接收到PUBLISH命令的节点不仅会向channel频道发送消息message，它还会向集群广播一条PUBLISH消息，所有接收到这条PUBLISH消息的节点都会向channel频道发送message消息, 将导致集群中的所有节点都向channel频道发送message消息。
+
+PUBLISH消息的正文由cluster.h/clusterMsgDataPublish结构表示：
+```c
+typedef struct {
+    uint32_t channel_len;
+    uint32_t message_len;
+    //定义为8字节只是为了对齐其他消息结构
+    //实际的长度由保存的内容决定
+    unsigned char bulk_data[8];
+} clusterMsgDataPublish;
+```
+
+clusterMsgDataPublish 结 构 的 bulk_data 属 性 是 一 个 字 节 数组 ， 这 个 字 节 数 组 保 存 了 客 户 端 通 过 PUBLISH 命 令 发 送 给 节 点 的channel 参 数 和 message 参 数 ， 而结 构 的 channel_len 和message_len则分别保存了channel参数的长度和message参数的长度
+
+
+### Redis分布式锁问题
+Redis是如何实现分布式锁的?
+
+Redis本身可以被多个客户端访问,所以恰好是一个共享存储系统,可以来保存分布式锁,而且redis的读写性能很高,足够应付高并发场景了.
+
+Redis的SET命令有个NX参数可以实现在key不存在时插入,所以可以用它实现分布式锁:
+1. key不存在,则直接插入成功
+2. key存在则插入失败
+
+我们可以看到命令是这样的
+```
+SET lock_key unique_value NX 
+expire lock_key px 10000
+
+SET lock_key unique_value NX PX 10000
+```
+选择下面一种,因为可能刚设置了锁,第二步的expire设置过期时间就失败了,所以必须合并到一步,采用第二种方式
+- lock_key 就是 key 键；
+- unique_value 是客户端生成的唯一的标识，区分来自不同客户端的锁操作；
+- NX 代表只在 lock_key 不存在时，才对 lock_key 进行设置操作；
+- PX 10000 表示设置 lock_key 的过期时间为 10s，这是为了避免客户端发生异常而无法释放锁。
+
+那么解锁呢?解锁需要1. 保证解锁的客户端是持有锁的客户端 2. 删除锁
+所以需要LUA脚本支持
+
+```lua
+// 释放锁时，先比较 unique_value 是否相等，避免锁的误释放
+if redis.call("get",KEYS[1]) == ARGV[1] then
+    return redis.call("del",KEYS[1])
+else
+    return 0
+end
+```
+
+基于 Redis 实现分布式锁有什么优缺点？
+基于 Redis 实现分布式锁的优点：
+
+    性能高效（这是选择缓存实现分布式锁最核心的出发点）。
+    实现方便。很多研发工程师选择使用 Redis 来实现分布式锁，很大成分上是因为 Redis 提供了 setnx 方法，实现分布式锁很方便。
+    避免单点故障（因为 Redis 是跨集群部署的，自然就避免了单点故障）。
+
+基于 Redis 实现分布式锁的缺点：
+
+    超时时间不好设置。如果锁的超时时间设置过长，会影响性能，如果设置的超时时间过短会保护不到共享资源。比如在有些场景中，一个线程 A 获取到了锁之后，由于业务代码执行时间可能比较长，导致超过了锁的超时时间，自动失效，注意 A 线程没执行完，后续线程 B 又意外的持有了锁，意味着可以操作共享资源，那么两个线程之间的共享资源就没办法进行保护了。
+        那么如何合理设置超时时间呢？ 我们可以基于续约的方式设置超时时间：先给锁设置一个超时时间，然后启动一个守护线程，让守护线程在一段时间后，重新设置这个锁的超时时间。实现方式就是：写一个守护线程，然后去判断锁的情况，当锁快失效的时候，再次进行续约加锁，当主线程执行完成后，销毁续约锁即可，不过这种方式实现起来相对复杂。
+
+    Redis 主从复制模式中的数据是异步复制的，这样导致分布式锁的不可靠性。如果在 Redis 主节点获取到锁后，在没有同步到其他节点时，Redis 主节点宕机了，此时新的 Redis 主节点依然可以获取锁，所以多个应用服务就可以同时获取到锁。
+
+#### Redis 如何解决集群情况下分布式锁的可靠性？
+
+Redis 官方已经设计了一个分布式锁算法 Redlock（红锁）。
+
+它是基于多个 Redis 节点的分布式锁，即使有节点发生了故障，锁变量仍然是存在的，客户端还是可以完成锁操作。
+
+Redlock 算法的基本思路，是让客户端和多个独立的 Redis 节点依次请求申请加锁，如果客户端能够和半数以上的节点成功地完成加锁操作，那么我们就认为，客户端成功地获得分布式锁，否则加锁失败。
+
+Redlock 算法加锁三个过程：
+
+    第一步是，客户端获取当前时间。
+
+    第二步是，客户端按顺序依次向 N 个 Redis 节点执行加锁操作：
+        加锁操作使用 SET 命令，带上 NX，EX/PX 选项，以及带上客户端的唯一标识。
+        如果某个 Redis 节点发生故障了，为了保证在这种情况下，Redlock 算法能够继续运行，我们需要给「加锁操作」设置一个超时时间（不是对「锁」设置超时时间，而是对「加锁操作」设置超时时间）。
+
+    第三步是，一旦客户端完成了和所有 Redis 节点的加锁操作，客户端就要计算整个加锁过程的总耗时（t1）。
+
+加锁成功要同时满足两个条件（简述：如果有超过半数的 Redis 节点成功的获取到了锁，并且总耗时没有超过锁的有效时间，那么就是加锁成功）：
+
+    条件一：客户端从超过半数（大于等于 N/2+1）的 Redis 节点上成功获取到了锁；
+    条件二：客户端获取锁的总耗时（t1）没有超过锁的有效时间。
+
+加锁成功后，客户端需要重新计算这把锁的有效时间，计算的结果是「锁的最初有效时间」减去「客户端为获取锁的总耗时（t1）」。
+
+加锁失败后，客户端向所有 Redis 节点发起释放锁的操作，释放锁的操作和在单节点上释放锁的操作一样，只要执行释放锁的 Lua 脚本就可以了。 --></div><hr class="vp-article-hr"><div class="page-info"><!----><span class="page-original-info">原创</span><span class="page-date-info" aria-label="写作日期"><svg xmlns="http://www.w3.org/2000/svg" class="icon calendar-icon" viewBox="0 0 1024 1024" fill="currentColor" aria-label="calendar icon"><path d="M716.4 110.137c0-18.753-14.72-33.473-33.472-33.473-18.753 0-33.473 14.72-33.473 33.473v33.473h66.993v-33.473zm-334.87 0c0-18.753-14.72-33.473-33.473-33.473s-33.52 14.72-33.52 33.473v33.473h66.993v-33.473zm468.81 33.52H716.4v100.465c0 18.753-14.72 33.473-33.472 33.473a33.145 33.145 0 01-33.473-33.473V143.657H381.53v100.465c0 18.753-14.72 33.473-33.473 33.473a33.145 33.145 0 01-33.473-33.473V143.657H180.6A134.314 134.314 0 0046.66 277.595v535.756A134.314 134.314 0 00180.6 947.289h669.74a134.36 134.36 0 00133.94-133.938V277.595a134.314 134.314 0 00-133.94-133.938zm33.473 267.877H147.126a33.145 33.145 0 01-33.473-33.473c0-18.752 14.72-33.473 33.473-33.473h736.687c18.752 0 33.472 14.72 33.472 33.473a33.145 33.145 0 01-33.472 33.473z"></path></svg><span><!----></span><meta property="datePublished" content="2021-11-23T00:00:00.000Z"></span><!----><span class="page-reading-time-info" aria-label="阅读时间"><svg xmlns="http://www.w3.org/2000/svg" class="icon timer-icon" viewBox="0 0 1024 1024" fill="currentColor" aria-label="timer icon"><path d="M799.387 122.15c4.402-2.978 7.38-7.897 7.38-13.463v-1.165c0-8.933-7.38-16.312-16.312-16.312H256.33c-8.933 0-16.311 7.38-16.311 16.312v1.165c0 5.825 2.977 10.874 7.637 13.592 4.143 194.44 97.22 354.963 220.201 392.763-122.204 37.542-214.893 196.511-220.2 389.397-4.661 5.049-7.638 11.651-7.638 19.03v5.825h566.49v-5.825c0-7.379-2.849-13.981-7.509-18.9-5.049-193.016-97.867-351.985-220.2-389.527 123.24-37.67 216.446-198.453 220.588-392.892zM531.16 450.445v352.632c117.674 1.553 211.787 40.778 211.787 88.676H304.097c0-48.286 95.149-87.382 213.728-88.676V450.445c-93.077-3.107-167.901-81.297-167.901-177.093 0-8.803 6.99-15.793 15.793-15.793 8.803 0 15.794 6.99 15.794 15.793 0 80.261 63.69 145.635 142.01 145.635s142.011-65.374 142.011-145.635c0-8.803 6.99-15.793 15.794-15.793s15.793 6.99 15.793 15.793c0 95.019-73.789 172.82-165.96 177.093z"></path></svg><span>大约 128 分钟</span><meta property="timeRequired" content="PT128M"></span><span class="page-category-info" aria-label="分类"><svg xmlns="http://www.w3.org/2000/svg" class="icon category-icon" viewBox="0 0 1024 1024" fill="currentColor" aria-label="category icon"><path d="M148.41 106.992h282.176c22.263 0 40.31 18.048 40.31 40.31V429.48c0 22.263-18.047 40.31-40.31 40.31H148.41c-22.263 0-40.311-18.047-40.311-40.31V147.302c0-22.263 18.048-40.31 40.311-40.31zM147.556 553.478H429.73c22.263 0 40.311 18.048 40.311 40.31v282.176c0 22.263-18.048 40.312-40.31 40.312H147.555c-22.263 0-40.311-18.049-40.311-40.312V593.79c0-22.263 18.048-40.311 40.31-40.311zM593.927 106.992h282.176c22.263 0 40.31 18.048 40.31 40.31V429.48c0 22.263-18.047 40.31-40.31 40.31H593.927c-22.263 0-40.311-18.047-40.311-40.31V147.302c0-22.263 18.048-40.31 40.31-40.31zM730.22 920.502H623.926c-40.925 0-74.22-33.388-74.22-74.425V623.992c0-41.038 33.387-74.424 74.425-74.424h222.085c41.038 0 74.424 33.226 74.424 74.067v114.233c0 10.244-8.304 18.548-18.547 18.548s-18.548-8.304-18.548-18.548V623.635c0-20.388-16.746-36.974-37.33-36.974H624.13c-20.585 0-37.331 16.747-37.331 37.33v222.086c0 20.585 16.654 37.331 37.126 37.331H730.22c10.243 0 18.547 8.304 18.547 18.547 0 10.244-8.304 18.547-18.547 18.547z"></path></svg><!--[--><span class="page-category-item clickable" role="navigation">tutorial</span><!--]--><meta property="articleSection" content="tutorial"></span><span class="page-tag-info" aria-label="标签"><svg xmlns="http://www.w3.org/2000/svg" class="icon tag-icon" viewBox="0 0 1024 1024" fill="currentColor" aria-label="tag icon"><path d="M939.902 458.563L910.17 144.567c-1.507-16.272-14.465-29.13-30.737-30.737L565.438 84.098h-.402c-3.215 0-5.726 1.005-7.634 2.913l-470.39 470.39a10.004 10.004 0 000 14.164l365.423 365.424c1.909 1.908 4.42 2.913 7.132 2.913s5.223-1.005 7.132-2.913l470.39-470.39c2.01-2.11 3.014-5.023 2.813-8.036zm-240.067-72.121c-35.458 0-64.286-28.828-64.286-64.286s28.828-64.285 64.286-64.285 64.286 28.828 64.286 64.285-28.829 64.286-64.286 64.286z"></path></svg><!--[--><span class="page-tag-item clickable" role="navigation">redis</span><!--]--><meta property="keywords" content="redis"></span></div></article></div><div class="vp-pagination"></div></div></main><aside class="vp-blog-info-wrapper"><div class="vp-blogger-info" vocab="https://schema.org/" typeof="Person"><div class="vp-blogger" style="cursor:pointer;" aria-label="个人介绍" data-balloon-pos="down" role="navigation"><!----><!----><div class="vp-blogger-description">长期持续分享学习内容</div><meta property="url" content="/intro.html"></div><div class="vp-blog-counts"><a href="/article/" class="vp-blog-count"><div class="count">42</div><div>文章</div></a><a href="/category/" class="vp-blog-count"><div class="count">14</div><div>分类</div></a><a href="/tag/" class="vp-blog-count"><div class="count">34</div><div>标签</div></a><a href="/timeline/" class="vp-blog-count"><div class="count">42</div><div>时间轴</div></a></div><div class="vp-social-medias"><a class="vp-social-media" href="https://space.bilibili.com/520711550" rel="noopener noreferrer" target="_blank" aria-label="BiliBili"><svg xmlns="http://www.w3.org/2000/svg" class="icon bilibili-icon" viewBox="0 0 1024 1024"><circle cx="512" cy="512" r="512" fill="#1296db"/><path fill="#fff" d="M745.363 177.725a47 47 0 0 1 0 66.3L702.5 286.85h44A141 141 0 0 1 887 427.512v281.25a141 141 0 0 1-141 140.626H277.25A141 141 0 0 1 137 708.763v-281.25a141 141 0 0 1 141-141h43.725l-42.788-42.825a47 47 0 1 1 66.263-66.3l99.45 99.45c2.963 2.962 5.438 6.187 7.425 9.637h120.487c1.988-3.45 4.5-6.75 7.463-9.675l99.413-99.45a47 47 0 0 1 66.3 0zm1.012 203.25h-468.75a47 47 0 0 0-46.763 43.388l-.112 3.525v281.25c0 24.712 19.125 44.962 43.387 46.724l3.488.15h468.75a47 47 0 0 0 46.763-43.387l.112-3.487v-281.25c0-26-21-47-47-46.876zm-375 93.75c26 0 47 21 47 47v47a47 47 0 1 1-93.75 0V521.6c0-26 21-47 47-47zm281.25 0c26 0 47 21 47 47v47a47 47 0 1 1-93.75 0V521.6c0-26 21-47 47-47z"/></svg></a><a class="vp-social-media" href="lixin@tutamail.com" rel="noopener noreferrer" target="_blank" aria-label="Email"><svg xmlns="http://www.w3.org/2000/svg" class="icon email-icon" viewBox="0 0 1024 1024"><circle cx="512" cy="512" r="512" fill="#1384FF"/><path fill="#fff" d="M270.077 286.233H751.99c32.933 0 59.86 24.855 60.274 55.51l-301.023 157L210.217 341.88c.207-30.723 26.927-55.717 59.86-55.717zm-59.929 115.714-.276 277.756c0 30.931 27.134 56.2 60.205 56.2H751.99c33.14 0 60.274-25.269 60.274-56.2V401.81L518.283 551.492a15.88 15.88 0 0 1-14.43 0L210.148 401.947z"/></svg></a><a class="vp-social-media" href="https://github.com/lixvyang" rel="noopener noreferrer" target="_blank" aria-label="GitHub"><svg xmlns="http://www.w3.org/2000/svg" class="icon github-icon" viewBox="0 0 1024 1024"><circle cx="512" cy="512" r="512" fill="#171515"/><path fill="#fff" d="M509.423 146.442c-200.317 0-362.756 162.42-362.756 362.8 0 160.266 103.936 296.24 248.109 344.217 18.139 3.327 24.76-7.872 24.76-17.486 0-8.613-.313-31.427-.49-61.702-100.912 21.923-122.205-48.63-122.205-48.63-16.495-41.91-40.28-53.067-40.28-53.067-32.937-22.51 2.492-22.053 2.492-22.053 36.407 2.566 55.568 37.386 55.568 37.386 32.362 55.438 84.907 39.43 105.58 30.143 3.296-23.444 12.667-39.43 23.032-48.498-80.557-9.156-165.246-40.28-165.246-179.297 0-39.604 14.135-71.988 37.342-97.348-3.731-9.178-16.18-46.063 3.556-96.009 0 0 30.46-9.754 99.76 37.19 28.937-8.048 59.97-12.071 90.823-12.211 30.807.14 61.843 4.165 90.822 12.21 69.26-46.944 99.663-37.189 99.663-37.189 19.792 49.946 7.34 86.831 3.61 96.01 23.25 25.359 37.29 57.742 37.29 97.347 0 139.366-84.82 170.033-165.637 179.013 13.026 11.2 24.628 33.342 24.628 67.182 0 48.498-.445 87.627-.445 99.521 0 9.702 6.535 20.988 24.945 17.444 144.03-48.067 247.881-183.95 247.881-344.175 0-200.378-162.442-362.798-362.802-362.798z"/></svg></a><a class="vp-social-media" href="https://twitter.com/Lixv28332301" rel="noopener noreferrer" target="_blank" aria-label="Twitter"><svg xmlns="http://www.w3.org/2000/svg" class="icon twitter-icon" viewBox="0 0 1024 1024"><circle cx="512" cy="512" r="512" fill="#3397db"/><path fill="#fff" d="M808.325 346.204c-18.128 16.702-25.664 25.257-25.664 25.257s6.518 130.151-61.715 230.362-156.427 160.296-284.542 173.128c-128.114 12.832-211.623-39.31-211.623-39.31s56.012-3.259 91.86-16.906c35.644-13.85 86.97-49.901 86.97-49.901s-72.917-22.609-99.191-47.865c-26.275-25.46-32.793-40.532-32.793-40.532l72.103-1.019s-75.77-40.532-97.36-72.306-24.44-63.141-24.44-63.141l55.4 22.405s-46.032-62.938-52.55-111.82 8.352-75.159 8.352-75.159 23.423 44.199 119.967 93.082 178.017 46.032 178.017 46.032-31.163-108.154 64.363-156.02 161.11 32.997 161.11 32.997 16.703-4.481 29.127-9.166c12.425-4.48 30.348-12.832 30.348-12.832l-29.33 52.754 45.421-4.889s-5.703 8.147-23.83 24.85z"/></svg></a><a class="vp-social-media" href="https://example.com" rel="noopener noreferrer" target="_blank" aria-label="Wechat"><svg xmlns="http://www.w3.org/2000/svg" class="icon wechat-icon" viewBox="0 0 1024 1024"><circle cx="512" cy="512" r="512" fill="#1AC88E"/><path fill="#fff" d="M827.551 578.742a176.583 176.583 0 0 0-185.685-158.379 172.942 172.942 0 0 0-186.3 158.379 172.942 172.942 0 0 0 185.686 158.379 282.169 282.169 0 0 0 65.536-10.923l60.689 32.768-16.384-54.613a166.275 166.275 0 0 0 76.458-125.611zm-245.76-27.307a21.845 21.845 0 1 1 0-43.69 24.872 24.872 0 0 1 27.307 21.845 24.872 24.872 0 0 1-27.921 21.845h.614zm121.356 0a21.845 21.845 0 1 1 0-43.69 24.872 24.872 0 0 1 27.306 21.845 24.872 24.872 0 0 1-28.512 21.845h1.206z"/><path fill="#fff" d="M623.662 400.953h21.23A222.709 222.709 0 0 0 419.772 245.6a208.145 208.145 0 0 0-223.323 189.94 182.044 182.044 0 0 0 89.201 150.483l-22.436 67.356 78.279-39.435a389.575 389.575 0 0 0 78.279 10.923h20.616a163.226 163.226 0 0 1-6.667-46.718 182.044 182.044 0 0 1 189.94-177.197zm-121.379-60.69a27.921 27.921 0 1 1 0 55.843 31.562 31.562 0 0 1-33.36-27.921 31.562 31.562 0 0 1 34.59-27.921h-1.23zM346.34 396.107a31.562 31.562 0 0 1-33.383-27.921 31.562 31.562 0 0 1 33.383-27.921 27.921 27.921 0 1 1 0 55.842z"/></svg></a></div></div><div class="vp-blog-infos"><div class="vp-blog-type-switcher"><button type="button" class="vp-blog-type-button"><div class="icon-wrapper active" aria-label="文章" data-balloon-pos="up"><svg xmlns="http://www.w3.org/2000/svg" class="icon article-icon" viewBox="0 0 1024 1024" fill="currentColor" aria-label="article icon"><path d="M853.333 938.667H170.667A42.667 42.667 0 0 1 128 896V128a42.667 42.667 0 0 1 42.667-42.667h682.666A42.667 42.667 0 0 1 896 128v768a42.667 42.667 0 0 1-42.667 42.667zm-42.666-85.334V170.667H213.333v682.666h597.334zM298.667 256h170.666v170.667H298.667V256zm0 256h426.666v85.333H298.667V512zm0 170.667h426.666V768H298.667v-85.333zm256-384h170.666V384H554.667v-85.333z"></path></svg></div></button><button type="button" class="vp-blog-type-button"><div class="icon-wrapper" aria-label="分类" data-balloon-pos="up"><svg xmlns="http://www.w3.org/2000/svg" class="icon category-icon" viewBox="0 0 1024 1024" fill="currentColor" aria-label="category icon"><path d="M148.41 106.992h282.176c22.263 0 40.31 18.048 40.31 40.31V429.48c0 22.263-18.047 40.31-40.31 40.31H148.41c-22.263 0-40.311-18.047-40.311-40.31V147.302c0-22.263 18.048-40.31 40.311-40.31zM147.556 553.478H429.73c22.263 0 40.311 18.048 40.311 40.31v282.176c0 22.263-18.048 40.312-40.31 40.312H147.555c-22.263 0-40.311-18.049-40.311-40.312V593.79c0-22.263 18.048-40.311 40.31-40.311zM593.927 106.992h282.176c22.263 0 40.31 18.048 40.31 40.31V429.48c0 22.263-18.047 40.31-40.31 40.31H593.927c-22.263 0-40.311-18.047-40.311-40.31V147.302c0-22.263 18.048-40.31 40.31-40.31zM730.22 920.502H623.926c-40.925 0-74.22-33.388-74.22-74.425V623.992c0-41.038 33.387-74.424 74.425-74.424h222.085c41.038 0 74.424 33.226 74.424 74.067v114.233c0 10.244-8.304 18.548-18.547 18.548s-18.548-8.304-18.548-18.548V623.635c0-20.388-16.746-36.974-37.33-36.974H624.13c-20.585 0-37.331 16.747-37.331 37.33v222.086c0 20.585 16.654 37.331 37.126 37.331H730.22c10.243 0 18.547 8.304 18.547 18.547 0 10.244-8.304 18.547-18.547 18.547z"></path></svg></div></button><button type="button" class="vp-blog-type-button"><div class="icon-wrapper" aria-label="标签" data-balloon-pos="up"><svg xmlns="http://www.w3.org/2000/svg" class="icon tag-icon" viewBox="0 0 1024 1024" fill="currentColor" aria-label="tag icon"><path d="M939.902 458.563L910.17 144.567c-1.507-16.272-14.465-29.13-30.737-30.737L565.438 84.098h-.402c-3.215 0-5.726 1.005-7.634 2.913l-470.39 470.39a10.004 10.004 0 000 14.164l365.423 365.424c1.909 1.908 4.42 2.913 7.132 2.913s5.223-1.005 7.132-2.913l470.39-470.39c2.01-2.11 3.014-5.023 2.813-8.036zm-240.067-72.121c-35.458 0-64.286-28.828-64.286-64.286s28.828-64.285 64.286-64.285 64.286 28.828 64.286 64.285-28.829 64.286-64.286 64.286z"></path></svg></div></button><button type="button" class="vp-blog-type-button"><div class="icon-wrapper" aria-label="时间轴" data-balloon-pos="up"><svg xmlns="http://www.w3.org/2000/svg" class="icon timeline-icon" viewBox="0 0 1024 1024" fill="currentColor" aria-label="timeline icon"><path d="M511.997 70.568c-243.797 0-441.429 197.633-441.429 441.435 0 243.797 197.632 441.429 441.43 441.429S953.431 755.8 953.431 512.002c0-243.796-197.637-441.434-441.435-441.434zm150.158 609.093-15.605 15.61c-8.621 8.615-22.596 8.615-31.215 0L472.197 552.126c-4.95-4.944-4.34-14.888-4.34-24.677V247.14c0-12.19 9.882-22.07 22.07-22.07h22.07c12.19 0 22.07 9.882 22.07 22.07v273.218l128.088 128.088c8.62 8.62 8.62 22.595 0 31.215zm0 0"></path></svg></div></button></div><div class="vp-sticky-article-wrapper"><div class="title"><svg xmlns="http://www.w3.org/2000/svg" class="icon article-icon" viewBox="0 0 1024 1024" fill="currentColor" aria-label="article icon"><path d="M853.333 938.667H170.667A42.667 42.667 0 0 1 128 896V128a42.667 42.667 0 0 1 42.667-42.667h682.666A42.667 42.667 0 0 1 896 128v768a42.667 42.667 0 0 1-42.667 42.667zm-42.666-85.334V170.667H213.333v682.666h597.334zM298.667 256h170.666v170.667H298.667V256zm0 256h426.666v85.333H298.667V512zm0 170.667h426.666V768H298.667v-85.333zm256-384h170.666V384H554.667v-85.333z"></path></svg><span class="num">42</span>文章</div><hr><ul class="vp-sticky-articles"></ul></div></div></aside></div></div><!--]--><footer class="vp-footer-wrapper"><div class="vp-footer">本站博客未经授权禁止转载</div><div class="vp-copyright">Lixin © 2020-2023</div></footer></div><!--]--><!----><!--]--></div>
+    <script type="module" src="/assets/app-9b617fb4.js" defer></script>
+  </body>
+</html>

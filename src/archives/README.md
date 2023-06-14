@@ -16,26 +16,26 @@ Go 语言教程
 
 ## Go标准库详解
 
-[Go reflect包详解](../posts/golang/std/std-reflect.md)
+[Go reflect包详解](../posts/program/golang/std/std-reflect.md)
 
-[Go Bufio包详解](../posts/golang/std/std-bufio.md)
+[Go Bufio包详解](../posts/program/golang/std/std-bufio.md)
 
-[Go flag包详解](../posts/golang/std/std-flag.md)
+[Go flag包详解](../posts/program/golang/std/std-flag.md)
 
-[Go fmt包详解](../posts/golang/std/std-fmt.md)
+[Go fmt包详解](../posts/program/golang/std/std-fmt.md)
 
-[Go log包详解](../posts/golang/std/std-log.md)
+[Go log包详解](../posts/program/golang/std/std-log.md)
 
-[Go strconv包详解](../posts/golang/std/std-strconv.md)
+[Go strconv包详解](../posts/program/golang/std/std-strconv.md)
 
-[Go time包详解](../posts/golang/std/std-time.md)
+[Go time包详解](../posts/program/golang/std/std-time.md)
 
 ## Gin 框架
 
-[深入剖析Go Gin框架](../posts/golang/tool/gin/2022-12-19-gin-framework-principle.md)
+[深入剖析Go Gin框架](../posts/program/golang/tool/gin/gin-framework-principle.md)
 
 ## Redis学习过程
 
-[Redis 学习笔记](../posts/redis/datastruct/datastruct.md)
+[Redis 学习笔记](../posts/program/redis/datastruct/datastruct.md)
 
-[缓存一致性](../posts/redis/cache-consistency/cache-consistency.md)
+[缓存一致性](../posts/program/redis/cache-consistency/cache-consistency.md)

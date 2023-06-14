@@ -77,6 +77,7 @@ Docker Registry 公开服务是开放给用户使用、允许用户管理镜像�
 之前提到过，Docker Hub 上有大量的高质量的镜像可以用，这里我们就说一下怎么获取这些镜像。
 
 从Docker中获取镜像的命令是`docker pull`命令,其格式为
+
 ```shell
 docker pull [选项] [Docker Registry 地址[:端口号]/]仓库名[:标签]
 ```
@@ -87,6 +88,7 @@ Docker 镜像仓库地址：地址的格式一般是 <域名/IP>[:端口号]。�
 仓库名：如之前所说，这里的仓库名是两段式名称，即 <用户名>/<软件名>。对于 Docker Hub，如果不给出用户名，则默认为 library，也就是官方镜像。
 
 比如：
+
 ```shell
 $ docker pull ubuntu:18.04
 18.04: Pulling from library/ubuntu
@@ -97,6 +99,7 @@ Digest: sha256:4bc3ae6596938cb0d9e5ac51a1152ec9dcac2a1c50829c74abd9c4361e321b26
 Status: Downloaded newer image for ubuntu:18.04
 docker.io/library/ubuntu:18.04
 ```
+
 上面的命令没有给出Docker镜像仓库地址,因此将会从docker.io官方获取,而镜像名称是 ubuntu:18.04，因此将会获取官方镜像 library/ubuntu 仓库中标签为 18.04 的镜像。docker pull 命令的输出结果最后一行给出了镜像的完整名称，即： docker.io/library/ubuntu:18.04。
 
 从下载过程中,我们可以看到之前提及的分层概念,镜像是由多层存储所构成。下载也是一层层的去下载，并非单一文件。下载过程中给出了每一层的 ID 的前 12 位。并且下载结束后，给出该镜像完整的 sha256 的摘要，以确保下载一致性。
@@ -104,6 +107,7 @@ docker.io/library/ubuntu:18.04
 ### 运行
 
 有了镜像后，我们就能够以这个镜像为基础启动并运行一个容器。以上面的 ubuntu:18.04 为例，如果我们打算启动里面的 bash 并且进行交互式操作的话，可以执行下面的命令。
+
 ```sh
 $ docker run -it --rm ubuntu:18.04 bash
 ```
@@ -121,6 +125,7 @@ bash是放在镜像名之后的命令,这里我们希望有个交互式 Shell，
 要想列出已经下载下来的镜像，可以使用 `docker image ls` 命令。
 
 列表包含了 仓库名、标签、镜像 ID、创建时间 以及 所占用的空间。
+
 ```shell
 REPOSITORY               TAG               IMAGE ID       CREATED         SIZE
 rabbitmq                 3-management      f42f6d9c3578   6 days ago      263MB
@@ -130,6 +135,7 @@ ubuntu                   18.04             71eaf13299f4   7 weeks ago     63.1MB
 redislabs/redisinsight   latest            671987a1c3f4   3 months ago    1.47GB
 hello-world              latest            feb5d9fea6a5   14 months ago   13.3kB
 ```
+
 一个镜像可以对应多个标签比如`3-management``management`标签不同,但镜像ID是相同的.
 
 仔细观察,这里标识的所占用空间和在 Docker Hub 上看到的镜像大小不同。比如ubuntu18.04镜像大小这里是63.1MB,但官网是25MB,这是因为 Docker Hub 中显示的体积是压缩后的体积。在镜像下载和上传过程中镜像是保持着压缩状态的，因此 Docker Hub 所显示的大小是网络传输中更关心的流量大小。而 docker image ls 显示的是镜像下载到本地后，展开的大小，准确说，是展开后的各层所占空间的总和，因为镜像到本地后，查看空间的时候，更关心的是本地磁盘空间占用的大小。
@@ -140,14 +146,18 @@ hello-world              latest            feb5d9fea6a5   14 months ago   13.3kB
 
 ###  虚悬镜像
 
-上面的镜像列表中，还可以看到一个特殊的镜像，这个镜像既没有仓库名，也没有标签，均为 <none>。：
+::: info
+上面的镜像列表中，还可以看到一个特殊的镜像，这个镜像既没有仓库名，也没有标签，均为`none`.
+:::
 
-这个镜像原本是有镜像名和标签的，原来为 mongo:3.2，随着官方镜像维护，发布了新版本后，重新 docker pull mongo:3.2 时，mongo:3.2 这个镜像名被转移到了新下载的镜像身上，而旧的镜像上的这个名称则被取消，从而成为了 <none>。除了 docker pull 可能导致这种情况，docker build 也同样可以导致这种现象。由于新旧镜像同名，旧镜像名称被取消，从而出现仓库名、标签均为 <none> 的镜像。这类无标签镜像也被称为 虚悬镜像(dangling image) ，可以用下面的命令专门显示这类镜像：
+这个镜像原本是有镜像名和标签的，原来为 mongo:3.2，随着官方镜像维护，发布了新版本后，重新 docker pull mongo:3.2 时，mongo:3.2 这个镜像名被转移到了新下载的镜像身上，而旧的镜像上的这个名称则被取消，从而成为了 `none`。除了 docker pull 可能导致这种情况，docker build 也同样可以导致这种现象。由于新旧镜像同名，旧镜像名称被取消，从而出现仓库名、标签均为 `none` 的镜像。这类无标签镜像也被称为 虚悬镜像(dangling image) ，可以用下面的命令专门显示这类镜像：
 
 一般来说，虚悬镜像已经失去了存在的价值，是可以随意删除的，可以用下面的命令删除。
+
 ```sh
 $ docker image prune
 ```
+
 ### 中间层镜像
 为了加速镜像构建、重复利用资源，Docker 会利用 中间层镜像。所以在使用一段时间后，可能会看到一些依赖的中间层镜像。默认的 docker image ls 列表中只会显示顶层镜像，如果希望显示包括中间层镜像在内的所有镜像的话，需要加 -a 参数。
 
@@ -173,6 +183,7 @@ REPOSITORY          TAG                 IMAGE ID            CREATED             
 redis               latest              5f515359c7f8        5 days ago          183 MB
 nginx               latest              05a60462f8ba        5 days ago          181 MB
 ```
+
 ## 删除本地镜像
 
 如果要删除本地的镜像，可以使用 docker image rm 命令，其格式为：

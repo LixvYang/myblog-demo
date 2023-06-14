@@ -963,7 +963,7 @@ Goroutine 的唤醒顺序也是按照加入队列的先后顺序，先加入的�
 
 Go语言调度模型里面,每一个线程M都会绑定一个处理器P,在单一粒度的时间里,只能做多处理一个goroutinen,每个P都会绑定一个上面所说的mcache.当内存需要分配时,当前运行的goroutine会从mcache中查找可用的mspan,**从本地mcache里分配内存不需要加锁**,这样分配效率更高
 
-![](../assets/img/GoMalloc/gomalloc1.png)
+![](/assets/images/GoMalloc/gomalloc1.png)
 
 申请内存时会给他们分配一个mspan这样的单元会不会产生浪费,其实mcache持有的一系列mspan并不是固定大小的,而是按照大小从8b到32kb分配了大概67*2类的mspan,每个内存页分为多级固定大小的空闲列表,这有助于减少碎片.
 
@@ -971,7 +971,8 @@ Go语言调度模型里面,每一个线程M都会绑定一个处理器P,在单�
 Go还为每一个mspan的种类维护着一个mcentral.它的作用是为所有的mcache提供切割好的mspan资源,每一个central会持有一种特定大小的mspan,当工作线程的mcache中没有合适大小的mspan时就去mcentral中获取
 
 mcentral被所有的工作线程共同享有,存在多个goroutine竞争的情况因此mcentral需要加锁,mcentral里维护着两个双向链表,nonempty表示里面还有空闲的mspan等待分配,empty表示这个链表里面的mspan都被分配到了mspan里.
-![](../assets/img/GoMalloc/gomalloc2.png)
+
+![](/assets/images/GoMalloc/gomalloc2.png)
 
 程序申请内存的时候,如果mcache没有空闲的mspan了,那么工作线程就像下图一样去获取和归还mspan的流程:
 - 获取加锁,从nonempty链表里面找到一个可用的mspan,并将其从nonempty中删除,将取出的mspan加入到empty链表中,将mspan返回给工作线程,解锁.

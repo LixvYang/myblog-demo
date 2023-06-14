@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-2d1aaa94","path":"/posts/program/redis/cache-consistency/","title":"Cache Consistency","lang":"zh-CN","frontmatter":{"title":"Cache Consistency","article":false,"feed":false,"sitemap":false},"headers":[],"git":{},"readingTime":{"minutes":0,"words":1},"filePathRelative":null,"excerpt":""}');export{e as data};

@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-85603d8c","path":"/posts/program/c/get-start-with-c-tcp-program/","title":"Get Start with C Tcp Program","lang":"zh-CN","frontmatter":{"title":"Get Start with C Tcp Program","article":false,"feed":false,"sitemap":false},"headers":[],"git":{},"readingTime":{"minutes":0,"words":1},"filePathRelative":null,"excerpt":""}');export{t as data};

@@ -54,13 +54,13 @@ Betxin是一个信息交易市场平台,你可以在这里交易世界上最受�
 
 1. 进入主页面您可以查看您感兴趣的话题种类
 
-![](../assets/betxin/img/home.jpg)
+![](/assets/images/betxin/img/home.jpg)
 
 2. 同时您也可以看到主页面有反馈和个人信息页面，您可以查看这些
 
-![](../assets/betxin/img/feedback.jpg)
+![](/assets/images/betxin/img/feedback.jpg)
 
-![](../assets/betxin/img/userhome.jpg)
+![](/assets/images/betxin/img/userhome.jpg)
 
 [Back to top>>>>>>>>>](#top)
 
@@ -68,34 +68,34 @@ Betxin是一个信息交易市场平台,你可以在这里交易世界上最受�
 
 如果您遇到您喜欢的话题，您可以进行购买预测
 
-![](../assets/betxin/img/buy1.jpg)
+![](/assets/images/betxin/img/buy1.jpg)
 
 > 您可以点击某个话题进入话题页面
 
-![](../assets/betxin/img/buy2.jpg)
+![](/assets/images/betxin/img/buy2.jpg)
 
 > 点击购买按钮
 
-![](../assets/betxin/img/buy3.jpg)
+![](/assets/images/betxin/img/buy3.jpg)
 
 > 您可以选择您想支付的数字货币，Betxin支持36种不同的加密货币
 
-![](../assets/betxin/img/buy4.jpg)
+![](/assets/images/betxin/img/buy4.jpg)
 
 > 选择您想支付的数额
 
-![](../assets/betxin/img/buy5.jpg)
+![](/assets/images/betxin/img/buy5.jpg)
 
 > 当您购买成功，页面会跳转到主页面，当您再次进入话题页面，您的购买信息已经显示成功
 
-![](../assets/betxin/img/buy6.jpg)
+![](/assets/images/betxin/img/buy6.jpg)
 
 
 > 当您想将您的筹码换出，您可以点击已购买话题的Refund按钮，来选择退款
 
-![](../assets/betxin/img/buy7.jpg)
+![](/assets/images/betxin/img/buy7.jpg)
 
-![](../assets/betxin/img/buy8.jpg)
+![](/assets/images/betxin/img/buy8.jpg)
 
 > 当您点击了Refund按钮后，您可以在机器人的聊天页面查看您的退款(**注意！退款将扣除5%的本金费用**)
 
@@ -105,18 +105,18 @@ Betxin是一个信息交易市场平台,你可以在这里交易世界上最受�
 
 当您遇到喜欢的话题，您可以收藏，您只需点击话题右上角的星星
 
-![](../assets//betxin/img/collect1.jpg)
+![](/assets/images/betxin/img/collect1.jpg)
 
-![](../assets//betxin/img/collect2.jpg)
+![](/assets/images/betxin/img/collect2.jpg)
 
 [Back to top>>>>>>>>>](#top)
 
 ### 4. 评论
 
-![](../assets//betxin/img/comment1.jpg)
+![](/assets/images/betxin/img/comment1.jpg)
 
 
-![](../assets//betxin/img/comment2.jpg)
+![](/assets/images/betxin/img/comment2.jpg)
 
-![](../assets//betxin/img/comment3.jpg)
+![](/assets/images/betxin/img/comment3.jpg)
 

@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-69a86107","path":"/posts/econonics/","title":"Econonics","lang":"zh-CN","frontmatter":{"title":"Econonics","article":false,"feed":false,"sitemap":false},"headers":[],"git":{},"readingTime":{"minutes":0,"words":1},"filePathRelative":null,"excerpt":""}');export{e as data};

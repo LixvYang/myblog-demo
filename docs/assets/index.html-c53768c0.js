@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-2bdb1026","path":"/tag/thinging/","title":"thinging 标签","lang":"zh-CN","frontmatter":{"title":"thinging 标签","index":false,"feed":false,"sitemap":false,"blog":{"type":"category","name":"thinging","key":"tag"},"layout":"BlogCategory"},"headers":[],"git":{},"readingTime":{"minutes":0,"words":0},"filePathRelative":null,"excerpt":""}');export{e as data};

@@ -17,9 +17,9 @@ In the past few years, Tide has always been a good App for people who like to me
 
 _All right, let's go._
 
-[click it to download apk](../apk/Deep.apk)
+[click it to download apk](/apk/Deep.apk)
 
-![Deep](../assets/img/deep.jpg)
+![Deep](/assets/images/deep.jpg)
 
 Let us continue. What's this? Deep that could help me in immersed. 
 
@@ -43,9 +43,9 @@ Enjoy!
 
 _好吧，我们继续。_
 
-![Deep](../assets/img/deep.jpg)
+![Deep](/assets/images/deep.jpg)
 
-[点击下载](../apk/Deep.apk)
+[点击下载](/apk/Deep.apk)
 
 让我们继续。 这是什么？ Deep可以帮助我沉浸其中。
 

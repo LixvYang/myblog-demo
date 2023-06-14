@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-fb37af2c","path":"/posts/program/golang/deep/","title":"Deep","lang":"zh-CN","frontmatter":{"title":"Deep","article":false,"feed":false,"sitemap":false},"headers":[],"git":{},"readingTime":{"minutes":0,"words":1},"filePathRelative":null,"excerpt":""}');export{e as data};

@@ -13,7 +13,7 @@ tag:
 
 If you are learn TCP/IP network, you must have heard that CS model with this.
 
-![](/assets/img/tcp.png)
+![](/assets/images/tcp/tcp.png)
 
 But if you are new with network programing, there are difficult.
 

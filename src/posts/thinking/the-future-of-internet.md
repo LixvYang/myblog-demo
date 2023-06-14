@@ -29,7 +29,7 @@ I very much agree.
 Although,I have not the habit of watching movies and TV shows. But when I want watch TV,I have to waiting a mintue-long shit ad.Very poor user experience.
 
 Another thing I meet in recent is that I want to resgiter a public account to use foreign product, when I got the SMS code, the pervasive advertising send me a waring.
-![warn](../assets/img/warn.jpg)
+![warn](/assets/images/warn.jpg)
 
 I did nothing, I got a waring.How nosense.
 

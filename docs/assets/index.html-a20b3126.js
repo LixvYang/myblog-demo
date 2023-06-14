@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-2b6a541e","path":"/tag/thinking/","title":"thinking 标签","lang":"zh-CN","frontmatter":{"title":"thinking 标签","index":false,"feed":false,"sitemap":false,"blog":{"type":"category","name":"thinking","key":"tag"},"layout":"BlogCategory"},"headers":[],"git":{},"readingTime":{"minutes":0,"words":0},"filePathRelative":null,"excerpt":""}');export{e as data};

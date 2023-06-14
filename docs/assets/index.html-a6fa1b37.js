@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-4ba4912a","path":"/posts/thinking/","title":"Thinking","lang":"zh-CN","frontmatter":{"title":"Thinking","article":false,"feed":false,"sitemap":false},"headers":[],"git":{},"readingTime":{"minutes":0,"words":1},"filePathRelative":null,"excerpt":""}');export{e as data};
