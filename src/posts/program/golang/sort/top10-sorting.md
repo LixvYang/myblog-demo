@@ -268,7 +268,7 @@ func partition(arr []int, start, end int) int {
 }
 ```
 
-### ![堆排序](https://www.bilibili.com/video/BV1fp4y1D7cj/?spm_id_from=333.337.search-card.all.click&vd_source=58c0cd7db768f7e1b79c590a4672562c)
+### [堆排序](https://www.bilibili.com/video/BV1fp4y1D7cj/?spm_id_from=333.337.search-card.all.click&vd_source=58c0cd7db768f7e1b79c590a4672562c)
 
 ![](/assets/images/heap.png)
 
