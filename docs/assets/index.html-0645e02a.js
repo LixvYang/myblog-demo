@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-1410c426","path":"/posts/thinking/2023/","title":"2023","lang":"zh-CN","frontmatter":{"title":"2023","article":false,"feed":false,"sitemap":false},"headers":[],"git":{},"readingTime":{"minutes":0,"words":1},"filePathRelative":null,"excerpt":""}');export{e as data};
